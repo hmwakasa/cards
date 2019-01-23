@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1">
+	<meta name="author" content="CareleSmithひとみ">
+	<meta name="description" content="フジョーリ2の遊び方">
+	<title>フジョーリ2</title>
+	<link rel="stylesheet" type="text/css" href="/jscss/card.css"><!-- css -->
+	<script src="/jscss/jquery-latest.min.js" type="text/javascript"></script><!-- jQuery -->
+	<script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_CHTML,/jscss/mathjax.js"></script><!-- Mathjax -->
+	<script src="/jscss/jquery.tablesorter.min.js" type="text/javascript"></script><!-- tabelesorter -->
+	<script src="/jscss/jquery.metadata.js" type="text/javascript"></script><!-- tabelesorter -->
+	<script src="/jscss/twitter.js" type="text/javascript"></script><!-- twitter リンク用 -->
+	<script src="/jscss/analytics.js" type="text/javascript"></script><!-- Google Analytics-->
+	<!-- favicon -->
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/manifest.json">
+	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="theme-color" content="#ffffff">
+</head>
+<body>
+<div class="wrapper">
+	<section>
+		<header>
+			<h1>フジョーリ2<br><span lang="en">Fujori 2</span></h1>
+			<div class="update">
+				CareleSmithひとみ<br>
+				<time>2017-02-16</time>作成
+			</div>
+		</header>
+		<nav class="head">
+			<ul itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
+				<li><a href="/" itemprop="url"><span itemprop="title">TOP</span></a></li>
+				<li><a href="/cards/"><span itemprop="title">カードゲームの遊び方・萃</span></a></li>
+				<li><a href="/cards/index.html#rules"><span itemprop="title">遊び方</span></a></li>
+				<li><span itemprop="titile">フジョーリ2</span></li>
+			</ul><br>	
+			<a href="https://twitter.com/share" class="twitter-share-button" data-via="CareleSmith9" data-lang="ja" target="_blank">ツイート</a>
+		</nav>
+		<p>
+			林虎雄さんの<a href="http://www.page.sannet.ne.jp/mikotan/" target="_blank">カードゲームルール集</a>を参考にしています。
+		<p>
+		<p>
+			林虎雄さんのオリジナルゲームです。
+			手札をなくすことが目的のゲームですが、<strong>手札をなくしても勝てるとは限らない</strong>システムが特徴的です。
+		</p>
+		<section>
+			<h2>遊ぶ人数</h2>
+			<p>
+				3人で遊びます。
+			</p>
+		</section>
+		<section>
+			<h2>使うカードとカードの点数</h2>
+			<p>
+				<b>ジョーカー</b>を除いた52枚のトランプを用います。
+			</p>
+			<p>
+				カードの点数は次の通りです。
+			</p>
+			<div class="table">
+				<table>
+					<tr><th><b>A</b></th><th><b>K</b></th><th><b>Q</b></th><th><b>J</b></th><th><b>10</b>〜<b>2</b></th></th>
+					<tr><td>14点</td><td>13点</td><td>12点</td><td>11点</td><td>数字通り</td></tr>
+				</table>
+			</div>
+			<p>
+				また、<strong><span class="b">黒色</span>のスートはプラスの点数</strong>、
+				<strong><span class="r">赤色</span>のスートはマイナスの点数</strong>になります。
+			</p>
+		</section>
+		<section>
+			<h2>ディール</h2>
+			<p>
+				初めのディーラーは誰がなっても構いません。
+				次のディールからは時計回りに交代します。
+			</p>
+			<p>
+				ディーラーは、カードを17枚ずつ配りましょう。
+				余った1枚は表向きにしてテーブルの中央に置きます。
+				テーブルの中央に置かれているカードを「台札」と呼ぶことにしましょう。
+			</p>
+		</section>
+		<section>
+			<h2>プレイ</h2>
+			<p>
+				ディーラーの左隣から時計回りにプレイを行います。
+				プレイの順番となった人は、手札からテーブルの中央にカードを出します。
+				出すことのできるカードは、ランクが3つ以内に大きいカードで、台札と違う色のスートのカードです。
+				例えば台札が<b><span class="b">黒</span>3</b>であれば、出すことのできるカードは
+				<b><span class="r">赤</span>4</b> <b><span class="r">赤</span>5</b> <b><span class="r">赤</span>6</b>
+				のいずれかです。この時、
+				<b>10</b> <b>J</b> <b>Q</b> <b>K</b> <b>A</b> <b>2</b>とつながっているものとして考えるので、
+				例えば台札が<b><span class="r">赤</span>Q</b>であれば、出すことのできるカードは
+				<b><span class="b">黒</span>K</b> <b><span class="b">黒</span>A</b> <b><span class="b">黒</span>2</b>
+				のいずれかとなります。
+			</p>
+			<p>
+				また、同じランクのカードがあれば重ねて出すことができます。
+				重ねるカードのスートの色は何でも構いません。
+				この時は、一番下のカードが台札と違う色のカードになるように重ねてカードを出します。
+			</p>
+			<p>
+				プレイされて出されたカード<small>（重ねて出された場合は一番上に出されたカード）</small>が新しい台札となって、
+				プレイの順番が次に移ります。
+			</p>
+			<p>
+				もし、出すことのできるカードが手札にない場合はパスをします。
+				出すことのできるカードが手札にあるのにパスをすることはできません。
+				パスをした場合は台札はそのままで次の人にプレイの順番が移ります。
+			</p>
+		</section>
+		<section>
+			<h2>革命</h2>
+			<p>
+				同じランクのカードが4枚重ねて出されたら、<strong>革命</strong>です。
+				革命が起きると、<strong><span class="r">赤色</span>のスートはプラスの点数</strong>、
+				<strong><span class="b">黒色</span>のスートはマイナスの点数</strong>になります。
+				すなわち、カードの得点の正負が入れ替わります。
+			</p>
+			<p>
+				2回目以降の革命では、革命が起こるたびにカードの得点の正負が入れ替わります。
+			</p>
+		</section>
+		<section>
+			<h2>得点</h2>
+			<p>
+				誰かの手札がなくなるとそこでプレイが終了します。
+				この時、手札をなくした人を「上がった人」と言うことにします。
+			</p>
+			<p>
+				もしくは、3人続けてパスをした場合もプレイが終了します。
+				この場合は、残った手札が最も少ない人が「上がった人」になります。
+				最も手札の枚数が少ない人が2人以上いる場合は、その中で手札の点数が高い人が「上がった人」になります。
+			</p>
+			<p>
+				上がった人とそうでない人とで得点の計算の方法が異なります。
+				<em>上がっていない人</em>は、手札の点数がそのまま得点になります。
+				<em>上がった人</em>は、上がっていない2人の合計点に-1をかけたものが得点になります。
+				例えば、上がってない人の点数が+14点と-2点だったら、上がった人の点数は-12点になります。
+				上がったからといって、必ずプラスの得点となるとは限らないのがミソです。
+			</p>
+			<p>
+				なお、上がった人に該当する人が2人以上いる場合
+				<small>（一番手札が少ない人の手札の点数が同じ場合）</small>は
+				引き分けとして得点を計算しません。
+			</p>
+		</section>
+		<section>
+			<h2>ゲーム</h2>
+			<p>
+				何ディールかやって、合計点が高い人から順位がつきます。
+			</p>
+		</section>
+		<aside>
+			<h2>感想</h2>
+			<p>
+				<time datetime="2016-12-25">2016年12月25日</time>にプレイしました。
+				革命でもしない限り、上がると負けるゲームです。
+				手札の点数を減らさないように手札をなるべく少なく捨てるという、なかなか独特なプレイ感です。
+			</p>
+		</aside>
+		<script src="/jscss/ad.js" type="text/javascript"></script>
+		<nav class="foot">
+			<a href="https://twitter.com/share" class="twitter-share-button" data-via="CareleSmith9" data-lang="ja" target="_blank">ツイート</a>
+			<a href="/cards/" class="top">トップへ</a>
+		</nav>
+	</section>
+</div>
+</body>
+</html>

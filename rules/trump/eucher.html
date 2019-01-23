@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1">
+	<meta name="author" content="CareleSmithひとみ">
+	<meta name="description" content="ユーカーの遊び方">
+	<title>ユーカー(Eucher)</title>
+	<link rel="stylesheet" type="text/css" href="/jscss/card.css"><!-- css -->
+	<script src="/jscss/jquery-latest.min.js" type="text/javascript"></script><!-- jQuery -->
+	<script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_CHTML,/jscss/mathjax.js"></script><!-- Mathjax -->
+	<script src="/jscss/jquery.tablesorter.min.js" type="text/javascript"></script><!-- tabelesorter -->
+	<script src="/jscss/jquery.metadata.js" type="text/javascript"></script><!-- tabelesorter -->
+	<script src="/jscss/twitter.js" type="text/javascript"></script><!-- twitter リンク用 -->
+	<script src="/jscss/analytics.js" type="text/javascript"></script><!-- Google Analytics-->
+	<!-- favicon -->
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/manifest.json">
+	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="theme-color" content="#ffffff">
+</head>
+<body>
+<div class="wrapper">
+	<section>
+		<header>
+			<h1>ユーカー<br><span lang="en">Eucher</span></h1>
+			<div class="update">
+				CareleSmithひとみ<br>
+				<time>2016-11-14</time>作成
+			</div>
+		</header>
+		<nav class="head">
+			<ul itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
+				<li><a href="/" itemprop="url"><span itemprop="title">TOP</span></a></li>
+				<li><a href="/cards/"><span itemprop="title">カードゲームの遊び方・萃</span></a></li>
+				<li><a href="/cards/index.html#rules"><span itemprop="title">遊び方</span></a></li>
+				<li><span itemprop="titile">ユーカー</span></li>
+			</ul><br>	
+			<a href="https://twitter.com/share" class="twitter-share-button" data-via="CareleSmith9" data-lang="ja" target="_blank">ツイート</a>
+		</nav>
+		<p>
+			主に<a href="http://gamefarm.jp" target="_blank">ゲームファーム</a>を参考にしました。
+		</p>
+		<p>
+			<a href="/cards/intro/tt.html">トリックテイキングゲーム</a>です。
+			ユーカーの仲間は、19世紀後半から、20世紀前半にかけてアメリカで盛んとなりました。
+			現在でも、アメリカの代表的なゲームとして盛んにプレイされていて、インターネット上でも遊ばれています。
+			最強の切り札として、最初にジョーカーを用いたゲームとされていますが、
+			現在のアメリカではジョーカーを用いることが少ないです。
+		</p>
+		<p>
+			様々な種類のルールがありますが、ここでは現在のアメリカで一般的と思われるルールを紹介します。
+			ジョーカーを使うルールは、ブリティッシュユーカーとして後日掲載する予定です。
+		</p>
+		<section>
+			<h2>使うカードと遊ぶ人数</h2>
+			<p>
+				4人で遊びます。向かい合った2人はパートナーとなります。
+			</p>
+			<p>
+				各スートの<b>A</b> <b>K</b> <b>Q</b> <b>J</b> <b>10</b> <b>9</b>のカード、合計24枚を使います。
+			</p>
+		</section>
+		<section>
+			<h2>カードのランク</h2>
+			<p>
+				ユーカーは切札があるトリックテイキングゲームですが、切札のスートが若干特殊です。
+				他の多くのトリックテイキングゲームと同じように、1つのスートのカード全てが切札となります。
+				そして、さらに<em>そのスートと同じ色の<b>J</b>も切札となります</em>。
+				例えば、<span class="r">♥</span>のスートが切札になったならば、
+				<b><span class="r">♦</span>J</b>も切札になります。
+				ここで、切札と同じマークの<b>J</b>を<strong><b>正J</b><span class="en">(right bower)</span></strong>、
+				切札マークではない、切札マークと同じ色の<b>J</b>を<strong><b>裏J</b><span class="en">(left bower)</span></strong>ということにします。
+			</p>
+			<p>
+				切札スートのランクは、強いものから順に<b>正J</b> <b>裏J</b> <b>A</b> <b>K</b> <b>Q</b> <b>10</b> <b>9</b>です。
+			</p>
+			<p>
+				一方で、切札以外のスートでは、強いものから順に<b>A</b> <b>K</b> <b>Q</b> <b>J</b> <b>10</b> <b>9</b>となります。
+				ただし、切札スートと同じ色のスートの<b>J</b>は、切札スートになるので、
+				そのスートでは<b>J</b>が存在しないことになります。
+			</p>
+			<p>
+				例えば、<em><span class="r">♥</span>が切札になった場合</em>は、このようになります。
+				それぞれのスートについて、左側の方が強いカードです。
+			</p>
+			<dl>
+				<dt>切札のスート</dt>
+				<dd>
+					<b><span class="r">♥</span>J</b>
+					<b><span class="r">♦</span>J</b>
+					<b><span class="r">♥</span>A</b>
+					<b><span class="r">♥</span>K</b>
+					<b><span class="r">♥</span>Q</b>
+					<b><span class="r">♥</span>10</b>
+					<b><span class="r">♥</span>9</b>
+				</dd>
+				<dt>その他のスート</dt>
+				<dd>
+					<b><span class="r">♦</span>A</b>
+					<b><span class="r">♦</span>K</b>
+					<b><span class="r">♦</span>Q</b>
+					<b><span class="r">♦</span>10</b>
+					<b><span class="r">♦</span>9</b>
+				</dd>
+				<dd>
+					<b><span class="b">♠</span>A</b>
+					<b><span class="b">♠</span>K</b>
+					<b><span class="b">♠</span>Q</b>
+					<b><span class="b">♠</span>J</b>
+					<b><span class="b">♠</span>10</b>
+					<b><span class="b">♠</span>9</b>
+				</dd>
+				<dd>
+					<b><span class="b">♣</span>A</b>
+					<b><span class="b">♣</span>K</b>
+					<b><span class="b">♣</span>Q</b>
+					<b><span class="b">♣</span>J</b>
+					<b><span class="b">♣</span>10</b>
+					<b><span class="b">♣</span>9</b>
+				</dd>
+			</dl>
+		</section>
+		<section>
+			<h2>ディール</h2>
+			<p>
+				最初のディーラーは任意に決めます。次からは時計回りで交代します。
+			</p>
+			<p>
+				ディーラーはカードをシャッフルしたのち、カードを3枚まとめて全員に1回配り、
+				次に2枚まとめて全員に1回配ります。（もしくは2枚ずつ→3枚ずつとしても構いません）
+				手札は合計で5枚になります。
+				4枚配られないカードが出ますが、それはテーブル中央に置き、一番上のカードを表向きにします。
+				表向きにしたカードが<strong>切札候補カード</strong>になります。
+			</p>
+		</section>
+		<section>
+			<h2>ビッド</h2>
+			<p>
+				ビッドでは切札を決めます。
+				切札を決めたプレイヤーを<strong>メーカー<span lang="en">(maker)</span></strong>と言います。
+			</p>
+			<p>
+				ディーラーの左隣から、切札候補カードのスートを切札にするかしないかをビッドします。
+				「する」<span lang="en">(order)</span>のビッドがあればそこでビッドは終わり、
+				切札候補カードのスートが切札となります。
+				切札候補カードのスートを切札にしたくなければ、パスをします。
+				パスがあれば、左隣の人にビッドをする権利が移ります。
+			</p>
+			<p>
+				もし、全員がパスをして、切札候補カードのスートが切札にならずに、ビッドが1巡したら、
+				切札表示カードを裏向きにし、2巡目のビッドを行います。
+				2巡目のビッドでは切札のスートを自由に決めることができます。
+				ただし2巡目のビッドでは切札候補カードのスートを切札にしてはいけません。
+				切札を決めたくなければパスをします。
+			</p>
+			<p>
+				もし2巡目でも全員がパスをしたら、ディーラーを変えてカードを配り直します。
+			</p>
+		</section>
+		<section>
+			<h2>1人プレイ</h2>
+			<p>
+				切札が決まったら、メーカーは1人でプレイすることを宣言できます。
+				1人でプレイする宣言<span lang="en">(I order it up alone)</span>があれば、
+				パートナーは手札をふせ、このディールのプレイには参加しません。
+				なお、メーカーのパートナーは1人プレイの宣言はできません。
+			</p>
+			<p>
+				メーカーがいない方のペア<strong>（ディフェンダー<span lang="en">defender</span>）</strong>のどちらか1人もまた、
+				同様に1人プレイをすることができます。どちらが1人プレイの宣言をしても構いません。
+				この場合も、1人プレイをする宣言があれば、パートナーは手札をふせプレイに参加しません。
+			</p>
+		</section>
+		<section>
+			<h2>手札の交換</h2>
+			<p>
+				切札表示カードが切札となった場合は、（メーカーではなく）<em>ディーラー</em>は切札表示カードを手札に加えることができます。
+				切札表示カードを手札に加えたならば、ディーラーは手札から不要なカードを1枚捨て札にします。
+			</p>
+		</section>
+		<section>
+			<h2>プレイ</h2>
+			<p>
+				マストフォローの<a href="/cards/intro/tt.html">トリックテイキングゲーム</a>です。
+				<em>オープニングリードはディーラーの左隣のプレイヤーです。</em>メーカーではありません。
+				1人プレイがあって、参加しないプレイヤーがいる場合はその左隣のプレイヤーがオープニングリードをします。
+			</p>
+			<p>
+				マストフォローですから、リードのスートを持っている場合はそのスートのカードを出さなければなりません。
+				しかし、ここで注意するべきことは、<b>裏J</b>は本来のスートでなく、切札のスートに属するので、
+				切札がリードされた時は<b>裏J</b>でフォローすることもできますし、
+				逆に、<b>裏J</b>のマークのスート（切札と同じ色のスート）がリードされた時は、
+				<b>裏J</b>を出してもフォローしたことにならないので、注意してください。
+			</p>
+			<p>
+				取ったトリックは裏向きにしてトリック数がわかるように置いておきます。
+				取ったトリックはペアで共有します。
+			</p>
+		</section>
+		<section>
+			<h2>得点</h2>
+			<p>
+				得点は以下の表に従います。1人プレイをしたとしても、得点はペアに入ります。
+			</p>
+			<div class="table">
+				<table>
+					<tr><th colspan="2">メーカー側の<wbr>トリック数</th><th> メーカー<wbr>の得点</th><th>ディフェンダー<wbr>の得点</th></tr>
+					<tr><th rowspan="2">2トリック以下</th><th></th><td>0</td><td>2</td></tr>
+					<tr> <th>ディフェンダーが<wbr>1人プレイの時</th><td>0</td><td>4</td></tr>
+					<tr><th colspan="2">3、4トリック</th><td>1</td><td>0</td></tr>
+					<tr><th rowspan="2">5トリック</th><th></th><td>2</td><td>0</td></tr>
+					<tr> <th>メーカーが<wbr>1人プレイの時</th><td>4</td><td>0</td></tr>
+				</table>
+			</div>
+			<p>
+				1人プレイでメーカーの側が3、4トリック取った時は、メーカーの点数は変わりません。
+				メーカーが5トリック取ることをマーチ<span lang="en">(March)</span>、
+				ディフェンダーが3、4トリック取ることをユーカー<span lang="en">(Eucher)</span>と言います。
+			</p>
+		</section>
+		<section>
+			<h2>ゲーム</h2>
+			<p>
+				10点先取で、先に10点取ったペアが勝ちです。
+			</p>
+		</section>
+		<aside>
+			<h2>感想</h2>
+			<p>
+				<time datetime="2016-11-08">2016年11月18日</time>にプレイしましたが、
+				ルーリングを取り違えた状態でプレイしていました。
+				オープニングリードが誰かは間違えやすいので注意してください。
+			</p>
+			<p>
+				手札が5枚と少ないので運の要素が多いと感じました。
+				ただし、切札を決めるときには結構悩むところがありおもしろかったです。
+				逆に初心者には切札を決めるのがしんどいかもしれません。
+			</p>
+		</aside>
+		<script src="/jscss/ad.js" type="text/javascript"></script>
+		<nav class="foot">
+			<a href="https://twitter.com/share" class="twitter-share-button" data-via="CareleSmith9" data-lang="ja" target="_blank">ツイート</a>
+			<a href="/cards/" class="top">トップへ</a>
+		</nav>
+	</section>
+</div>
+</body>
+</html>

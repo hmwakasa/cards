@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1">
+	<meta name="author" content="CareleSmithひとみ">
+	<meta name="description" content="T-トリテ">
+	<title>D-トリテ(D-TT)</title>
+	<link rel="stylesheet" type="text/css" href="/jscss/card.css"><!-- css -->
+	<script src="/jscss/jquery-latest.min.js" type="text/javascript"></script><!-- jQuery -->
+	<script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_CHTML,/jscss/mathjax.js"></script><!-- Mathjax -->
+	<script src="/jscss/jquery.tablesorter.min.js" type="text/javascript"></script><!-- tabelesorter -->
+	<script src="/jscss/jquery.metadata.js" type="text/javascript"></script><!-- tabelesorter -->
+	<script src="/jscss/twitter.js" type="text/javascript"></script><!-- twitter リンク用 -->
+	<script src="/jscss/analytics.js" type="text/javascript"></script><!-- Google Analytics-->
+	<!-- favicon -->
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/manifest.json">
+	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="theme-color" content="#ffffff">
+</head>
+<body>
+<div class="wrapper">
+	<section>
+		<header>
+			<h1>ᴅ-トリテ<br><span lang="en">d-TT</span></h1>
+			<div class="update">
+				CareleSmithひとみ<br>
+				<del><time>2017-10-30</time>草稿</del>
+				<ins><time>2017-11-09</time>大幅更新</ins><!--この更新以前の変更履歴はありません -->
+			</div>
+		</header>
+		<nav class="head">
+			<ul itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
+				<li><a href="/" itemprop="url"><span itemprop="title">TOP</span></a></li>
+				<li><a href="/cards/"><span itemprop="title">カードゲームの遊び方・萃</span></a></li>
+				<li><a href="/cards/index.html#rules"><span itemprop="title">遊び方</span></a></li>
+				<li><span itemprop="titile"><span style="font-variant: small-caps;">d</span>-トリテ</span></li>
+			</ul><br>	
+			<a href="https://twitter.com/share" class="twitter-share-button" data-via="CareleSmith9" data-lang="ja" target="_blank">ツイート</a>
+		</nav>
+		<p>
+			<strong><span style="font-variant: small-caps;">d</span>-トリテ</strong>は、私ひとみさんが考案した、
+			ドラフトをする<a href="/cards/intro/tt.html">トリックテイキングゲーム</a>です。
+		</p>
+		<section>
+			<h2>遊ぶ人数と使うカード</h2>
+			<p>
+				3人で遊びます。
+			</p>
+			<p>
+				使うカードは、通常のトランプから<b>10</b> <b>9</b> <b>8</b>を除いた<strong>40枚</strong>です。
+				ランクは強いものから順に、<b>A</b> <b>3</b> <b>K</b> <b>Q</b> <b>J</b> <b>7</b> <b>6</b> <b>5</b> <b>4</b> <b>2</b>です。
+				<strong><b>3</b>が強くなっていることに注意してください。</strong>
+			</p>
+		</section>
+		<section>
+			<h2>ゲームの流れ</h2>
+			<p>
+				このゲームの目的は、ビッドとちょうど同じトリック数をとることです。
+				ゲームの流れは次のようになります。
+			</p>
+			<ol>
+				<li>切札決め</li>
+				<li>ドラフト1回目</li>
+				<li>ビッド</li>
+				<li>ドラフト2回目</li>
+				<li>プレイ</li>
+			</ol>
+		</section>
+		<section>
+			<h2>ドラフトとは</h2>
+			<p>
+				まず、ドラフトが何かわからない人に向けてドラフトのやり方を説明します。
+			</p>
+			<p>
+				ドラフトでは、はじめ、全員にあらかじめ決められた枚数のカードが配られます
+				（例えばこのゲームでは6枚です）。
+				全員はこの配られたカード6枚の中から、手札にしたいカードを1枚抜き出して確保します。
+				抜き出さなかった5枚は、そのまま横の人に回します
+				（右隣に渡す場合と、左隣に渡す場合があります）。
+			</p>
+			<p>
+				全員が1枚ずつ確保したら、隣から回って来た5枚のカードを見て、
+				そこから1枚抜き出して手札として確保します。
+				この時、自分が今まで手札として確保したカードを見ても構いません。
+				選ばなかった4枚のカードはまた隣に回します。
+			</p>
+			<p>
+				このように、1枚手札に確保しては余ったカードを隣に回すというのを、
+				最初配られたカードがなくなるまで繰り返します。
+				結果、6枚のカード（うち1枚は最後に隣から1枚だけで回されたカード）を手札とすることになります。
+				これをドラフトと言います。
+			</p>
+		</section>
+		<section>
+			<h2>切札決め</h2>
+			<p>
+				実際のプレイの詳細について説明しましょう。
+				まず、適当な方法でディーラーを決めます。
+				ディーラーはカードをよくシャッフルして、4枚テーブルの中央に表向きでおきます。
+				この4枚のカードはプレイで使うことはありません。
+				プレイに使うカードは36枚です。
+			</p>
+			<p>
+				表にした4枚のカードのうち、最も強いランクのカードのスートが切札になります。
+				もし、最も強いランクのカードが複数あった場合は、
+				<span class="b">♠</span> <span class="r">♥</span> <span class="r">♦</span> <span class="b">♣</span>
+				の順番で優先されます。
+				ただし、<b>A</b> <b>3</b> <b>K</b> <b>Q</b> <b>J</b>から1枚も表にならなかった場合、
+				切札なしとなります。
+			</p>
+			<p>
+				例えば、
+				<b><span class="r">♥</span>A</b> <b><span class="r">♦</span>Q</b> <b><span class="r">♦</span>4</b> <b><span class="b">♣</span>2</b>
+				が表になった場合は<span class="r">♥</span>が切札になります。
+				<b><span class="r">♦</span>3</b> <b><span class="b">♣</span>3</b> <b><span class="r">♥</span>K</b> <b><span class="b">♠</span>6</b>
+				が表になった場合は<span class="r">♦</span>が切札になります。
+				<b><span class="b">♠</span>7</b> <b><span class="b">♣</span>7</b> <b><span class="b">♣</span>5</b> <b><span class="r">♦</span>2</b>
+				が表になった場合は切札はありません。
+			</p>
+		</section>
+		<section>
+			<h2>第1ドラフト</h2>
+			<p>
+				ディーラーはカードを全員に6枚ずつ配り、1回目のドラフトを開始します。
+				この時、自分が取らなかったカードは左隣に回します。
+			</p>
+		</section>
+		<section>
+			<h2>ビッド</h2>
+			<p>
+				1回目のドラフトが終わったら、1回目のドラフトで取った6枚のカードを見て
+				全員が<em>同時に</em>とるトリック数を宣言します。
+				宣言できるのは0〜12の整数です。
+				プレイでは、この宣言したトリック数とちょうど同じトリック数をとることが目的となります。
+			</p>
+			<p>
+				全員同時に宣言したら、声が混ざって聞こえなくなると思うので、
+				指で示すなどした方がわかりやすいと思います。
+			</p>
+		</section>
+		<section>
+			<h2>第2ドラフト</h2>
+			<p>
+				全員のビッドを確認したら、2回目のドラフトを始めます。
+			</p>
+			<p>
+				全員にカードを6枚ずつ配って、今度は反時計回りにドラフトを行います
+				<small>（取らなかったカードは右隣に回します）</small>。
+			</p>
+			<p>
+				2回のドラフトを終え、全員の手札は12枚になるはずです。
+			</p>
+		</section>
+		<section>
+			<h2>プレイ</h2>
+			<p>
+				ディーラーの左隣がオープニングリードをして<a href="/cards/intro/tt.html">トリックテイキングゲーム</a>のプレイを開始します。
+				プレイは時計回りの順で行います。
+				リードのスートをフォローする義務があります。リードのスートをフォローできない場合はどのカードを出しても構いません。
+			</p>
+		</section>
+		<section>
+			<h2>得点</h2>
+			<p>
+				次のように得点をつけます。
+			</p>
+			<dl>
+				<dt>
+					全員がビッドに成功した場合
+				</dt>
+				<dd>
+					一番累計の点数が低い人は-10点で、一番累計の点数が高い人は+10点です。
+					累計点数が2番目の人は得失点なしです。
+					もし、全員の点数が同じだったら誰も得失点はなく、
+					一番累計の点数が低い人、または一番累計の点数が高い人が2人いた場合は、
+					10点ではなく、5点ずつ得点、または失点します。
+				</dd>
+				<dt>
+					2人が成功した場合
+				</dt>
+				<dd>
+					成功した人は、自分のビッドの値に10を加えた値をそれぞれ得点します。
+					失敗した人は2人のビッドの値の合計に、さらに20を加えた値を失点します。
+				</dd>
+				<dt>
+					1人だけが成功した場合
+				</dt>
+				<dd>
+					成功した人は、自分のビッドの2倍に20を加えた値を得点します。
+					失敗した人はそれぞれ、成功した人のビッドに10点を加えたものを失点します。
+				</dd>
+				<dt>
+					全員がビッドに失敗した場合
+				</dt>
+				<dd>
+					一番累計の点数が低い人は+10点で、一番累計の点数が高い人は-10点です。
+					累計点数が2番目の人は得失点なしです。
+					もし、全員の点数が同じだったら誰も得失点はなく、
+					一番累計の点数が低い人、または一番累計の点数が高い人が2人いた場合は、
+					10点ではなく、5点ずつ失点、または得点します。
+				</dd>
+			</dl>
+			<p>
+				なんか難しく書いてあるように見えますが、全員の合計が0点になるようになっています。
+			</p>
+		</section>
+		<section>
+			<h2>ゲーム</h2>
+			<p>
+				何ディールかやって、累計の得点が多い人が勝ちです。
+			</p>
+		</section>
+		<aside>
+			<h2>バリエーション</h2>
+			<p>
+				得点方法は以下のようなものを当初考えていました。
+			</p>
+			<div class="table">
+				<table>
+					<tr>
+						<th></th>
+						<th>成功<wbr>した人</th>
+						<th>失敗<wbr>した人</th>
+					</tr>
+					<tr>
+						<th>全員が<wbr>失敗</th>
+						<td colspan="2">点数を<wbr>2倍にする</td>
+						
+					</tr>
+					<tr>
+						<th>1人が<wbr>成功</th>
+						<td>ビッドの<wbr>2倍の<wbr>得点</td>
+						<td>成功した<wbr>人の<wbr>ビッドと<wbr>同じだけ<wbr>失点</td>
+					<tr>
+					<tr>
+						<th>2人が<wbr>成功</th>
+						<td>自分の<wbr>ビッドと<wbr>同じだけ<wbr>得点</td>
+						<td>成功した<wbr>人の<wbr>ビッドの<wbr>合計だけ<wbr>失点</td>
+					</tr>
+					<tr>
+						<th>全員が<wbr>失敗</th>
+						<td colspan="2">得点が<wbr>半分になる</td>
+						
+					</tr>
+				</table>
+				<small class="wrap">
+					半分にした時、端数が出るときは必ず2人に出るので、そのうち得点が高い方は切り上げ、低い方は切り下げ。
+				</small>
+			</div>
+		</aside>
+		<aside>
+			<h2>感想</h2>
+			<p>
+				2017年11月4日にプレイをしました。自作のルールですが、それなりに遊べます。
+				ただし、ビッドをした後にもドラフトをするので、ビッドを成功させることがかなり難しいです。
+				低いビッドをした後に、切り札の<b>3</b>とかが回ってきてしまうとかなりきつくなってしまうので、
+				少し高めのビッドをした方が成功しやすいような気もします。
+			</p>
+			<p>
+				プレイされた方がいらっしゃれば、ツイッター<a href="http://twitter.com/CareleSmith9" target="_blank">@CareleSmith9</a>
+				<a href="https://twitter.com/share" class="twitter-share-button" data-via="CareleSmith9" data-lang="ja" target="_blank">ツイート</a>
+				もしくはメール(<a class="url">log7equal0.8451♡gmail.com</a>)で感想を聞かせてくれると嬉しいです。
+			</p>
+		</aside>
+		<script src="/jscss/ad.js" type="text/javascript"></script>
+		<nav class="foot">
+			<a href="https://twitter.com/share" class="twitter-share-button" data-via="CareleSmith9" data-lang="ja" target="_blank">ツイート</a>
+			<a href="/cards/" class="top">トップへ</a>
+		</nav>
+	</section>
+</div>
+</body>
+</html>

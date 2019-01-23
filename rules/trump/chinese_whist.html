@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1">
+	<meta name="author" content="CareleSmithひとみ">
+	<meta name="description" content="チャイニーズホイストの遊び方">
+	<title>チャイニーズホイスト(Chiniese Whist)</title>
+	<link rel="stylesheet" type="text/css" href="/jscss/card.css"><!-- css -->
+	<script src="/jscss/jquery-latest.min.js" type="text/javascript"></script><!-- jQuery -->
+	<script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_CHTML,/jscss/mathjax.js"></script><!-- Mathjax -->
+	<script src="/jscss/jquery.tablesorter.min.js" type="text/javascript"></script><!-- tabelesorter -->
+	<script src="/jscss/jquery.metadata.js" type="text/javascript"></script><!-- tabelesorter -->
+	<script src="/jscss/twitter.js" type="text/javascript"></script><!-- twitter リンク用 -->
+	<script src="/jscss/analytics.js" type="text/javascript"></script><!-- Google Analytics-->
+	<!-- favicon -->
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/manifest.json">
+	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="theme-color" content="#ffffff">
+</head>
+<body>
+<div class="wrapper">
+	<section>
+		<header>
+			<h1>チャイニーズホイスト<br><span lang="en">Chinese Whist</span></h1>
+			<div class="update">
+				CareleSmithひとみ<br>
+				<time>2016-06-29</time>作成
+			</div>
+		</header>
+		<nav class="head">
+			<ul itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
+				<li><a href="/" itemprop="url"><span itemprop="title">TOP</span></a></li>
+				<li><a href="/cards/"><span itemprop="title">カードゲームの遊び方・萃</span></a></li>
+				<li><a href="/cards/index.html#rules"><span itemprop="title">遊び方</span></a></li>
+				<li><span itemprop="titile">チャイニーズホイスト</span></li>
+			</ul><br>	
+			<a href="https://twitter.com/share" class="twitter-share-button" data-via="CareleSmith9" data-lang="ja" target="_blank">ツイート</a>
+		</nav>
+		<p>
+			トランプゲーム大百科（1998、社会思想社、デヴィッド・パーレット著、松田道弘訳）や、
+			<a href="http://www.toothycat.net/wiki/wiki.pl?PlayingCards/Whist#uid-8" target="_blank" class="url">http://www.toothycat.net/wiki/wiki.pl?PlayingCards/Whist#uid-8</a>を参考にしました。
+			参考文献にはあまり詳しくルールが書いてなかったので、筆者が手を加えた部分があります。
+		</p>
+		<p>
+			ホイストのバリエーションの<a href="/cards/intro/tt.html">トリックテイキングゲーム</a>ですが、歴史などはわかりませんでした。
+			誰かくわしく知っている人がいれば教えて下さい。
+			名前にチャイニーズと入っているので、中国と関連あるのでしょうか。
+		</p>
+		<section>
+			<h2>遊ぶ人数と使うカード</h2>
+			<p>
+				2から4人で遊びます。
+				4人で遊ぶ時は、向かい合った2人でパートナーとなります。
+			</p>
+			<p>
+				カードは通常の52枚のカードを使い、3人でやる時は各スートの<b>2</b>を抜きます。
+				カードのランクは、<b>2</b> <b>3</b> <b>4</b> …… <b>10</b> <b>J</b> <b>Q</b> <b>K</b> <b>A</b>の順で強くなります。
+			</p>
+		</section>
+		<section>
+			<h2>ディール</h2>
+			<p>
+				最初のディーラーは任意で、次のディールからは時計回りに交代します。
+			</p>
+			<p>
+				カードの配り方が特徴的です。
+				4人でプレイする場合は、それぞれのプレイヤーの前に、<strong>裏向きで</strong>6枚ずつ配ります。
+				その次に、配った裏向きのカードに重ねて、6枚ずつ<strong>表向きで</strong>配ります。
+				そして、プレイヤーに1枚ずつ配り、これは手に持ちます。
+				手に持ったカードは、自分だけが表を確認できて、自分以外の人には表を見せてはいけません。
+			</p>
+			<p>
+				このように、裏向きで何枚か配り、その上に表向きのカードを重ね、数枚のカードを手札として配ります。
+				人数ごとにその内訳は変わります。2人でやる時は好きな方を選んでください。
+			</p>
+			<div class="table">
+				<table>
+					<tr><th>人数</th><th>裏向きで<wbr>配る枚数</th><th>手に持つ<wbr>カードの枚数</th></tr>
+					<tr><td rowspan="2">2人</td><td>10</td><td>6</td></tr>
+					<tr> <td>12</td><td>2</td></tr>
+					<tr><td>3人</td><td>7</td><td>2</td></tr>
+					<tr><td>4人</td><td>6</td><td>1</td></tr>
+				</table>
+			</div>
+		</section>
+		<section>
+			<h2>プレイ</h2>
+			<p>
+				ディーラーが切札を決めて、ディーラーの左隣のプレイヤーがオープニングリードをします。
+				マストフォローの<a href="/cards/intro/tt.html">トリックテイキングゲーム</a>です。
+			</p>
+			<p>
+				プレイできるカードは、手に持っているカードか、自分の前で表向きになっているカードです。
+				自分の前で表向きになっているカードをプレイして、裏向きになっているカードが現れた場合、
+				その裏向きになっているカードは次のトリックのリードの直前に表向きにします。
+			</p>
+		</section>
+		<section>
+			<h2>得点</h2>
+			<p>
+				特に得点のつけ方に規定はないようですが、以下のようにしてつければいいでしょう。
+			</p>
+			<section>
+				<h3>2人の場合</h3>
+				<p>
+					全部で26トリックあるので、目標は13トリックになります。
+					とったトリック数から13を引いたものがそのまま得点になります。
+					13トリック取れなかった場合はマイナス点です。
+					全員の合計点は0点になるはずです。
+				</p>
+			</section>
+			<section>
+				<h3>3人の場合</h3>
+				<p>
+					全部で16トリックあり、目標は5トリックです。
+					とったトリック数から5を引いたものがそのまま得点になります。
+					2人の場合と同じように、とったトリック数が5トリックより少なければ失点です。
+					全員の目標の合計より、全部のトリック数の方が多いので、ディールを行うたび全員の合計点は1点ずつ増えます。
+				</p>
+			</section>
+			<section>
+				<h3>4人の場合</h3>
+				<p>
+					全部で13トリックあり、ホイストと同じように、パートナーと合わせて過半数の7トリックを取ることが目標となります。
+					7トリック以上とったペアが、とったトリック数から6を引いた数だけ得点します。
+					7トリック取れなかったペアは何も得点しません。
+				</p>
+			</section>
+		</section>
+		<section>
+			<h2>ゲーム</h2>
+			<p>
+				特にゲームの終了条件は決まっていませんが、ディール数を決めて、
+				目標の得点を定めて、先にその得点に達した人が勝ちとすればよいでしょう。
+			</p>
+		</section>
+		<aside>
+			<h2>感想</h2>
+			<p>
+				2016年3月末に2人でプレイしました。
+				この時は手にもつカードを1枚としてプレイしました。
+				見えていないカードがあるとはいえ、相手のカードの多くが見えているので、
+				しっかり計画を立ててプレイしないと、（相手が強ければ強いほど）蹂躙されます。
+				手に持っているカードは、相手の意表をつくことができるので大切に使いましょう。
+			</p>
+			<p>
+				トリックテイキングゲーム初心者に、トリックテイキングゲームを教えるのには適しているかもしれません。
+				相手に教えながらプレイできるので。
+				しかし、トリックテイキングゲームの中では異端なルールである上に、
+				一度負け始めると大きく負けるので、あまり初心者同士でやるのにはお勧めできないかもしれません。
+			</p>
+		</aside>
+		<script src="/jscss/ad.js" type="text/javascript"></script>
+		<nav class="foot">
+			<a href="https://twitter.com/share" class="twitter-share-button" data-via="CareleSmith9" data-lang="ja" target="_blank">ツイート</a>
+			<a href="/cards/" class="top">トップへ</a>
+		</nav>
+	</section>
+</div>
+</body>
+</html>

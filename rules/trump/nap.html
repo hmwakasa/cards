@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1">
+	<meta name="author" content="CareleSmithひとみ">
+	<meta name="description" content="ナップの遊び方">
+	<title>ナップ(Nap)</title>
+	<link rel="stylesheet" type="text/css" href="/jscss/card.css"><!-- css -->
+	<script src="/jscss/jquery-latest.min.js" type="text/javascript"></script><!-- jQuery -->
+	<script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_CHTML,/jscss/mathjax.js"></script><!-- Mathjax -->
+	<script src="/jscss/jquery.tablesorter.min.js" type="text/javascript"></script><!-- tabelesorter -->
+	<script src="/jscss/jquery.metadata.js" type="text/javascript"></script><!-- tabelesorter -->
+	<script src="/jscss/twitter.js" type="text/javascript"></script><!-- twitter リンク用 -->
+	<script src="/jscss/analytics.js" type="text/javascript"></script><!-- Google Analytics-->
+	<!-- favicon -->
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/manifest.json">
+	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="theme-color" content="#ffffff">
+</head>
+<body>
+<div class="wrapper">
+	<section>
+		<header>
+			<h1>ナップ<br><span lang="en">Nap</span></h1>
+			<div class="update">
+				CareleSmithひとみ<br>
+				<del><time>2016-06-27</time>作成</del>
+				<ins><time>2018-01-16</time>修正</ins>
+			</div>
+		</header>
+		<nav class="head">
+			<ul itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
+				<li><a href="/" itemprop="url"><span itemprop="title">TOP</span></a></li>
+				<li><a href="/cards/"><span itemprop="title">カードゲームの遊び方・萃</span></a></li>
+				<li><a href="/cards/index.html#rules"><span itemprop="title">遊び方</span></a></li>
+				<li><span itemprop="titile">タイトル</span></li>
+			</ul><br>	
+			<a href="https://twitter.com/share" class="twitter-share-button" data-via="CareleSmith9" data-lang="ja" target="_blank">ツイート</a>
+		</nav>
+		<p>
+			<a href="http://gamefarm.jp" target="_blank">ゲームファーム</a>や<a href="http://pagat.com" target="_blank">pagat.com</a>、
+			トランプゲーム大全（2014、スモール出版、赤桐裕二著）などを参考にしました。
+		</p>
+		<p>
+			19世紀後半にイギリスやヨーロッパで盛んになった、簡単な<a href="/cards/intro/tt.html">トリックテイキングゲーム</a>です。
+			今では最も栄えていた時期ほどの人気はありませんが、今でもポピュラーなゲームです。
+		</p>
+		<p>
+			ここでは、少し古めのルールを紹介します。今、広く行われているルールよりもわかりやすいからです。
+			その後、<a href="#now">現在広く行われているルール</a><del datetime="2016-07-29">と、
+			バリエーションを</del>紹介します。
+			なお、日本のナポレオンとは別のゲームです。
+		</p>
+		<section>
+			<h2>遊ぶ人数と使うカード</h2>
+			<p>
+				2人から8人いれば遊べます。
+				特に、4人以上いれば面白く遊べます。
+			</p>
+			<p>
+				カードは通常の52枚のカードを使います。<b>ジョーカー</b>は使いません。
+				カードのランクは、強いものから順に<b>A</b> <b>K</b> <b>Q</b> <b>J</b> <b>10</b> <b>9</b> <b>8</b> …… <b>2</b>です。
+			</p>
+			<p>
+				得点のやり取りにチップを使ったほうが楽なので、チップを用意したほうがプレイしやすいです。
+				チップを用意できなくても、支払ったチップをマイナス点として、受け取ったチップをプラス点として記録することができます。
+			</p>
+		</section>
+		<section>
+			<h2>ディール</h2>
+			<p>
+				初めのディーラーは任意に決めます。次のディールからは時計回りに交代します。
+			</p>
+			<p>
+				ディーラーは、一人当たり5枚ずつ配ります。
+				配り残りはまとめて横に置いておき、このディール中には使用しません。
+			</p>
+		</section>
+		<section>
+			<h2>ビッド</h2>
+			<p>
+				ビッドから始めます。ディーラーの左隣から時計回りに、1巡（一人1回ずつ）だけ行います。
+				行うことのできるビッドは、以下の通りです。
+				表の下に行くほど、強いビッドとなっています。
+			</p>
+			<div class="table">
+				<table>
+					<tr><th colspan="2">ビッド</th><th>目標</th><th>切札</th><th colspan="2">得失点</th></tr>
+					<tr><td lang="en">One</td><td>ワン</td><td>1トリック以上とる</td><td rowspan="3">あり</td><td>+1</td><td>-1</td></tr>
+					<tr><td lang="en">Tow</td><td>ツー</td><td>2トリック以上とる</td> <td>+2</td><td>-2</td></tr>
+					<tr><td lang="en">Three</td><td>スリー</td><td>3トリック以上とる</td> <td>+3</td><td>-3</td></tr>
+					<tr><td lang="en">Misere</td><td>ミーゼル</td><td>全トリック負ける</td><td><strong>なし</strong></td><td>+3</td><td>-3</td></tr>
+					<tr><td lang="en">Four</td><td>フォー</td><td>4トリック以上とる</td><td rowspan="4">あり</td><td>+4</td><td>-4</td></tr>
+					<tr><td lang="en">Nap</td><td>ナップ</td><td rowspan="3">全トリックとる</td> <td>+10</td><td>-6</td></tr>
+					<tr><td lang="en">Wellington</td><td>ウェリントン</td>  <td>+20</td><td>-12</td></tr>
+					<tr><td lang="en">Blucher</td><td>ブリュッヒャー</td>  <td>+40</td><td>-24</td></tr>
+				</table>
+			</div>
+			<p>
+				なお、ワンとブリュッヒャーのビッドは、オプショナルで、（特にワンのビッドは）採用しないこともあります。
+			</p>
+			<p>
+				最初にビッドをするプレイヤーはどのビッドを行うこともできますが、以降のプレイヤーは今までのビッドより強いビッドしかできません。
+				しかし、ウェリントンは、ナップがビッドされた時にしかビッドできず、
+				ブリュッヒャーはウェリントンがビッドされた時にしかビッドできません。
+				ビッドをしたくないときはパスをすることもできます。
+			</p>
+			<p>
+				ビッドが1巡して、最後にビッドしていた人（すなわち一番強いビッドをした人）がデクレアラーになります。
+				もし全員がパスをしたら、ディーラーを変えて配り直しです。
+			</p>
+		</section>
+		<section>
+			<h2>プレイ</h2>
+			<p>
+				デクレアラーがオープニングリードをして始めます。
+				普通の、マストフォローの<a href="/cards/intro/tt.html">トリックテイキングゲーム</a>です。
+				リードのスートはフォローしなければなりません。
+				また、切札ありのゲームでは、<strong>オープニングリードのスートが切札になります</strong>。
+			</p>
+		</section>
+		<section>
+			<h2>得点</h2>
+			<p>
+				ビッド表に書いた通りにチップを授受します。
+				デクレアラーが目標を達成できたら、得点欄の左に書いてあるだけのチップを全員から受け取ります。
+				目標達成をできなかった場合は、全員に得点欄の右に書いてあるだけのチップを支払います。
+			</p>
+		</section>
+		<section>
+			<h2>ゲーム</h2>
+			<p>
+				何ディールかやって、チップの一番多い人が勝ちです。
+				終了するタイミングは、全員が同じ回数ディーラーをやった時か、
+				誰かが破産した時にすれば公平になるでしょう。
+			</p>
+		</section>
+		<section>
+			<h2 id="now">現在行われているルール</h2>
+			<p>
+				ここに説明したルールは、少し古いルールで、現在広く行われているルールは次のようになります。
+			</p>
+			<section>
+				<h3>カード</h3>
+				<p>
+					人数に応じて、適当にカードを減らします。
+					使用するカードを減らした方が、よりシリアスなプレイができます。
+					次の表は一例です。
+				</p>
+				<div class="table">
+					<table>
+						<tr><th>人数</th><th>抜くカード</th></tr>
+						<tr><td rowspan="2">3人</td><td><b>8</b>〜<b>2</b></td></tr>
+						<tr> <td><b>7</b>〜<b>2</b></td></tr>
+						<tr><td>4人</td><td><b>7</b>〜<b>2</b></td></tr>
+						<tr><td rowspan="3">5人</td><td><b>5</b>〜<b>2</b></td></tr>
+						<tr> <td><b>6</b>〜<b>2</b></td></tr>
+						<tr> <td><b>7</b>〜<b>2</b></td></tr>
+					</table>
+				</div>
+			</section>
+			<section>
+				<h3>ディール</h3>
+				<p>
+					カードを配るとき、まず2枚まとめて配り、次に3枚まとめて（もしくは3枚-2枚の順で）配ります。
+				</p>
+				<p>
+					最初のディールが終わって、次のディールからは、カードを集めてからシャッフルはせず、カットをするだけとします。
+					シャッフルするのは、ゲームの最初と、ナップ以上のビッドが成立したときです。
+				</p>
+			</section>
+		</section>
+		<aside>
+			<h2>感想</h2>
+			<p>
+				軽いゲームで、初心者にもわかりやすく、短い時間で終わるので、
+				トリックテイキングゲームの導入や、軽く遊びたい時にお勧めできます。
+				慣れた人には物足りないと感じるかもしれません。
+			</p>
+		</aside>
+		<script src="/jscss/ad.js" type="text/javascript"></script>
+		<nav class="foot">
+			<a href="https://twitter.com/share" class="twitter-share-button" data-via="CareleSmith9" data-lang="ja" target="_blank">ツイート</a>
+			<a href="/cards/" class="top">トップへ</a>
+		</nav>
+	</section>
+</div>
+</body>
+</html>

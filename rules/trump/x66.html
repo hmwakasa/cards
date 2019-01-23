@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1">
+	<meta name="author" content="CareleSmithひとみ">
+	<meta name="description" content="66の遊び方">
+	<title>66</title>
+	<link rel="stylesheet" type="text/css" href="/jscss/card.css"><!-- css -->
+	<script src="/jscss/jquery-latest.min.js" type="text/javascript"></script><!-- jQuery -->
+	<script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_CHTML,/jscss/mathjax.js"></script><!-- Mathjax -->
+	<script src="/jscss/jquery.tablesorter.min.js" type="text/javascript"></script><!-- tabelesorter -->
+	<script src="/jscss/jquery.metadata.js" type="text/javascript"></script><!-- tabelesorter -->
+	<script src="/jscss/twitter.js" type="text/javascript"></script><!-- twitter リンク用 -->
+	<script src="/jscss/analytics.js" type="text/javascript"></script><!-- Google Analytics-->
+	<!-- favicon -->
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/manifest.json">
+	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="theme-color" content="#ffffff">
+</head>
+<body>
+<div class="wrapper">
+	<section>
+		<header>
+			<h1>66<br><span lang="en">Sixty-six</span></h1>
+			<div class="update">
+				CareleSmithひとみ<br>
+				<time>2016-08-03</time>作成
+			</div>
+		</header>
+		<nav class="head">
+			<ul itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
+				<li><a href="/" itemprop="url"><span itemprop="title">TOP</span></a></li>
+				<li><a href="/cards/"><span itemprop="title">カードゲームの遊び方・萃</span></a></li>
+				<li><a href="/cards/index.html#rules"><span itemprop="title">遊び方</span></a></li>
+				<li><span itemprop="titile">66</span></li>
+			</ul><br>
+			<a href="https://twitter.com/share" class="twitter-share-button" data-via="CareleSmith9" data-lang="ja" target="_blank">ツイート</a>
+		</nav>
+		<p>
+			<a href="http://gamefarm.jp" target="_blank">ゲームファーム</a>や、<a href="http://pagat.com" target="_blank">pagat.com</a>、
+			トランプゲーム大全（2014、スモール出版、赤桐裕二著）などを参考にしました。
+			主にゲームファームのルールを参考にしていますが、ゲームファームのルールは他の2つの文献とルールが大きく違います。
+			おそらくpagat.comとトランプゲーム大全で紹介されてるルールが一般的であると思われます。
+			しかし、ゲームファームのルールの方が簡素なので、ゲームファームのルールをベースに紹介し、
+			最後に他の文献との違いを紹介するという方式とします。
+		</p>
+		<p>
+			イタリアやドイツなどで広く遊ばれている<a href="/cards/intro/tt.html">トリックテイキングゲーム</a>です。
+			ドイツではスカートと並ぶほどに有名なゲームです。
+			17世紀ごろのドイツで、具体的には1652年頃にパーダーボルン<span lang="de">(Paderborn)</span>という町で発明されたと言われています。
+			この66から派生したゲームも幾つかあります。特に66から派生したシュナプセンはオーストリアで有名です。
+		</p>
+		<section>
+			<h2>使うカードと遊ぶ人数</h2>
+			<p>
+				2人で遊ぶゲームです。使うカードは、トランプからそれぞれのスートの
+				<b>A</b> <b>10</b> <b>K</b> <b>Q</b> <b>J</b> <b>9</b>を抜き出した合計24枚です。
+			</p>
+			<p>
+				カードのランクと点数は次のようになってます。カードの点数が大きいほど強いカードです。
+				<b>10</b>の位置に注意してください。
+				全てのカードの点数を合計したら120点になります。
+			</p>
+			<div class="table">
+				<table>
+					<tr><th><b>A</b></th><th><b>10</b></th><th><b>K</b></th><th><b>Q</b></th><th><b>J</b></th><th><b>9</b></th></tr>
+					<tr><td>11点</td><td>10点</td><td>4点</td><td>3点</td><td>2点</td><td>0点</td></tr>
+				</table>
+			</div>
+		</section>
+		<section>
+			<h2>ディール</h2>
+			<p>
+				初めのディーラーは任意に決めます。それ以降はディールごとに交代します。
+				ディーラーは、カードを相手から順に3枚まとめて2回配ります。手札は6枚です。
+			</p>
+			<p>
+				その後、ディーラーは1枚テーブルに表向きにおきます。
+				このカードか切札表示札で、このカードのスートが切札となります。
+				残りのカードは切札表示札と直角に（インデックスが見えるように）、裏向きにして山札としておきます。
+				なお、切札表示札は山札の一番下のカードになります。
+			</p>
+		</section>
+		<section>
+			<h2>プレイ</h2>
+			<p>
+				ディーラーでない人からオープニングリードをして始めます。プレイの目的は、66点以上を取ることです。
+				<strong>リードのスートをフォローする必要はありません。</strong>いわゆる、メイフォローです。
+				1トリックのプレイが終わるたびに、トリックに勝った方から順に山札から1枚ずつ手札に加えます。
+			</p>
+			<p>
+				しかし、<em>山札がなくなって</em>その次のトリックからフォローの規則が変わります。
+				山札がない時は、<strong>リードのスートをフォローして</strong>ください。
+			</p>
+			<p>
+				なおプレイ中にとった得点をカウントするのは非常に重要な戦略ですが、
+				メモを取ることは禁止されています。
+			</p>
+			<p>
+				なお、一番最後のトリックに勝つと10点を獲得します。
+				この10点は、後述する<a href="#close">クローズ</a>が起きた場合や、
+				最後のトリックに達する前に<a href="#going_out">勝利宣言</a>があった場合は発生しません。
+			</p>
+			<section>
+				<h3>交換</h3>
+				<p>
+					切札の<b>9</b>を持っている人は、プレイ中いつでも、それを切札表示札と取り替えることができます。
+					この交換を行うためには、1トリック以上取っている必要があります。
+				</p>
+			</section>
+			<section>
+				<h3>マリッジ</h3>
+				<p>
+					マリッジとは同じスートの<b>K</b>と<b>Q</b>の組み合わせのことです。
+					特に、切札のマリッジはロイヤルマリッジと呼ばれます。
+				</p>
+				<p>
+					手札にマリッジがある人は、自分のリードの直前に、その2枚を公開して、マリッジの点数を得ることができます。
+					マリッジの点数は以下の通りです。
+				</p>
+				<div class="table">
+					<table>
+						<tr><th>切札以外のマリッジ</th><th>ロイヤルマリッジ</th></tr>
+						<tr><td>20点</td><td>40点</td></tr>
+					</table>
+				</div>
+				<p>
+					マリッジは1回に1組しか宣言することができず、マリッジ宣言をした直後のリードは、
+					宣言したマリッジの、どちらかのカードでないといけません。
+					なお、後述するクローズがあった後や、山札がなくなった後にはマリッジの宣言はできません。
+				</p>
+			</section>
+			<section>
+				<h3 id="close">クローズ</h3>
+				<p>
+					自分がリードを行う前ならいつでも、山札からカードを取る前でも取った後でも、山札がまだ残っていれば、
+					「<strong>クローズ<span lang="en">(colse)</span></strong>」と宣言して、
+					切札表示札を裏向きにして山札の一番上に置きます。
+					もちろんですが、クローズ直前に自分が山札をとったのならば、相手にも山札のカードを引かせなければなりません。
+					クローズされると、山札がなくなったものとして扱われます。
+					すなわちフォローの規則がマストフォローに変わり、山札からカードを引くこともなくなります。
+				</p>
+			</section>
+			<section>
+				<h3 id="going_out">勝利宣言</h3>
+				<p>
+					プレイヤーは、トリックのプレイ中を除いて、プレイ中いつでも、もしくは最後のトリックが終わった後でも、
+					勝利宣言が出来ます。勝利宣言があるとプレイが終わります。
+				</p>
+			</section>
+		</section>
+		<section>
+			<h2>得点</h2>
+			<p>
+				プレイが終わったら、次の表に従って、得点を算出します。
+				この得点は、カードの得点とは違うので、「ゲームポイント(gp)」と書くことにします。
+				プレイでとった得点には、とったトリックに含まれるカードの点数、マリッジの点数、
+				（クローズもなく、勝利宣言も最後までなかった場合）最後のトリックの10点のボーナスが含まれます。
+			</p>
+			<div class="table">
+				<table>
+					<caption>勝利宣言のある時の得点</caption>
+					<tr>
+						<th colspan="2" class="warp">プレイでとった得点</th>
+						<th colspan="2" class="wrap">得るゲームポイント</th>
+					</tr>
+					<tr>
+						<th class="wrap">勝利宣言したプレイヤー</th>
+						<th class="wrap">相手</th>
+						<th class="wrap">勝利宣言したプレイヤー</th>
+						<th class="wrap">相手</th>
+					</tr>
+					<tr>
+						<td rowspan="3">66点以上</td>
+						<td>33点以上</td>
+						<td>1gp</td>
+						<td></td>
+					</tr>
+					<tr>
+						
+						<td>33点未満</td>
+						<td>2gp</td>
+						<td></td>
+					</tr>
+					<tr>
+						
+						<td>1トリックも<wbr>とってない</td>
+						<td>3gp</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td rowspan="2">66点未満</td>
+						<td>1トリック<wbr>以上取った</td>
+						<td></td>
+						<td>2gp</td>
+					</tr>
+					<tr>
+						
+						<td>1トリックも<wbr>とってない</td>
+						<td></td>
+						<td>3gp</td>
+					</tr>
+					<tr>
+						<td>1トリックも<wbr>とってない</td>
+						<td></td>
+						<td></td>
+						<td>3gp</td>
+					</tr>
+				</table>
+			</div>
+			<p>
+				勝利宣言がなかった場合、グローズがあったならば、
+				クローズした人が勝利宣言をしたものとして得点を計算します。
+				誰もクローズを行っていないならば、誰も得点をしません。
+				次のディールに1ゲームポイント持ち越します。（次のディールの得点が、1ゲームポイント増えます）
+				引き分けが続くと持ち越される点数も増えてゆきます。
+			</p>
+		</section>
+		<section>
+			<h2>ゲーム</h2>
+			<p>
+				7ゲームポイント先取です。先に7ゲームポイント取った人がゲームに勝ちます。
+			</p>
+		</section>
+		<aside>
+			<h2>注釈</h2>
+			<section>
+				<h3>フォローの規則について</h3>
+				<p>
+					<a href="http://pagat.com" target="_blank">pagat.com</a>とトランプゲーム大全では、
+					山札がなくなってからのフォローの規則が以下のようになると記載されています。
+					すなわち、マストフォローで、さらに可能な限り勝たなければなりません。つまり、
+				</p>
+				<ol>
+					<li>リードと同じスートで、より強いカードを持っていれば、必ずその中から1枚出します。</li>
+					<li>リードと同じスートで弱いカードしか持ってなければ、その中から出します。</li>
+					<li>リードと同じスートを持っていなければ切札を出します。</li>
+					<li>リードと同じスートも、切札も持っていなければ好きに1枚出します。</li>
+				</ol>
+			</section>
+			<section>
+				<h3>切札<b>9</b>の交換ついて</h3>
+				<p>
+					<a href="http://pagat.com" target="_blank">pagat.com</a>とトランプゲーム大全では、
+					1トリック以上取っている時に、自分がリードする直前にしか交換できないとされています。
+					なおクローズが行われたタイミングでは、トリックに勝ってなくとも交換ができます。
+				</p>
+			</section>
+			<section>
+				<h3>勝利宣言と得点について</h3>
+				<p>
+					<a href="http://pagat.com" target="_blank">pagat.com</a>とトランプゲーム大全では、
+					最後のトリックの後の終了宣言は、最後のトリックに勝った人しかできないとされています。
+					また、得点計算で、勝利宣言もクローズもなかった時は、点数の多い方が勝利宣言をしたのと同じようにして計算するとあります。
+					引き分けの場合は双方得点無しで、得点の繰越も起きません。
+				</p>
+				<p>
+					なお、勝利宣言もクローズもない場合は、最後のトリックの10点のボーナスを含めて、
+					全部で少なくとも130点をプレイで獲得できるので、引き分けなければ、勝っている方は66点以上が約束されています。
+				</p>
+			</section>
+			<ins datetime="2016-08-03">
+				<section>
+					<h3>勝つためのヒント</h3>
+					<p>
+						<a href="http://pagat.com" target="_blank">pagat.com</a>からの引用です。
+					</p>
+					<ul>
+						<li>
+							的確に勝利宣言をするために、自分の取った点数を覚えるのは基本的な戦術です。
+						</li>
+						<li>
+							自分が33点に達する前に勝利宣言をされることを防ぐために、相手が取った点数も覚えることが望ましいです。
+							ロイヤルマリッジを崩してでもトリックに切札を出して勝ちに行く必要があるかもしれません。
+						</li>
+						<li>
+							クローズしても66点を取るのに十分なほどの点数を取ったのならば、クローズしましょう。
+							相手にマリッジの宣言をさせる機会を与えないためです。
+						</li>
+						<li>
+							切札でないスートの、強いカードをたくさん持っているのならクローズしたほうがいいです。
+							相手に切札でそのカードを取られることを防ぐためです。
+						</li>
+						<li>
+							プレイされた全部のカードを覚えていれば、山札がなくなった後のプレイで、
+							相手の手札をすべて把握できるので、有利に進めることができます。
+						</li>
+					</ul>
+				</section>
+			</ins>
+		</aside>
+		<aside>
+			<h2>感想</h2>
+			<ins datetime="2016-08-23">
+				<p>
+					2人集まった時によくプレイしています。
+					軽いゲームなので、時間があまりなくてもプレイできます。
+				</p>
+				<p>
+					目標点の66点に対して、マリッジ・ロイヤルマリッジの点数が非常に高いので、
+					マリッジを作れるかどうかは非常に重要です。特に理由がなければ
+					<b>K</b><b>Q</b>はプレイせずに取っておく方が良いでしょう。
+				</p>
+				<p>
+					また、プレイで取った点数をすべて覚えるのは重要ですが、そこまでできないという人は、
+					最低でも<b>A</b>と<b>10</b>、およびマリッジの点数は覚えておきましょう。
+					この3つが占める点数の割合は大きいので、この3つで60点あれば、
+					だいたい<b>K</b><b>Q</b><b>J</b>を合わせて66点ぐらいになっています。
+				</p>
+			</ins>
+		</aside>
+		<script src="/jscss/ad.js" type="text/javascript"></script>
+		<nav class="foot">
+			<a href="https://twitter.com/share" class="twitter-share-button" data-via="CareleSmith9" data-lang="ja" target="_blank">ツイート</a>
+			<a href="/cards/" class="top">トップへ</a>
+		</nav>
+	</section>
+</div>
+</body>
+</html>

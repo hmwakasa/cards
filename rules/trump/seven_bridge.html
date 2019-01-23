@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1">
+	<meta name="author" content="CareleSmithひとみ">
+	<meta name="description" content="セブンブリッジの遊び方">
+	<title>セブンブリッジ(Seven Bridge)</title>
+	<link rel="stylesheet" type="text/css" href="/jscss/card.css"><!-- css -->
+	<script src="/jscss/jquery-latest.min.js" type="text/javascript"></script><!-- jQuery -->
+	<script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_CHTML,/jscss/mathjax.js"></script><!-- Mathjax -->
+	<script src="/jscss/jquery.tablesorter.min.js" type="text/javascript"></script><!-- tabelesorter -->
+	<script src="/jscss/jquery.metadata.js" type="text/javascript"></script><!-- tabelesorter -->
+	<script src="/jscss/twitter.js" type="text/javascript"></script><!-- twitter リンク用 -->
+	<script src="/jscss/analytics.js" type="text/javascript"></script><!-- Google Analytics-->
+	<!-- favicon -->
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/manifest.json">
+	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="theme-color" content="#ffffff">
+</head>
+<body>
+<div class="wrapper">
+	<section>
+		<header>
+			<h1>セブンブリッジ<br><span lang="en">Seven Bridge</span></h1>
+			<div class="update">
+				CareleSmithひとみ<br>
+				<time>2016-08-30</time>作成
+			</div>
+		</header>
+		<nav class="head">
+			<ul itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
+				<li><a href="/" itemprop="url"><span itemprop="title">TOP</span></a></li>
+				<li><a href="/cards/"><span itemprop="title">カードゲームの遊び方・萃</span></a></li>
+				<li><a href="/cards/index.html#rules"><span itemprop="title">遊び方</span></a></li>
+				<li><span itemprop="titile">セブンブリッジ</span></li>
+			</ul><br>	
+			<a href="https://twitter.com/share" class="twitter-share-button" data-via="CareleSmith9" data-lang="ja" target="_blank">ツイート</a>
+		</nav>
+		<p>
+			任天堂のトランプに付属していた説明書の記述を基にしています。
+			一部<a href="http://pagat.com" target="_blank">pagat.com</a>や
+			<a href="https://ja.wikipedia.org/wiki/セブンブリッジ" target="_blank">Wikipediaの記事</a>も参考にしています。
+		</p>
+		<p>
+			日本発祥のゲームです。
+			麻雀のように、同じランクのカードや、
+			同じスートのカードでシークエンス<small>（連番）</small>でメルドを作る、ラミー系のゲームですが、
+			他の人の捨て札を使ってメルドを作れることが特徴です。
+			これは、麻雀でいう副露に当たって、このおかげでよりこのゲームが麻雀に似たゲームとなっています。
+		</p>
+		<section>
+			<h2>使うカードと遊ぶ人数</h2>
+			<p>
+				2から5人で遊びます。
+				使うカードは通常のトランプに<b>ジョーカー</b>1枚を加えた53枚です。
+			</p>
+			<p>
+				カードの点数は次の通りです。
+				なお、この点数は罰点であって、点数が少ない人の方が勝ちとなります。
+			</p>
+			<div class="table">
+				<table>
+					<caption>カードの点数</caption>
+					<tr><th><b>2</b>〜<b>10</b></th><td>数字の点数</td></tr>
+					<tr><th><b>A</b>,<b>K</b>,<b>Q</b>,<b>J</b></th><td>10点</td></tr>
+				</table>
+			</div>
+			<p>
+				さらに、<b>7</b>が手札にあると、1枚につき点数が2倍になります。
+				<b>ジョーカー</b>が手札にあると点数は5倍になります。
+			</p>
+		</section>
+		<section>
+			<h2>ディール</h2>
+			<p>
+				最初のディーラーは任意に決めます。
+				以降のディールでは、時計回りの順にディーラーが交代します。
+				ディーラーは1人に7枚ずつ配ります。
+				余ったカードはテーブルに山札として、まとめて伏せて置いておきます。
+			</p>
+		</section>
+		<section>
+			<h2>目的</h2>
+			<p>
+				このゲームの目的は、メルドを作って手札をなくすことです。
+				メルドとは、以下の二つのことを指します。
+			</p>
+			<ul>
+				<li>同じランクのカード3枚以上の組</li>
+				<li>同じスートのカードの、3枚以上の連番（シークエンス）</li>
+			</ul>
+			<p>
+				なお、<b>A</b><b>2</b><b>3</b>……というシークエンスと、
+				……<b>Q</b><b>K</b><b>A</b>というシークエンス、どちらも作ることができますが、
+				……<b>K</b><b>A</b><b>2</b>……とはつながりません。
+				ただし、<b>7</b>を含むメルドは特殊です。
+			</p>
+			<ul>
+				<li>
+					<b>7</b>1枚でも、同じランクの組としてメルドできます。
+				</li>
+				<li>
+					<b>7</b>を含めば2枚でもシークエンスになります。
+					つまり、同じスートの<b>6</b><b>7</b>もしくは<b>7</b><b>8</b>でメルドになります。
+				</li>
+			</ul>
+			<p>
+				<b>ジョーカー</b>はワイルドカードで、適当なカードの代わりとして使うことができます。
+				例えば、<b>4</b><b>4</b><b>ジョーカー</b>でメルドしたり、
+				<b>4</b><b>5</b><b>ジョーカー</b>でメルドしたりできます。
+				なお、<b>ジョーカー</b>を<b>7</b>の代わりに使って2枚でシークエンスを作ること、
+				例えば<b>6</b><b>ジョーカー</b>でシークエンスにすることはできません。
+			</p>
+		</section>
+		<section>
+			<h2>プレイ</h2>
+			<p>
+				ディーラから時計回りの順でプレイします。
+				プレイでやることは、以下の順です。
+			</p>
+			<ol>
+				<li>山札から1枚手札に加える</li>
+				<li>メルドを作る</li>
+				<li>手札から1枚捨てる</li>
+			</ol>
+			<p>
+				「メルドを作る」について説明します。
+				手札にメルドとなるカードがある場合は、この時に自分の前に出します。出さなくても構いません。
+				シークエンスはきちんと順番に並べて出します。
+				<b>ジョーカー</b>を使った場合は、どのカードの代わりに使ったかわかるようにしておきます。
+				また、<em>自分の前にメルドを出している人は</em>、
+				自分もしくは他の人の前に出してあるメルドに、カードを付け加えることができるのならば、
+				カードを付け加えることができます。シークエンスを伸ばしたり、同じランクのカード3枚組を4枚組にしたりなどです。
+			</p>
+			<p>
+				捨て札は、山札の隣に、表向きで重ねて置きます。
+			</p>
+		</section>
+		<section>
+			<h2>ポン・チー</h2>
+			<p>
+				通常のプレイとは別に、「ポン」や「チー」というプレイをすることができます。
+				いずれも、他の人の捨て札をとって、自分がメルドを作るというプレイです。
+			</p>
+			<p>
+				誰の捨て札でもいいので、誰かの捨て札と自分の手札で同じランク3枚以上の組のメルドができる場合、
+				「ポン」と言ってその捨て札をもらうことができます。
+				この場合、すぐさまポンしたカードでできたメルドを自分の前に出します。
+				もし、2人がポンした場合は、<b>ジョーカー</b>を持っている人が優先されます。
+			</p>
+			<p>
+				プレイの順番が一巡した後に、
+				プレイの順番が直前の人の捨て札と手札を合わせて、新しくシークエンスを作ることができる場合、
+				「チー」と言ってその捨て札をもらうことができます。
+				この場合、すぐさまチーしたカードでできたメルドを自分の前に出します。
+				もし、同時にポンもあれば、ポンが優先されます。
+			</p>
+			<p>
+				ポンやチーがあったら、その人はメルドを作って手札を捨てます。
+				これでその人のプレイは終わります。
+				次にプレイする人は、その人の次の人です。
+				したがって、ポンの時は、プレイの順番を飛ばされる人がいるかもしれません。
+			</p>
+		</section>
+		<section>
+			<h2>ディールの終了と得点</h2>
+			<p>
+				誰かが手札を全てなくすとゲーム終了です。
+				この時点で残っている手札の点数がそのまま罰点になります。
+				もし、自分がメルドしてない時に、1回のプレイで全ての手札をなくした場合
+				（この場合は他人のメルドに付け加えても構いません）、
+				その人はボーナスで罰点が50点差し引かれます。
+				罰点はディールごとに累計されます。
+			</p>
+		</section>
+		<section>
+			<h2>ゲーム</h2>
+			<p>
+				ゲームの終了の条件は時に決まってません。
+				あらかじめターゲットスコアを決めて、罰点の累計がそれに達した人が出た時点でゲームをやめるか、
+				ディール数をあらかじめ決めておきましょう。
+				罰点の累計が少ない人が勝ちです。
+			</p>
+		</section>
+		<aside>
+			<h2>感想</h2>
+			<p>
+				<time datetime="2016-08-28">2016年8月28日</time>に4人でプレイしました。
+				ラミー系のゲームは、なかなかメルドを作ることができなかったりするのですが、
+				ポンやチーができることで、スムーズにゲームが進行します。
+			</p>
+			<p>
+				プレイで手札を1枚にしてしまうとなかなか上がれなくなってしまいます。
+				メルドにできるカードも、手札に持っておいた方が上がりやすくなる場合があるので注意です。
+			</p>
+		</aside>
+		<script src="/jscss/ad.js" type="text/javascript"></script>
+		<nav class="foot">
+			<a href="https://twitter.com/share" class="twitter-share-button" data-via="CareleSmith9" data-lang="ja" target="_blank">ツイート</a>
+			<a href="/cards/" class="top">トップへ</a>
+		</nav>
+	</section>
+</div>
+</body>
+</html>

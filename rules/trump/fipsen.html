@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1">
+	<meta name="author" content="CareleSmithひとみ">
+	<meta name="description" content="フィプセンの遊び方">
+	<title>フィプセン(Fipsen)</title>
+	<link rel="stylesheet" type="text/css" href="/jscss/card.css"><!-- css -->
+	<script src="/jscss/jquery-latest.min.js" type="text/javascript"></script><!-- jQuery -->
+	<script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_CHTML,/jscss/mathjax.js"></script><!-- Mathjax -->
+	<script src="/jscss/jquery.tablesorter.min.js" type="text/javascript"></script><!-- tabelesorter -->
+	<script src="/jscss/jquery.metadata.js" type="text/javascript"></script><!-- tabelesorter -->
+	<script src="/jscss/twitter.js" type="text/javascript"></script><!-- twitter リンク用 -->
+	<script src="/jscss/analytics.js" type="text/javascript"></script><!-- Google Analytics-->
+	<!-- favicon -->
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/manifest.json">
+	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="theme-color" content="#ffffff">
+</head>
+<body>
+<div class="wrapper">
+	<section>
+		<header>
+			<h1>フィプセン<br><span lang="de">Fipsen</span></h1>
+			<div class="update">
+				CareleSmithひとみ<br>
+				<time>2016-06-18</time>作成
+			</div>
+		</header>
+		<nav class="head">
+			<ul itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
+				<li><a href="/" itemprop="url"><span itemprop="title">TOP</span></a></li>
+				<li><a href="/cards/"><span itemprop="title">カードゲームの遊び方・萃</span></a></li>
+				<li><a href="/cards/index.html#rules"><span itemprop="title">遊び方</span></a></li>
+				<li><span itemprop="titile">フィプセン</span></li>
+			</ul><br>
+			<a href="https://twitter.com/share" class="twitter-share-button" data-via="CareleSmith9" data-lang="ja" target="_blank">ツイート</a>
+		</nav>
+		<p>
+			ニコリ134号などを参考にしました。
+		</p>
+		<p>
+			ドイツはハンブルグの北にある、
+			プリストドルフ<span lang="de">(Pristdorf)</span>という小さな町で遊ばれている
+			<a href="/cards/intro/tt.html">トリックテイキングゲーム</a>です。
+			コントラクトブリッジの大会の隣で大会をやっているようですが、年々プレイヤーが減っているようです。
+		</p>
+		<section>
+			<h2>遊ぶ人数</h2>
+			<p>
+				4人で遊ぶゲームですが、3人で遊ぶこともできます。
+				3人ルールは<a href="#for_3">最後</a>に紹介することにして、ここでは4人ルールを紹介します。
+			</p>
+		</section>
+		<section>
+			<h2>使うカード</h2>
+			<p>
+				カードは、通常のトランプから、<span class="b">♠</span><span class="r">♥</span><span class="b">♣</span>の
+				<b>A</b> <b>K</b> <b>Q</b> <b>J</b> <b>10</b> <b>9</b> <b>8</b> <b>7</b>と、<b><span class="r">♦</span>7</b>の、
+				合計25枚を抜き出して使います。
+				<span class="r">♦</span>は1枚しか使わないので注意してください。
+			</p>
+			<p>
+				カードのランクは、強いものから順に<b>A</b> <b>K</b> <b>Q</b> <b>J</b> <b>10</b> <b>9</b> <b>8</b> <b>7</b>です。
+			</p>
+		</section>
+		<section>
+			<h2>ディール</h2>
+			<p>
+				初めのディーラーは任意に決めます。次のディールからは時計回りに交代します。
+			</p>
+			<p>
+				ディーラーの左隣から順に、時計回りに3枚ずつまとめて配ります。
+				次に中央に2枚、裏向きで配ります。この中央に配った2枚を<strong>スカート<span lang="de">(skat)</span></strong>といいます。
+				その次に2枚ずつ配り、残った3枚は配り残りとして横にまとめて置いておきます。
+				一人当たり配られるカードは5枚になります。
+				なお、スカートは、ビッドでデクレアラーになった人が、手札と交換することができるカードです。
+				また、初めに配られた手札、もしくは交換した後の手札に成立する、特別な役が一つあります。
+				これについての詳細は<a href="#siebener">「ズィーベナーフィップス」</a>の項目を見てください。
+			</p>
+		</section>
+		<section>
+			<h2>ビッド</h2>
+			<p>
+				ビッドから始めます。
+				このゲームでビッドするのは、自分の取るトリック数と、追加宣言です。
+				ビッドできる最小のトリック数は2トリックです。
+				追加宣言には以下のものがあります。
+			</p>
+			<dl>
+				<dt>ハント<span lang="de">(Hand)</span></dt>
+					<dd>スカートと手札を交換しない。</dd>
+				<dt>ルーテン<span lang="de">(Ruten)</span></dt>
+					<dd><span class="r">♦</span>を切札にする。（切札は1枚になります）</dd>
+				<dt>ドゥルヒ<span lang="de">(Durch)</span></dt>
+					<dd>ビッドにかかわらず全トリックとる。なお、5トリックのビッドをすると、自動的にドゥルヒの宣言もしたことになります。</dd>
+			</dl>
+			<p>
+				また、<strong>キーカー<span lang="de">(Kieker)</span></strong>という特別なビッドがあります。
+				これは、<em>手札に絵札のない時にだけ</em>できるビッドで、手札とスカートと配り残りのカードの合計10枚から、
+				5枚を選んで新しい手札にし、その手札で全てのトリックをとるというビッドです。
+				絵札は<b>K</b> <b>Q</b> <b>J</b>のみを指すので、<b>A</b>が手札にあってもキーカーの宣言はできます。
+				ルーテンの追加宣言もできます。
+			</p>
+			<p>
+				ビッドの強さは、トリック数が多いものの方が強く、
+				同じトリック数のビッドでは追加宣言の個数が多い方が強くなります。
+				例えば、「3トリック」は「2トリックのハント」より強く、
+				「3トリックのルーテン、ハント」は「3トリックのドゥルヒ」より強いです。
+				また、キーカーは4トリックと5トリックの間の強さのビッドになります。
+			</p>
+			<p>
+				このゲームのビッドの方法は勝ち抜き式で行います。最終的にビッドに勝った人がデクレアラーとなります。
+				説明のために、ディーラーの左隣の人から順に、Aさん、Bさん、Cさん、Dさん（ディーラー）と名前をつけます。
+				最初のビッドをする人は、Aさんです。Aさんはビッドをするかパスをします。
+				Aさんがビッドをした場合、Bさんがそれに対応して、より強いビッドかパスをします。
+				もしBさんもビッドした場合、Aさんはそれに対して、より強いビッドをするか、「ホールド」と宣言するか、パスをします。
+				ホールドは、直前のビッドと同じ強さのビッドをするということですが、ビッドの優先権はディーラーから遠い人が高い
+				（すなわちDさん、Cさん、Bさん、Aさんの順で高い）ので、同じ強さのビッドでも、この場合は優先権のあるAさんのビッドの方が強くなります。
+				なお、ホールドするときは、追加宣言を何にするかは言わなくていいです。
+				Aさんがパスをしなかった場合、Bさんは、さらに強いビッドをするか、パスをするか選択します。
+				このように、AさんとBさんとでビッド合戦をして、パスをしなかった方（勝った方）が次のCさんと同様なビッド合戦をします。
+				このビッド合戦で勝った人が最後にDさん（ディーラー）とビット合戦をします。
+				そして、最後に勝ち残った人がビッドで勝った人となり、デクレアラーとなります。
+			</p>
+			<p>
+				もし、最後にホールドをしてデクレアラーになった場合は、デクレアラーになった時点で、
+				どの追加宣言にするかを確定させます。
+				また、この時点で、デクレアラーはビッドのトリック数を増やしても構いません。
+			</p>
+		</section>
+		<section>
+			<h2>プレイ</h2>
+			<p>
+				まず、前提として、デクレアラーは、プレイの途中でも追加宣言を増やすことができます。
+				ただし、ビッドした追加宣言は減らすことができません。
+			</p>
+			<p>
+				ハントの宣言がなければ、デクレアラーはスカートを手札に加えて、
+				スカートを含めた7枚のうちから不要な2枚を裏向きに捨てます。
+				キーカーが成立した時は先に説明した通りに手札交換を行ってください。
+				もし、手札の交換を行わなかった場合、ハントを追加宣言したとみなされます。
+			</p>
+			<p>
+				次に切札のスートを宣言します。ノートランプ（切札なし）はありません。
+				ここでデクレアラーが<span class="r">♦</span>を切札にした場合はルーテンの宣言をしたことになります。
+				ビッド時にルーテンの宣言をしていた場合は、必ず<span class="r">♦</span>を切札にします。
+			</p>
+			<p>
+				切札が決まったら、デクレアラーがオープニングリードをします。
+				普通のマストフォローの<a href="/cards/intro/tt.html">トリックテイキングゲーム</a>です。
+				ビッドのトリック数だけトリックを取ることができたら、そこでディールは終了します。
+				もし、オープニングリードから全てのトリックを取り続けて来ている場合は、プレイを終わらせずに続けても構いません。
+				プレイを続けた場合、ドゥルヒの宣言をしたことになります。
+				プレイを続けると必ずドゥルヒの宣言をしたことになるので、プレイを続けてからドゥルヒを取り消すことはできないことに注意してください。
+			</p>
+			<p>
+				ドゥルヒがないときに、ビッド数のトリックをとることができれば、デクレアラー側の勝利です。
+				また、ドゥルヒをして、全トリックとることができた場合ももちろんデクレアラーの勝ちです。
+				取ったトリック数がビッド数に足りない時や、
+				ビッド数いかんにかかわらず、ドゥルヒの宣言があるときに、全トリック取れなかった場合はデクレアラーの負けです。
+			</p>
+		</section>
+		<section>
+			<h2>得点</h2>
+			<p>
+				得失点はデクレアラーにのみあります。
+				基本点はビッドの数で、追加宣言の数だけ基本点を2倍にします。
+				例えば、3トリックのルーテン、ドゥルヒだった場合は、$3 \times 2^{2} = 12$といった具合です。
+				キーカーは基本点が10点です。ルーテンをつけた場合は2倍して20点になります。
+			</p>
+			<p>
+				デクレアラーが勝ったときは、デクレアラーは上に示した点数（基本点を何倍かにした点数）を得点します。
+				デクレアラーが負けたときは、さらに<strong>2倍</strong>にした点数を失点します。
+				上にあげた3トリックのルーテン、ドゥルヒのときは、デクレアラーが勝てば12点の得点、
+				デクレアラーが負ければ24点の失点となります。
+			</p>
+			<section id="siebener">
+				<h3>ズィーベナーフィップス<span lang="de">(Siebener Fips)</span></h3>
+				<p>
+					特殊な得点の仕方が一つあります。
+					<em>手札が<b>7</b>4枚と<b>A</b>である</em>ときには、
+					<strong>ズィーベナーフィップス<span lang="de">(Sibener Fips)</span></strong>と宣言することができます。
+					これは、配られた手札で成立していても、スカートとの交換や、キーカーでの交換の後でも、
+					いつでも宣言することができます。
+					ズィーベナーフィップスがあれば、ディールが終了し、宣言したプレイヤーは<strong>30点</strong>得点します。
+				</p>
+			</section>
+		</section>
+		<section>
+			<h2 id="for_3">3人ゲーム</h2>
+			<p>
+				3人でやる場合も、4人と同じようにして遊びます。
+				しかし、配り残りは8枚となります。
+				また、キーカーが成立した場合は、デクレアラーは自分の手札をすべて捨てて、
+				スカート2枚と配り残り8枚とを合わせた、10枚から5枚選んで新しい手札にします。
+			</p>
+		</section>
+		<aside>
+			<h2>感想</h2>
+			<p>
+				ビッドの方法が多少特殊ですが、初心者でもルールが分かりやすいと思います。
+				初心者でも分かりやすいルールですが、追加宣言を何にするかだとか、
+				プレイ途中にドゥルヒを追加するかなど、いろいろ考えることがあるので、決して面白くないことはないです。
+			</p>
+			<p>
+				このゲームで面白いところは、強いビッドが得点が高いというわけではないということです。
+				例えば、3トリックのビッドよりも、2トリック追加宣言1の方が1点高くなります。
+				ですから、トリック数を上げるよりも、追加宣言を増やす方が得点しやすくなるかもしれません。
+			</p>
+			<p>
+				3人でやる場合と、4人でやる場合では、あまり変わりませんが、キーカーの時は大きく変わります。
+				3人でキーカーが成立した時は、自分の弱い手札を捨てて、10枚手に取るので、手札が強くなる確率が高いです。
+				しかし、4人の場合は、新しく5枚しか手に取れないので、3人の時よりも手札が強くなりにくく、少し難しくなります。
+			</p>
+		</aside>
+		<script src="/jscss/ad.js" type="text/javascript"></script>
+		<nav class="foot">
+			<a href="https://twitter.com/share" class="twitter-share-button" data-via="CareleSmith9" data-lang="ja" target="_blank">ツイート</a>
+			<a href="/cards/" class="top">トップへ</a>
+		</nav>
+	</section>
+</div>
+</body>
+</html>

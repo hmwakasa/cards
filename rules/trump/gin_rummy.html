@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1">
+	<meta name="author" content="CareleSmithひとみ">
+	<meta name="description" content="ジンラミーの遊び方">
+	<title>ジンラミー(Gin Rummy)</title>
+	<link rel="stylesheet" type="text/css" href="/jscss/card.css"><!-- css -->
+	<script src="/jscss/jquery-latest.min.js" type="text/javascript"></script><!-- jQuery -->
+	<script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_CHTML,/jscss/mathjax.js"></script><!-- Mathjax -->
+	<script src="/jscss/jquery.tablesorter.min.js" type="text/javascript"></script><!-- tabelesorter -->
+	<script src="/jscss/jquery.metadata.js" type="text/javascript"></script><!-- tabelesorter -->
+	<script src="/jscss/twitter.js" type="text/javascript"></script><!-- twitter リンク用 -->
+	<script src="/jscss/analytics.js" type="text/javascript"></script><!-- Google Analytics-->
+	<!-- favicon -->
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/manifest.json">
+	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="theme-color" content="#ffffff">
+</head>
+<body>
+<div class="wrapper">
+	<section>
+		<header>
+			<h1>ジンラミー<br><span lang="en">Gin Rummy</span></h1>
+			<div class="update">
+				CareleSmithひとみ<br>
+				<time>2016-11-25</time>作成
+			</div>
+		</header>
+		<nav class="head">
+			<ul itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
+				<li><a href="/" itemprop="url"><span itemprop="title">TOP</span></a></li>
+				<li><a href="/cards/"><span itemprop="title">カードゲームの遊び方・萃</span></a></li>
+				<li><a href="/cards/index.html#rules"><span itemprop="title">遊び方</span></a></li>
+				<li><span itemprop="titile">ジンラミー</span></li>
+			</ul><br>	
+			<a href="https://twitter.com/share" class="twitter-share-button" data-via="CareleSmith9" data-lang="ja" target="_blank">ツイート</a>
+		</nav>
+		<p>
+			<a href="http://gamefarm.jp" target="_blank">ゲームファーム</a>やトランプゲーム大全（2014、スモール出版、赤桐裕二著）を参考にしています。
+		</p>
+		<p>
+			ポーカー、コントラクトブリッジと並ぶ世界3大ゲームの一つです。アメリカで生まれました。
+			19世紀の終わり頃からジンポーカー<span lang="en">(Gin Poker)</span>の名前でプレイされていたようですが、
+			その後得点方法が改良されて、1939年ごろから非常にポピュラーになったそうです。
+		</p>
+		<section>
+			<h2>遊ぶ人数と使うカード</h2>
+			<p>
+				2人で遊びます。使うカードは通常のトランプ52枚です。
+				カードの並びは<b>A</b> <b>2</b> <b>3</b> …… <b>10</b> <b>J</b> <b>Q</b> <b>K</b>で、
+				<b>K</b>から<b>A</b>にはつながりません。カードの点数は以下です。
+			</p>
+			<div class="table">
+				<table>
+					<tr><th><b>A</b></th><th><b>2</b>〜<b>10</b></th><th><b>J</b>, <b>Q</b>, <b>K</b></th></tr>
+					<tr><td>1</td><td>数字通り</td><td>10</td></tr>
+				</table>
+			</div>
+		</section>
+		<section>
+			<h2>プレイの目的</h2>
+			<p>
+				10枚の手札の中で、メルドを作ることが目的になります。
+			</p>
+			<p>
+				メルドは以下の2種類のいずれかになります。
+			</p>
+			<dl>
+				<dt>
+					セット
+				</dt>
+				<dd>
+					同じランクのカード3枚以上の組のことです。
+				</dd>
+				<dt>
+					シークエンス
+				</dt>
+				<dd>
+					同じスートの3枚以上の連番のカードです。
+					例えば<b><span class="b">♠</span>4</b> <b><span class="b">♠</span>5</b> <b><span class="b">♠</span>6</b>です。
+					先述の通り<b>A</b>は<b>2</b>の下にしかつながらないので、<b>Q</b> <b>K</b> <b>A</b>のシークエンスや、
+					<b>K</b> <b>A</b> <b>2</b>のシークエンスは作ることができません。
+				</dd>
+			</dl>
+			<p>
+				メルドは手札の中で作るので、セットの一部になっていたカードをシークエンスにするなど、
+				自由に組み替えても構いませんし、メルドになっているカードを捨て札にして、
+				メルドを崩すことも自由に行えます。
+			</p>
+		</section>
+		<section>
+			<h2>ディール</h2>
+			<p>
+				最初のディーラーはドローで決めます。
+				すなわち、2人がカードを引いて、より高いランクのカードを引いたほうがディーラーとなります。
+				この時は<b>K</b>が一番強いカードで、<b>A</b>が一番弱いカードとします。
+				次のディールからは、前回のディールで負けた人がディーラーになります。
+			</p>
+			<p>
+				ディーラーはカードを1枚ずつ10枚配ります。残りのカードは裏向きに伏せて、山札にします。
+				山札の一番上のカードは、表向きにして山札の横に置きます。
+				これが最初の捨て札になります。
+			</p>
+			<p>
+				プレイ中、捨て札をするときはこの捨て札の上にどんどん重ねてゆきます。
+				捨て札は重ねて捨てるので、捨て札の山が作られることになります。
+				捨て札の山は、一番上のカードだけを確認でき、それより下のカードを見ることは禁止されています。
+				一番上のカードだけが見えるように、きちんと重ねて捨てるようにしましょう。
+				なお、捨て札の一番上のカードは<strong>アップカード<span lang="en">(up Card)</span></strong>と呼ばれます。
+			</p>
+		</section>
+		<section>
+			<h2>プレイ</h2>
+			<p>
+				プレイは交互に行います。自分の番では次のプレイをします。
+			</p>
+			<p>
+				まず、手札を1枚加えます。
+				手札に加えることができるのは、山札の一番上のカードか、捨て札の一番上のカードのどちらかです。
+				次に、手札から1枚捨てて、捨て札の山に表向きでおきます。
+			</p>
+			<p>
+				基本的には、この繰り返しです。ただし、ディールの最初のプレイは特殊です。
+				ディールの最初では、まずディーラーでない方のプレイヤー（ノンディーラー）からプレイを開始しますが、
+				取ることのできるカードは捨て札の一番上のカード、つまり最初の捨て札だけです。
+				もし、取りたくなかったら「パス」と言います。
+			</p>
+			<p>
+				ノンディーラーが捨て札の一番上のカードを取ったならば、ノンディーラーは捨て札をして、
+				ディーラーにプレイの順番が移ります。これ以降は通常通りにプレイが進行します。
+			</p>
+			<p>
+				もしノンディーラーがパスをしたならば、同じようにディーラーが最初の捨て札を手札に加えるかを選択します。
+				手札に加えたならば、ディーラーは捨て札をして、ノンディーラーから通常通りにプレイが行われます。
+			</p>
+			<p>
+				ディーラーもパスをしたならば、ノンディーラーが山札の一番上のカードを手札に加えて、
+				通常のプレイが始まります。
+			</p>
+		</section>
+		<section>
+			<h2>プレイの終了</h2>
+			<p>
+				プレイ中に、<strong>ノック<span lang="en">(knock)</span></strong>
+				<small>（<a href="#knock">後</a>で説明します）</small>をどちらかのプレイヤーが行うと、
+				そこでプレイが終了して、得点計算に向けていくつか処理を行います。
+			</p>
+			<section>
+				<h3 id="knock">ノック</h3>
+				<p>
+					手札の中で、<em>捨て札をした後のメルドになっていないカードの点数の合計が<strong>10点</strong>以下</em>になる場合、
+					捨て札を裏向きに捨てることで、ノックをすることができます。ノックするとプレイが終了します。
+				</p>
+				<p>
+					例えば、捨て札をする直前の手札が次の11枚になっていたとします。
+					（手札は10枚配られて、1枚加えてから1枚捨てるので、捨てる直前の手札は11枚あります）
+				</p>
+				<div class="figure">
+					<b><span class="b">♠</span>A</b> <b><span class="r">♥</span>A</b> <b><span class="r">♦</span>A</b> <b><span class="b">♣</span>A</b><wbr>
+					<b><span class="r">♦</span>5</b> <b><span class="r">♦</span>6</b> <b><span class="r">♦</span>7</b> <b><span class="r">♦</span>8</b><wbr>
+					<b><span class="b">♣</span>3</b> <b><span class="b">♣</span>4</b> <b><span class="b">♣</span>K</b>
+				</div>
+				<p>
+					ここで、
+					<b><span class="b">♠</span>A</b> <b><span class="r">♥</span>A</b> <b><span class="r">♦</span>A</b> <b><span class="b">♣</span>A</b>
+					はメルド（セット）になっています。
+					同様に
+					<b><span class="r">♦</span>5</b> <b><span class="r">♦</span>6</b> <b><span class="r">♦</span>7</b> <b><span class="r">♦</span>8</b>
+					もメルド（シークエンス）になっています。
+					メルドになっていないカードは
+					<b><span class="b">♣</span>3</b> <b><span class="b">♣</span>4</b> <b><span class="b">♣</span>K</b>
+					の3枚です。
+					この時、<b><span class="b">♣</span>K</b>を捨てると、残った手札の中のカードで、メルドになっていないカードは
+					<b><span class="b">♣</span>3</b> <b><span class="b">♣</span>4</b>
+					の2枚になって、その合計点数が7点になります。したがってノックすることができます。
+				</p>
+				<p>
+					もし、捨て札をした後の手札が、すべてメルドになっている場合は、<strong>ジン<span lang="en">(gin)</span></strong>と呼ばれます。
+					例えば、捨て札をする直前の手札が次の11枚になっていたとします。
+				</p>
+				<div class="figure">
+					<b><span class="b">♠</span>A</b> <b><span class="r">♥</span>A</b> <b><span class="r">♦</span>A</b> <b><span class="b">♣</span>A</b><wbr>
+					<b><span class="r">♦</span>5</b> <b><span class="r">♦</span>6</b> <b><span class="r">♦</span>7</b><wbr>
+					<b><span class="b">♣</span>2</b> <b><span class="b">♣</span>3</b> <b><span class="b">♣</span>4</b> <b><span class="b">♣</span>K</b>
+				</div>
+				<p>
+					この時は、
+					<b><span class="b">♠</span>A</b> <b><span class="r">♥</span>A</b> <b><span class="r">♦</span>A</b> <b><span class="b">♣</span>A</b>
+					がセットに、
+					<b><span class="r">♦</span>5</b> <b><span class="r">♦</span>6</b> <b><span class="r">♦</span>7</b>
+					と
+					<b><span class="b">♣</span>2</b> <b><span class="b">♣</span>3</b> <b><span class="b">♣</span>4</b>
+					はそれぞれシークエンスになっています。
+					ここで、<b><span class="b">♣</span>K</b>を捨ててノックすると、残りの手札はすべてメルドになっているため、
+					ジンとなります。
+				</p>
+				<p>
+					山札から補充した後の手札ではなく、捨て札をした後の手札が問題となるのは、
+					麻雀などと異なるので気をつけて下さい。
+				</p>
+			</section>
+			<section>
+				<h3>レイオフ</h3>
+				<p>
+					誰かがノックをすると、そこでプレイが終了します。
+					誰かがノックした時点で、二人とも手札をすべて公開します。
+					手札を公開する時は、どのようなメルドができているか、
+					もしくはメルドになっていないカードはどれなのかが明確に分かるようにして置きます。
+				</p>
+				<p>
+					この時に、メルドになっていないカードの点数を比べるのですが、
+					（点数が小さい方が優秀です）
+					この時点で、ノックをしなかった方のプレイヤーは、
+					ノックしたプレイヤーのメルドに<strong>つけ札（レイオフ<span lang="en">lay off</span>）</strong>することができます。
+				</p>
+				<p>
+					レイオフとは、自分の手札から相手のメルドにカードを出して、メルドに付け加えることです。
+					例えば、相手がノックした時の手札が次のようであったとします。
+					（ここで「/」メルドの区切りを表して、「//」以降のカードはメルドになっていないことを表すものとします）
+				</p>
+				<div class="figure">
+					<b><span class="b">♠</span>9</b> <b><span class="r">♥</span>9</b> <b><span class="r">♦</span>9</b> /<wbr>
+					<b><span class="r">♦</span>4</b> <b><span class="r">♦</span>5</b> <b><span class="r">♦</span>6</b> <b><span class="r">♦</span>7</b> //<wbr>
+					<b><span class="b">♣</span>2</b> <b><span class="b">♣</span>3</b> <b><span class="r">♥</span>3</b>
+				</div>
+				<p>
+					自分の手札はこのようであったとします。
+				</p>
+				<div class="figure">
+					<b><span class="b">♠</span>A</b> <b><span class="r">♥</span>A</b> <b><span class="r">♦</span>A</b> //<wbr>
+					<b><span class="b">♣</span>9</b> <b><span class="r">♦</span>2</b> <b><span class="r">♦</span>3</b><wbr>
+					<b><span class="b">♣</span>4</b> <b><span class="r">♥</span>4</b> <b><span class="b">♣</span>K</b> <b><span class="b">♠</span>K</b>
+				</div>
+				<p>
+					この時、自分の手札から、<b><span class="b">♣</span>9</b>を相手の
+					<b><span class="b">♠</span>9</b> <b><span class="r">♥</span>9</b> <b><span class="r">♦</span>9</b>
+					に加えて、<b>9</b>4枚のセットにすることができます。
+					また、<b><span class="r">♦</span>2</b> <b><span class="r">♦</span>3</b>は相手の
+					<b><span class="r">♦</span>4</b> <b><span class="r">♦</span>5</b> <b><span class="r">♦</span>6</b> <b><span class="r">♦</span>7</b>
+					に加えることで、シークエンスのメルドにすることができます。
+					結果、自分の手札で、メルドになっていないカードは
+					<b><span class="b">♣</span>4</b> <b><span class="r">♥</span>4</b> <b><span class="b">♣</span>K</b> <b><span class="b">♠</span>K</b>
+					になります。
+				</p>
+				<p>
+					なお、レイオフできるのは、相手のメルドになっているカードに対してだけで、
+					メルドになっていないカードにレイオフすることはできません。
+					先の例で、相手の<em>メルドになっていない</em><b><span class="b">♣</span>2</b> <b><span class="b">♣</span>3</b>
+					に自分の<b><span class="b">♣</span>4</b>をレイオフすることはできません。
+				</p>
+				<p>
+					ノックした人はレイオフをすることはできません。
+				</p>
+				<p>
+					なお、<em>ジンの時は、相手はレイオフをすることができません</em>。
+				</p>
+			</section>
+			<section>
+				<h3>引き分け</h3>
+				<p>
+					あるプレイヤーが山札からカードを取って、捨て札をした時、山札の残りが2枚以下ならば引き分けになります。
+					この場合は誰も得点せずにディールが終わります。次のディールはディーラーを変えずに行います。
+				</p>
+			</section>
+		</section>
+		<section>
+			<h2>得点</h2>
+			<p>
+				レイオフまで終われば得点計算を行います。
+				まず、それぞれのプレイヤーはメルドになっていないカードの点数を合計します。
+				ノックしたプレイヤーの点数の方が合計点が小さいならば、
+				2人の点数の差が、そのままノックしたプレイヤーの得点になります。
+				ジンであればさらに25点のボーナスを得点します。
+				ジンの場合得る25点のボーナスは、<strong>ジンボーナス<span lang="en">(gin bonus)</span></strong>と言います。
+			</p>
+			<p>
+				もし、ノックしたプレイヤーの合計点が、相手の合計点以上であれば、
+				相手が合計点の差に25を足した値を得点します。
+				これを<strong>アンダーカット<span lang="en">(under cut)</span></strong>と言います。
+				ジンの場合はアンダーカットは起こりません。
+				<small>（ただし、これは相手がジンをするのを忘れた時だけです）</small>
+			</p>
+			<p>
+				いずれにせよ、メルドにならなかったカードの合計点が大きかった方の人は、
+				得点が0になります。
+			</p>
+			<p>
+				レイオフであげた例で、ノックをした人のメルドになっていないカードは
+				<b><span class="b">♣</span>2</b> <b><span class="b">♣</span>3</b> <b><span class="r">♥</span>3</b>、
+				その相手のメルドになっていないカードは、
+				<b><span class="b">♣</span>4</b> <b><span class="r">♥</span>4</b> <b><span class="b">♣</span>K</b> <b><span class="b">♠</span>K</b>
+				になります。
+				メルドになっていないカードの合計点は、ノックをした人は8点、
+				その相手は28点なので、ノックをした人が20点を得点します。
+			</p>
+		</section>
+		<section>
+			<h2>ゲーム</h2>
+			<p>
+				何ディールか繰り返して、どちらかの累計点が100点以上になると、
+				そのプレイヤーがゲームに勝って、ゲームが終わります。
+			</p>
+			<p>
+				ゲームが終わると、各プレイヤーは今までの累計点に次のボーナス点を加えます。
+			</p>
+			<dl>
+				<dt>ボックスボーナス<span lang="en">(box bonus)</span></dt>
+				<dd>得点した回数に25点をかけた点数</dd>
+				<dt>ゲームボーナス<span lang="en">(game bonus)</span></dt>
+				<dd>ゲームの勝者（累計点が100に達したプレイヤー）に100点</dd>
+				<dt>シャットアウトボーナス<span lang="en">(shout out bonus)</span></dt>
+				<dd>ゲームの敗者が全く得点していない場合、ゲームの勝者に100点</dd>
+			</dl>
+			<p>
+				最終的に、ボーナスを加えた最終的な得点の差が、勝者の勝ち分になります。
+			</p>
+		</section>
+		<aside>
+			<h2>感想</h2>
+			<p>
+				何回かプレイしたことがあります。
+				<time datetime="2016-11-25">2016年11月25日</time>に改めてプレイしました。
+				ルールは複雑ではないので、初めてやる人でも簡単にルールがのみこめると思います。
+				実力も反映されますが、運の要素が比較的大きいので、ある程度やったことがある人と、
+				初心者とで遊んでも十分楽しめると思います。
+			</p>
+		</aside>
+		<script src="/jscss/ad.js" type="text/javascript"></script>
+		<nav class="foot">
+			<a href="https://twitter.com/share" class="twitter-share-button" data-via="CareleSmith9" data-lang="ja" target="_blank">ツイート</a>
+			<a href="/cards/" class="top">トップへ</a>
+		</nav>
+	</section>
+</div>
+</body>
+</html>

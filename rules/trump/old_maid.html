@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1">
+	<meta name="author" content="CareleSmithひとみ">
+	<meta name="description" content="説明">
+	<title>ババ抜き(Old Maid)</title>
+	<link rel="stylesheet" type="text/css" href="/jscss/card.css"><!-- css -->
+	<script src="/jscss/jquery-latest.min.js" type="text/javascript"></script><!-- jQuery -->
+	<script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_CHTML,/jscss/mathjax.js"></script><!-- Mathjax -->
+	<script src="/jscss/jquery.tablesorter.min.js" type="text/javascript"></script><!-- tabelesorter -->
+	<script src="/jscss/jquery.metadata.js" type="text/javascript"></script><!-- tabelesorter -->
+	<script src="/jscss/twitter.js" type="text/javascript"></script><!-- twitter リンク用 -->
+	<script src="/jscss/analytics.js" type="text/javascript"></script><!-- Google Analytics-->
+	<!-- favicon -->
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/manifest.json">
+	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="theme-color" content="#ffffff">
+</head>
+<body>
+<div class="wrapper">
+	<section>
+		<header>
+			<h1>ババ抜き<br><span lang="en">Old Maid</span></h1>
+			<div class="update">
+				CareleSmithひとみ<br>
+				<del><time>2017-10-25</time>作成</del>
+				<ins><time>2017-11-15</time>修正</ins><!-- リンク追加 -->
+			</div>
+		</header>
+		<nav class="head">
+			<ul itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
+				<li><a href="/" itemprop="url"><span itemprop="title">TOP</span></a></li>
+				<li><a href="/cards/"><span itemprop="title">カードゲームの遊び方・萃</span></a></li>
+				<li><a href="/cards/index.html#rules"><span itemprop="title">遊び方</span></a></li>
+				<li><span itemprop="titile">ババ抜き</span></li>
+			</ul><br>	
+			<a href="https://twitter.com/share" class="twitter-share-button" data-via="CareleSmith9" data-lang="ja" target="_blank">ツイート</a>
+		</nav>
+		<p>
+			株式会社バンダイが発行した『伊藤家トランプ』や『トランプゲーム大全』（2014、スモール出版、赤桐裕二著）を参考にしています。
+			自分が幼少期に遊んでいた記憶なども基にしています。
+		</p>
+		<p>
+			おそらくほとんどの人が子供の頃にやったことがあろうゲームです。
+			日本でもかなり有名です。
+			19世紀のビクトリア朝時代に生まれ、今では世界各国で色々な呼び名で遊ばれています。
+		</p>
+		<section>
+			<h2>使うカードと遊ぶ人数</h2>
+			<p>
+				何人でも遊ぶことができます。
+				通常のカード52枚に<b>ジョーカー</b>（ババ）1枚を加えた53枚を使います。
+			</p>
+		</section>
+		<section>
+			<h2>ディール</h2>
+			<p>
+				カードは誰が配っても構いません。
+				1枚ずつ配って、全てのカードを配りきります。
+				手札の枚数に差が出ることがありますが、気にせず全てのカードを配ります。
+			</p>
+			<p>
+				手札を配られたら、全員は自分の手札から同じランクのカード2枚組があればテーブルの中央に捨てます。
+				同じランク3枚組があった場合は、そのうち2枚を捨て、1枚は手札に残します。
+				カードを捨てるときは表向きに捨てます。
+			</p>
+		</section>
+		<section>
+			<h2>プレイ</h2>
+			<p>
+				全員が捨て札を終えたらプレイが始まります。
+				まずディーラーは手札を裏向きに広げてもち、左隣のプレイヤーに1枚選んで取らせます
+				（手前の順番のプレイヤーからカードを1枚取ります）。
+				左隣のプレイヤーは取ったカードと同じランクのカードが手札にあれば、取ったカードと合わせて2枚を捨て札にします。
+				同じランクのカードがないならばそのカードを手札に加えます。
+			</p>
+			<p>
+				カードをとったプレイヤーは次に、さらに左隣のプレイヤーにカードを取らせ、同様なプレイを続けていきます。
+			</p>
+			<p>
+				こうやって時計回りでプレイを進めてゆきます。
+				途中で手札が無くなった人がいれば、その人はプレイから抜けます。
+				プレイから抜けた人はいないものとしてプレイを進行しますが、
+				もし、自分の右隣のプレイヤーが、直前に同じランクのカード2枚を揃えてプレイから抜けたならば、
+				右隣の人からカードをとることは省略して、左隣の人にカードを1枚取らせます。
+			</p>
+		</section>
+		<section>
+			<h2>ゲーム</h2>
+			<p>
+				<b>ジョーカー</b>はペアにならないので必ず余ります。
+				1人を除いた全員がプレイから抜け、最後まで<b>ジョーカー</b>を持っていた人が負けです。
+			</p>
+		</section>
+		<section>
+			<h2>バリエーション</h2>
+			<ul>
+				<li>
+					人数が多い時はトランプ1デッキ52枚をさらに加えた、105枚のトランプで遊ぶことがあります。
+				</li>
+				<li>
+					<b>ジョーカー</b>1枚を加えるのではなく、<b>Q</b>1枚（場合によっては必ず<b><span class="r">♥</span>Q</b>）
+					を除いた51枚のカードで遊ぶこともあります。
+					<ins datetime="2017-11-15">このときはいずれかの<b>Q</b>が最後まで残ることになります。</ins>
+					<small>（正確にはこのルールのことを<span lang="en">Old Maid</span>と呼び、
+					<b>ジョーカー</b>を加えるルールは<span lang="en">Old Joke</span>と呼びます）</small>
+				</li>
+				<li>
+					1回負けたら1ライフを失うという遊び方もあります。
+					最初はみんな3ライフを持っていて、3ライフ全て失うとゲームに負けます。
+				</li>
+				<li>
+					<b>ジョーカー</b>1枚を加えるのでも、<b>Q</b>を抜くのでもなく、
+					カードを配る前に1枚裏向きのまま無作為に抜くという遊び方もあります。
+					この場合は、裏向きで抜かれたカードと同じランクのカードが最後まで残り、
+					抜かれたカードはプレイの途中に確認することはできません。
+					この遊び方は、日本では<strong>ジジ抜き</strong>と呼ばれています。
+				</li>
+				<li>
+					右隣の人が直前にペアを作ってプレイから抜けた場合に、
+					右隣の人からカードを1枚引くのを省略するのではなく、
+					（直前にプレイから抜けた右隣の人は除いて）
+					プレイに残っている人のうちもっとも右隣に近い人からカードを1枚取るというルールにすることがあります。
+				</li>
+			</ul>
+		</section>
+		<aside>
+			<h2>感想</h2>
+			<p>
+				幼少期にプレイしたことはありますが、最近はプレイしたことがありません。
+			</p>
+			<p>
+				なお、<a href="/cards/intro/mftt.html">マストフォロー練習用トランプ</a>
+				を用いてジジ抜きをすると楽しいことを<a href="/cards/rules/mftt/imaid.html">発見</a>しました。
+			</p>
+		</aside>
+		<script src="/jscss/ad.js" type="text/javascript"></script>
+		<nav class="foot">
+			<a href="https://twitter.com/share" class="twitter-share-button" data-via="CareleSmith9" data-lang="ja" target="_blank">ツイート</a>
+			<a href="/cards/" class="top">トップへ</a>
+		</nav>
+	</section>
+</div>
+</body>
+</html>

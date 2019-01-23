@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1">
+	<meta name="author" content="CareleSmithひとみ">
+	<meta name="description" content="スリートリックスの遊び方">
+	<title>スリートリックス(Three Tricks)</title>
+	<link rel="stylesheet" type="text/css" href="/jscss/card.css"><!-- css -->
+	<script src="/jscss/jquery-latest.min.js" type="text/javascript"></script><!-- jQuery -->
+	<script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_CHTML,/jscss/mathjax.js"></script><!-- Mathjax -->
+	<script src="/jscss/jquery.tablesorter.min.js" type="text/javascript"></script><!-- tabelesorter -->
+	<script src="/jscss/jquery.metadata.js" type="text/javascript"></script><!-- tabelesorter -->
+	<script src="/jscss/twitter.js" type="text/javascript"></script><!-- twitter リンク用 -->
+	<script src="/jscss/analytics.js" type="text/javascript"></script><!-- Google Analytics-->
+	<!-- favicon -->
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/manifest.json">
+	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="theme-color" content="#ffffff">
+</head>
+<body>
+<div class="wrapper">
+	<section>
+		<header>
+			<h1>スリートリックス<br><span lang="en">Three Tricks</span></h1>
+			<div class="update">
+				CareleSmithひとみ<br>
+				<time>2017-05-08</time>作成
+			</div>
+		</header>
+		<nav class="head">
+			<ul itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
+				<li><a href="/" itemprop="url"><span itemprop="title">TOP</span></a></li>
+				<li><a href="/cards/"><span itemprop="title">カードゲームの遊び方・萃</span></a></li>
+				<li><a href="/cards/index.html#rules"><span itemprop="title">遊び方</span></a></li>
+				<li><span itemprop="titile">スリートリックス</span></li>
+			</ul><br>
+			<a href="https://twitter.com/share" class="twitter-share-button" data-via="CareleSmith9" data-lang="ja" target="_blank">ツイート</a>
+		</nav>
+		<p>
+			くぼたやウェブログの中のページ
+			<a href="http://kubotaya.exblog.jp/2030724/" target="_blank" class="url">http://kubotaya.exblog.jp/2030724/</a>
+			を参考にしました。
+		</p>
+		<p>
+			ゲーム研究家である草場純さんが1991年に考案した<a href="/cards/intro/tt.html">トリックテイキングゲーム</a>です。
+		</p>
+		<section>
+			<h2>遊ぶ人数と使うカード</h2>
+			<p>
+				4人で遊びます。
+				使うのは通常のトランプ52枚です。
+				カードのランクは強いものから順に
+				<b>A</b> <b>K</b> <b>Q</b> <b>J</b> <b>10</b> <b>9</b> <b>8</b> <b>7</b> <b>6</b> <b>5</b> <b>4</b> <b>3</b> <b>2</b>
+				です。
+			</p>
+		</section>
+		<section>
+			<h2>ディール</h2>
+			<p>
+				初めのディーラーは任意に決めます。
+				次のディールからは時計回りに交代します。
+			</p>
+			<p>
+				ディーラーはカードを1枚ずつ配って、全員に13枚ずつ配ります。
+			</p>
+		</section>
+		<section>
+			<h2>プレイ</h2>
+			<p>
+				ディーラーの左隣がオープニングリードをします。
+				切札のない<a href="/cards/intro/tt.html">トリックテイキングゲーム</a>です。
+				リードのスートをフォローする義務があります（マストフォローです）。
+			</p>
+		</section>
+		<section>
+			<h2>得点</h2>
+			<p>
+				13トリックのプレイが終わったら、取ったトリック数によって次のように得点をつけます。
+			</p>
+			<div class="table">
+				<table>
+					<tr><th>取った<wbr>トリック数</th><th>得点</th></tr>
+					<tr><td>0</td><td>-5</td></tr>
+					<tr><td>1</td><td>+1</td></tr>
+					<tr><td>2</td><td>+4</td></tr>
+					<tr><td>3</td><td>+9</td></tr>
+					<tr><td>4</td><td>-4</td></tr>
+					<tr><td>5</td><td>-5</td></tr>
+					<tr><td>6</td><td>-6</td></tr>
+					<tr><td>7</td><td>-7</td></tr>
+					<tr><td>8</td><td>-8</td></tr>
+					<tr><td>9</td><td>-9</td></tr>
+					<tr><td>10</td><td>-10</td></tr>
+					<tr><td>11</td><td>-11</td></tr>
+					<tr><td>12</td><td>-12</td></tr>
+					<tr><td>13</td><td>-13</td></tr>
+				</table>
+			</div>
+			<p>
+				要は、1〜3トリック取れば取ったトリック数の2乗が得点になり、
+				4トリック以上取ったら取ったトリック数だけマイナス点になります。
+			</p>
+		</section>
+		<section>
+			<h2>ゲーム</h2>
+			<p>
+				4ディールやって、得点が最も高い人が勝ちです。
+			</p>
+		</section>
+		<aside>
+			<h2>補足</h2>
+			<p>
+				オリジナルのルールでは、0トリック取った時の点数が-3点となっていましたが、
+				-5点とする方がバランスが良いようです。
+			</p>
+			<p>
+				また、<a href="http://kubotaya.exblog.jp/2030724/" target="_blank" class="url">http://kubotaya.exblog.jp/2030724/</a>
+				には、手札を配られた後、
+				プレイする前に配られた手札から2枚を選んで右に渡すようにする
+				（<a href="./hearts.html">ハーツ</a>の要領です）
+				のも面白いかもしれないと書かれています。
+			</p>
+			<p>
+				さらに、カードを1枚表にしたり、
+				前もってスペードなどに固定することによって切札を決めるのも面白いかもしれないと書かれています。
+			</p>
+		</aside>
+		<aside>
+			<h2>感想</h2>
+			<p>
+				まだプレイしてません。
+			</p>
+		</aside>
+		<script src="/jscss/ad.js" type="text/javascript"></script>
+		<nav class="foot">
+			<a href="https://twitter.com/share" class="twitter-share-button" data-via="CareleSmith9" data-lang="ja" target="_blank">ツイート</a>
+			<a href="/cards/" class="top">トップへ</a>
+		</nav>
+	</section>
+</div>
+</body>
+</html>

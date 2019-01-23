@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1">
+	<meta name="author" content="CareleSmithひとみ">
+	<meta name="description" content="ネイブの遊び方">
+	<title>ネイブ(Knave)</title>
+	<link rel="stylesheet" type="text/css" href="/jscss/card.css"><!-- css -->
+	<script src="/jscss/jquery-latest.min.js" type="text/javascript"></script><!-- jQuery -->
+	<script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_CHTML,/jscss/mathjax.js"></script><!-- Mathjax -->
+	<script src="/jscss/jquery.tablesorter.min.js" type="text/javascript"></script><!-- tabelesorter -->
+	<script src="/jscss/jquery.metadata.js" type="text/javascript"></script><!-- tabelesorter -->
+	<script src="/jscss/twitter.js" type="text/javascript"></script><!-- twitter リンク用 -->
+	<script src="/jscss/analytics.js" type="text/javascript"></script><!-- Google Analytics-->
+	<!-- favicon -->
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/manifest.json">
+	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="theme-color" content="#ffffff">
+</head>
+<body>
+<div class="wrapper">
+	<section>
+		<header>
+			<h1>ネイブ<br><span lang="en">Kanve</span></h1>
+			<div class="update">
+				CareleSmithひとみ<br>
+				<del><time>2017-04-13</time>作成</del>
+				<ins><time>2017-04-19</time>加筆</ins>
+				<ins><time>2018-03-23</time>修正</ins><!-- 誤字修正 -->
+			</div>
+		</header>
+		<nav class="head">
+			<ul itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
+				<li><a href="/" itemprop="url"><span itemprop="title">TOP</span></a></li>
+				<li><a href="/cards/"><span itemprop="title">カードゲームの遊び方・萃</span></a></li>
+				<li><a href="/cards/index.html#rules"><span itemprop="title">遊び方</span></a></li>
+				<li><span itemprop="titile">ネイブ</span></li>
+			</ul><br>
+			<a href="https://twitter.com/share" class="twitter-share-button" data-via="CareleSmith9" data-lang="ja" target="_blank">ツイート</a>
+		</nav>
+		<p>
+			トランプゲーム大全（2014、スモール出版、赤桐裕二著）を参考にしました。
+		</p>
+		<p>
+			<span lang="en">Hubert Phillips</span>氏が、著書の中で、
+			<a href="./hearts.html#black_maria">ブラックマリア</a>やブービーとならんで、3人用ゲームとしてお勧めしているらしいのですが、
+			実際は当人が作ったゲームであるそうです。
+		</p>
+		<p>
+			<a href="./hearts.html">ハート</a>などのゲームと似ていて、カードにはマイナスの点数がありますが、
+			1トリックとるごとにプラス点となります。
+			また、この系統のゲームにしては珍しく切札があります。
+		</p>
+		<section>
+			<h2>遊ぶ人数と使うカード</h2>
+			<p>
+				3人で遊びます。
+			</p>
+			<p>
+				使うカードは通常のトランプ52枚で、
+				カードのランクは強いものから順に
+				<b>A</b> <b>K</b> <b>Q</b> <b>J</b> <b>10</b> <b>9</b> <b>8</b> <b>7</b> <b>6</b> <b>5</b> <b>4</b> <b>3</b> <b>2</b>
+				です。
+			</p>
+		</section>
+		<section>
+			<h2>ディール</h2>
+			<p>
+				最初のディーラーは任意で決めます。
+				次からは時計回りの順で交代します。
+			</p>
+			<p>
+				ディーラーは左隣のプレイヤーからカードを1枚ずつ配ります。
+				1人当たりの手札は17枚になります。
+				カードが1枚配られずに余りますが、それはテーブルに表向きでおきます。
+				このスートのカードが切札になります。
+				このカードはプレイに使用されません。
+			</p>
+		</section>
+		<section>
+			<h2>プレイ</h2>
+			<p>
+				ディーラーの左隣のプレイヤーがオープニングリードを行い、
+				<a href="/cards/intro/tt.html">トリックテイキングゲーム</a>のプレイを行います。
+				マストフォローのトリックテイキングゲームです。
+			</p>
+		</section>
+		<section>
+			<h2>得点</h2>
+			<p>
+				17トリック全てのプレイが終わったら得点をつけます。
+				得点は次の表に従います。
+			</p>
+			<div class="table">
+				<table>
+					<tr><th>1トリックとるごとに</th><td>+1点</td></tr>
+					<tr><th><b><span class="r">♥</span>J</b>をとると</th><td>-4点</td></tr>
+					<tr><th><b><span class="r">♦</span>J</b>をとると</th><td>-3点</td></tr>
+					<tr><th><b><span class="b">♣</span>J</b>をとると</th><td>-2点</td></tr>
+					<tr><th><b><span class="b">♠</span>J</b>をとると</th><td>-1点</td></tr>
+				</table>
+			</div>
+		</section>
+		<section>
+			<h2>ゲーム</h2>
+			<p>
+				何ディールかやって、累計点が20を超えた人がいればそこでゲームは終わります。
+				もっとも累計した点数の高い人が勝ちです。
+			</p>
+		</section>
+		<aside>
+			<h2>感想</h2>
+			<del datetime="2017-04-19">
+				<p>
+					まだプレイしていません。
+				</p>
+			</del>
+			<ins datetime="2017-04-19">
+				<p>
+					2017年4月18日にプレイしました。
+					<b>J</b>をとると失点になるので、あまりトリックを取りたくないところですが、
+					トリックを取らないと得点にならないので、トリックを取らないわけにはいきません。
+					バランスのとれた良いゲームだと思いましたが、トリックをとるべきかどうかのジレンマがあるので、
+					初心者がプレイするのは少し大変かなと思いました。
+				</p>
+			</ins>
+		</aside>
+		<script src="/jscss/ad.js" type="text/javascript"></script>
+		<nav class="foot">
+			<a href="https://twitter.com/share" class="twitter-share-button" data-via="CareleSmith9" data-lang="ja" target="_blank">ツイート</a>
+			<a href="/cards/" class="top">トップへ</a>
+		</nav>
+	</section>
+</div>
+</body>
+</html>

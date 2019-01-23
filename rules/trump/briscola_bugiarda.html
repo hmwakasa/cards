@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1">
+	<meta name="author" content="CareleSmithひとみ">
+	<title>ブリスコラブジャルダ(Briscola Bugiarda)</title>
+	<link rel="stylesheet" type="text/css" href="/jscss/card.css"><!-- css -->
+	<script src="/jscss/jquery-latest.min.js" type="text/javascript"></script><!-- jQuery -->
+	<script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_CHTML,/jscss/mathjax.js"></script><!-- Mathjax -->
+	<script src="/jscss/jquery.tablesorter.min.js" type="text/javascript"></script><!-- tabelesorter -->
+	<script src="/jscss/jquery.metadata.js" type="text/javascript"></script><!-- tabelesorter -->
+	<script src="/jscss/twitter.js" type="text/javascript"></script><!-- twitter リンク用 -->
+	<script src="/jscss/analytics.js" type="text/javascript"></script><!-- Google Analytics-->
+	<!-- favicon -->
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/manifest.json">
+	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="theme-color" content="#ffffff">
+</head>
+<body>
+<div class="wrapper">
+	<section>
+		<header>
+			<h1>ブリスコラブジャルダ<br><span lang="it">Briscola Bugiarda</span></h1>
+			<div class="update">
+				CareleSmithひとみ<br>
+				<time>2018-03-16</time>作成
+			</div>
+		</header>
+		<nav class="head">
+			<ul itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
+				<li><a href="/" itemprop="url"><span itemprop="title">TOP</span></a></li>
+				<li><a href="/cards/"><span itemprop="title">カードゲームの遊び方・萃</span></a></li>
+				<li><a href="/cards/index.html#rules"><span itemprop="title">遊び方</span></a></li>
+				<li><span itemprop="titile">ブリスコラブジャルダ</span></li>
+			</ul><br>	
+			<a href="https://twitter.com/share" class="twitter-share-button" data-via="CareleSmith9" data-lang="ja" target="_blank">ツイート</a>
+		</nav>
+		<p>
+			ニコリ137号を参考にしました。
+		</p>
+		<p>
+			古くからイタリアで遊ばれている<a href="/cards/intro/tt.html">トリックテイキングゲーム</a>だそうです。
+			<span lang="it">Briscola</span>は「切札」、
+			<span lang="ir">Bugiarda</span>は「詐欺」という意味だそうです。
+		</p>
+		<p>
+			このゲームは5人で遊ぶのですが、ナポレオンのように、
+			ビッドで決まったデクレアラーと、カードで指名されたパートナーがチームとなって、
+			他の3人（ディフェンダーと呼びます）を敵に回して戦います。
+			多くのトランプゲームではゲーム中に会話をすることは禁じられていますが、
+			このゲームは<strong>ゲーム中に自由に会話ができます</strong>。
+			そして、嘘のことをしゃべるなどして、誰がパートナーなのかわからなくすることも自由です。
+		</p>
+		<p>
+			独特なビッドと、フォローが強制されていないトリックテイキングのプレイが特徴的です。
+		</p>
+		<section>
+			<h2>使うカードと遊ぶ人数</h2>
+			<p>
+				5人で遊びます。
+				ゲームを始める前に、全員に15枚ぐらいずつのチップを渡します。
+				ゲーム中の得点は、チップのやりとりで行います。
+			</p>
+			<p>
+				使うカードはイタリア系の40枚のトランプです。
+				通常のトランプから、<b>8</b> <b>9</b> <b>10</b>を取り除くことで代用できます。
+			</p>
+			<p>
+				カードのランクと点数は、強いものから順に次のようになっています。
+				得点は全部で120点あります。
+			</p>
+			<div class="table">
+				<table>
+					<tr>
+						<th><b>A</b></th>
+						<th><b>3</b></th>
+						<th><b>K</b></th>
+						<th><b>Q</b></th>
+						<th><b>J</b></th>
+						<th><b>7</b><wbr><b>6</b><wbr><b>5</b><wbr><b>4</b><wbr><b>2</b></th>
+					</tr>
+					<tr>
+						<td>11点</td>
+						<td>10点</td>
+						<td>4点</td>
+						<td>3点</td>
+						<td>2点</td>
+						<td>0点</td>
+					</tr>
+				</table>
+			</div>
+		</section>
+		<section>
+			<h2>ゲームの流れ</h2>
+			<p>
+				ブリスコラブジャルダは、次のような流れで遊ばれます。
+				プレイの進行はすべて<strong>反時計回り</strong>です。
+			</p>
+			<ol>
+				<li>カードを配る。</li>
+				<li>ビッドをする。</li>
+				<li>切札を宣言する。この時、ビッドとの組み合わせで自動的にパートナーも決まる。</li>
+				<li>トリックテイキングのプレイをする。デクレアラーは60点以上取るのが目標。</li>
+				<li>得点のやり取りをする。</li>
+			</ol>
+			<p>
+				次から詳しく説明します。
+			</p>
+		</section>
+		<section>
+			<h2>ディール</h2>
+			<p>
+				最初のディーラーは誰がなっても構いません。
+				次からは反時計回りの順で交代します。
+			</p>
+			<p>
+				ディーラーは反時計回りにカードを1枚ずつ配ります。
+				全員の手札は8枚ずつになります。
+			</p>
+		</section>
+		<section>
+			<h2>ビッド</h2>
+			<p>
+				カードが配られたら、次はビッドです。
+				このビッドでは、取る点数などを宣言するのではなく、
+				<strong>パートナーを決めるためのカードのランク</strong>をビッドします。
+			</p>
+			<p>
+				このビッドでは、<strong>カードのランクをビッド</strong>します。
+				ビッドで、最も弱いランクをビッドした人がデクレアラーとなります。
+				そして、デクレアラーはパートナーを指定しますが、このパートナーはカードを使って指名します。
+				この時、指名に使うカードは、デクレアラーがビッドしたランクのカードのうち、
+				デクレアラーが切札と宣言したスートのカードを持っている人がパートナーとなります。
+				すなわち、より強いランクのカードでデクレアラーになったほうが、
+				パートナーの手札が強いことが保証されるわけです。
+				したがって、カードのランクが低いビッドの方がより強いビッドとなるわけです。
+			</p>
+			<p>
+				さて、ビッドの方法を詳しく説明します。
+				先ほど説明した通り、ビッドではカードのランクをビッドします。
+				<b>A</b>が一番弱いビッドで、<b>3</b>、<b>K</b>、<b>Q</b>……<b>4</b>、<b>2</b>という風に、
+				ランクがより低いビッドの方が、ビッドとしては強くなります。
+				そして、最も強いビッドとして、「パートナーなし」が存在します。
+			</p>
+			<p>
+				ビッドはディーラーの右隣から行います。
+				ビッドの順番になった人は、今までビッドされたランクよりも強いビッド
+				<small>（すなわち、弱いランク）</small>をビッドするか、
+				デクレアラーになりたくなければパスをします。
+				一度パスをしたら再びビッドをすることはできません。
+			</p>
+			<p>
+				最後までパスせずに残った人がデクレアラーになります。
+				もし全員がパスをした場合はディーラーを変えてカードを配り直します。
+			</p>
+		</section>
+		<section>
+			<h2>切札とパートナー決め</h2>
+			<p>
+				デクレアラーが決まったら、デクレアラーは切札のスートを宣言します。
+			</p>
+			<p>
+				そして、その宣言した切札のうち、デクレアラーがビッドしたランクのカード（パートナー指名カード）
+				を持っている人がパートナーとなります。
+				誰がパートナーかは、パートナー指名カードがプレイされるまではわかりませんが、
+				パートナー指名カードを持っていると言うなどしても<small>（それが事実であれ偽りであれ）</small>構いません。
+				もし、パートナー指名カードがデクレアラーの手札にあるならば、
+				デクレアラーはパートナーなしでプレイすることになります。
+			</p>
+			<p>
+				以下、デクレアラーでもそのパートナーでもない人のことをディフェンダーということにします。
+				デクレアラー側は61点以上を取ることが目的で、ディフェンダーはそれを阻止することが目的です。
+			</p>
+		</section>
+		<section>
+			<h2>プレイ</h2>
+			<p>
+				デクレアラーがオープニングリードをしてプレイが始まります。
+				<strong>メイフォロー</strong>の<a href="/cards/intro/tt.html">トリックテイキングゲーム</a>です。
+			</p>
+			<p>
+				メイフォローはなかなか見慣れないので詳しく説明します。
+				まず、普通の（マストフォローの）トリックテイキングゲームでは
+				リードされたスートのカードを持っていれば必ずフォローしなければなりません。
+				一方で、メイフォローのトリックテイキングゲームでは、
+				リードされたスートのカードを持っていたとしても、<strong>フォローする必要はありません</strong>。
+			</p>
+			<p>
+				なお、トリックの勝者の決め方は普通と変わりません。
+				切札が出ていれば切札の中で最も強いカードを出した人が、
+				出ていなければリードのスートのカードの中でもとも強いカードを出した人がそのトリックを取り、
+				次のリードをします。
+			</p>
+			<p>
+				例えば、<b><span class="b">♣</span>6</b>がリードされて、
+				そのトリックにすでに切札である<b><span class="r">♥</span>3</b>が出されたとします。
+				この時、手札に<b><span class="b">♣</span>A</b>しか<span class="b">♣</span>のカードがなければ
+				必ずそれを出さなければならないのがマストフォローです。
+				しかし、メイフォローでは<b><span class="b">♣</span>A</b>を出す必要がありません。
+				違うスートのカードを出すことが許されるのです。
+			</p>
+			<p>
+				次の例として、<span class="r">♥</span>が切札になった時に、
+				<b><span class="b">♠</span>A</b>がリードされたとします。
+				この時、普通だったら手札に<span class="b">♠</span>のカードがあれば必ずそれを出さなければなりませんが、
+				メイフォローでは<span class="b">♠</span>を持っていたとしても
+				<span class="r">♥</span>のカードを出して、そのトリックを勝ちに行くことが許されます。
+			</p>
+		</section>
+		<section>
+			<h2>得点</h2>
+			<p>
+				8トリック全てのプレイが終われば得点のやりとりに移ります。
+			</p>
+			<div class="table">
+				<table>
+					<caption>得点表</caption>
+					<tr><th>デクレアラーが<wbr>とった点数</th><th>チップ</th></tr>
+					<tr><td>カポット<wbr>（全トリック取る）</td><td>+4</td></tr>
+					<tr><td>101〜120</td><td>+3</td></tr>
+					<tr><td>81〜100</td><td>+2</td></tr>
+					<tr><td>61〜80</td><td>+1</td></tr>
+					<tr><td>41〜60</td><td>-1</td></tr>
+					<tr><td>21〜40</td><td>-2</td></tr>
+					<tr><td>0〜20</td><td>-3</td></tr>
+					<tr><td>逆カポット<wbr>（全トリック落とす）</td><td>-4</td></tr>
+				</table>
+			</div>
+			<p>
+				デクレアラーが+2チップだった場合、ディフェンダー側の3人は全員1チップずつ出します。
+				そうすると6チップ集まるので、デクレアラーは4チップ、パートナーは2チップ受け取ります。
+				2:1の配分です。
+			</p>
+			<p>
+				デクレアラーが-1チップだった場合は、ディフェンダーの全員に1チップずつ支払えるように、
+				デクレアラーとパートナーが2:1の配分でチップを出し合います。
+				この場合なら、デクレアラーが2チップだし、パートナーは1チップ出します。
+				そしてディフェンダーは1チップずつ受け取ります。
+			</p>
+		</section>
+		<section>
+			<h2>ゲーム</h2>
+			<p>
+				行うディール数に決まりはないようです。
+				全員が1回ずつディーラーをやるまでだとか、時間を決めるだとか適当な方法で、
+				事前に決めておきましょう。
+			</p>
+		</section>
+		<aside>
+			<h2>感想</h2>
+			<p>
+				何回かプレイしたことがあります。
+				メイフォローのゲームは少ないので、慣れるまでが大変でしたが、
+				ビッドの駆け引きやパートナーを明かす駆け引きだとかが楽しかったです。
+			</p>
+		</aside>
+		<script src="/jscss/ad.js" type="text/javascript"></script>
+		<nav class="foot">
+			<a href="https://twitter.com/share" class="twitter-share-button" data-via="CareleSmith9" data-lang="ja" target="_blank">ツイート</a>
+			<a href="/cards/" class="top">トップへ</a>
+		</nav>
+	</section>
+</div>
+</body>
+</html>

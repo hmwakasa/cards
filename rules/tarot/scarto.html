@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1">
+	<meta name="author" content="CareleSmithひとみ">
+	<meta name="description" content="スカルトの遊び方">
+	<title>スカルト(Scarto)</title>
+	<link rel="stylesheet" type="text/css" href="/jscss/card.css"><!-- css -->
+	<script src="/jscss/jquery-latest.min.js" type="text/javascript"></script><!-- jQuery -->
+	<script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_CHTML,/jscss/mathjax.js"></script><!-- Mathjax -->
+	<script src="/jscss/jquery.tablesorter.min.js" type="text/javascript"></script><!-- tabelesorter -->
+	<script src="/jscss/jquery.metadata.js" type="text/javascript"></script><!-- tabelesorter -->
+	<script src="/jscss/twitter.js" type="text/javascript"></script><!-- twitter リンク用 -->
+	<script src="/jscss/analytics.js" type="text/javascript"></script><!-- Google Analytics-->
+	<!-- favicon -->
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/manifest.json">
+	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="theme-color" content="#ffffff">
+</head>
+<body>
+<div class="wrapper">
+	<section>
+		<header>
+			<h1>スカルト<br><span lang="it">Scarto</span></h1>
+			<div class="update">
+				CareleSmithひとみ<br>
+				<time>2016-12-01</time>作成
+			</div>
+		</header>
+		<nav class="head">
+			<ul itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
+				<li><a href="/" itemprop="url"><span itemprop="title">TOP</span></a></li>
+				<li><a href="/cards/"><span itemprop="title">カードゲームの遊び方・萃</span></a></li>
+				<li><a href="/cards/index.html#rules"><span itemprop="title">遊び方</span></a></li>
+				<li><span itemprop="titile">スカルト</span></li>
+			</ul><br>	
+			<a href="https://twitter.com/share" class="twitter-share-button" data-via="CareleSmith9" data-lang="ja" target="_blank">ツイート</a>
+		</nav>
+		<p>
+			<a href="http://gamefarm.jp" target="_blank">ゲームファーム</a>を参考にしました。
+		</p>
+		<p>
+			イタリアのピエモンテ州でプレイされている、タロットカードを使う<a href="/cards/intro/tt.html">トリックテイキングゲーム</a>です。
+			タロットカードを使うゲームの中では単純なルールなので、タロットのゲームの入門になります。
+		</p>
+		<section>
+			<h2>遊ぶ人数</h2>
+			<p>
+				3人で遊びます。
+			</p>
+		</section>
+		<section>
+			<h2>使うカードとランク</h2>
+			<p>
+				<a href="/cards/intro/tarots.html" target="_blank">タロットカード</a>78枚を使います。
+				タロットカードの構成やランクの順は、リンク先を参照してください。
+			</p>
+			<p>
+				カードの点数は以下の通りです。
+				トリックテイキングゲームのプレイで、
+				カードの点数を集めながらたくさんトリックを取ることが目的となります。
+				表にないカード（<b>XXI</b> <b>I</b>以外の切札、小アルカナの数札）は全て0点です。
+			</p>
+			<div class="table">
+				<table>
+					<tr><th><b>XXI</b></th><th><b>I</b></th><th><b>O</b></th><th><b>K</b></th><th><b>Q</b></th><th><b>C</b></th><th><b>J</b></th></tr>
+					<tr><td>5</td><td>5</td><td>4</td><td>5</td><td>4</td><td>3</td><td>2</td></tr>
+				</table>
+			</div>
+		</section>
+		<section>
+			<h2>ディール</h2>
+			<p>
+				最初のディーラーは任意で決めます。
+				次からはディールごとに反時計回りに交代します。
+				このゲームではプレイの順番も全て反時計回りです。
+			</p>
+			<p>
+				まず、ディーラーはカードをシャッフルして、左隣の人にカットしてもらいます。
+				その後、ディーラーの左隣のプレイヤーから、5枚ずつ5回配ります。
+				余った3枚はディーラーに配ります。
+				ディーラーの手札は28枚、そのほかのプレイヤーは25枚の手札が配られます。
+			</p>
+		</section>
+		<section>
+			<h2>捨て札</h2>
+			<p>
+				ディーラーは3枚手札が多いので捨て札をしましょう。
+			</p>
+			<p>
+				ディーラーは3枚、自分の手札から裏向きに捨てます。
+				この捨て札はディーラーがプレイでとったカードと同様に扱います。
+			</p>
+			<p>
+				ディーラーは捨て札を自由にすることができますが、次の2つの条件を守らなければなりません。
+			</p>
+			<ul>
+				<li>
+					<b>K</b>、切札<b>XXI</b>、愚者<b>O</b>を捨てることはできません。
+				</li>
+				<li>
+					切札<b>I</b>を捨てることもできません。
+					しかし、配られた切札が<b>I</b>だけであるときは<b>I</b>を捨てて構いません。
+				</li>
+			</ul>
+		</section>
+		<section>
+			<h2>プレイ</h2>
+			<p>
+				ディーラーが捨て札をしたら<a href="/cards/intro/tt.html">トリックテイキングゲーム</a>のプレイが始まります。
+				オープニングリードはディーラーの左隣のプレイヤーです。
+				プレイの順番は反時計回りになります。
+			</p>
+			<p>
+				トリックテイキングゲームのプレイでは、フォローの義務があります。
+				また、フォローできない時は、手札に切札があれば必ず切札を出さなければなりません。
+				リードのスートが手札になく、さらに手札に切札もない時は好きなカードを出しても構いません。
+			</p>
+			<section>
+				<h3>愚者<b>O</b>の役割</h3>
+				<p>
+					このゲームでの愚者<b>O</b>の扱いは次の通りです。
+				</p>
+				<p>
+					<b>O</b>はどのスートにも属しません。<b>O</b>はカードのプレイの規則を無視して、いつでも出すことができます。
+					もし<b>O</b>がリードだった場合は、2人目は好きなカードを出すことができます。
+					3人目の人は2人目が出したカードがリードされたカードであると考えてプレイします。
+				</p>
+				<p>
+					<b>O</b>は一番弱いカードとして扱われます。愚者を出したトリックはとることができません。
+					しかし、<b>O</b>はトリックに勝ったプレイヤーではなく、<b>O</b>を出したプレイヤーがとります。
+					<b>O</b>が出たトリックでは、トリックに勝った人は<b>O</b>以外の2枚をとり、
+					<b>O</b>を出した人は<b>O</b>1枚を取るということになります。
+				</p>
+			</section>
+		</section>
+		<section>
+			<h2>得点</h2>
+			<p>
+				25トリック終わって、手札が無くなったらプレイ終了です。
+				とったカードの得点の合計を求めます。
+				ディーラーの捨て札はディーラーの点数として、
+				愚者<b>O</b>は<b>O</b>を出したプレイヤーの点数として数えます。
+			</p>
+			<div class="table">
+				<table>
+					<caption>カードの点数</caption>
+					<tr><th><b>XXI</b></th><th><b>I</b></th><th><b>O</b></th><th><b>K</b></th><th><b>Q</b></th><th><b>C</b></th><th><b>J</b></th></tr>
+					<tr><td>5</td><td>5</td><td>4</td><td>5</td><td>4</td><td>3</td><td>2</td></tr>
+				</table>
+			</div>
+			<p>
+				さらに、とったカードを3枚セットにして、それぞれのセットにつき、次のように点数を修正します。
+				どのようにセットを作っても、得点の結果は変わりません。
+			</p>
+			<div class="table">
+				<table>
+					<tr><th>点数の<wbr>あるカード</th><th>点数の<wbr>ないカード</th><th>点数の修正</th></tr>
+					<tr><td>3枚</td><td>0枚</td><td>-2点</td></tr>
+					<tr><td>2枚</td><td>1枚</td><td>-1点</td></tr>
+					<tr><td>1枚</td><td>2枚</td><td>±0点</td></tr>
+					<tr><td>0枚</td><td>3枚</td><td>+1点</td></tr>
+				</table>
+			</div>
+			<p>
+				<b>O</b>が出されたトリックを取った人は、2枚のカードが余ってしまいますが、
+				もう1枚点数のないカードがあるものとして点数を修正します。
+			</p>
+			<p>
+				<b>O</b>をとったプレイヤーは<b>O</b>以外のカードでセットを作ります。
+				<b>O</b>1枚は点数を修正しないでそのまま4点として計算します。
+			</p>
+			<p>
+				全員の点数の合計は、必ず78点になります。
+				慣れないうちは点数の計算間違えがしばしば起こるので、一度合計して検算した方が良いでしょう。
+			</p>
+			<p>
+				得点は、自分の点数から3人の平均点の26を引いたものです。
+				26点以上取った人はプラスの得点、26点取れなかった人はマイナスの得点になります。
+			</p>
+		</section>
+		<section>
+			<h2>ゲーム</h2>
+			<p>
+				このゲームは負けを1人決めるゲームです。
+				3ディールやって、合計の得点が一番小さい（マイナス点が一番大きい）プレイヤーが負けとなります。
+			</p>
+		</section>
+		<aside>
+		<h2>注釈</h2>
+			<p>
+				現地で以前使われていたタロットデッキでは、切札の<b>XXI</b>に天使のイラストが描かれていたようです。
+				そこに、18世紀初め、フランスからタロットのカードが入ってきたのですが、
+				そのカードでは切札<b>XX</b>に天使の絵が描かれていたそうです。
+			</p>
+			<p>
+				しかし、現地の人は天使が最強であることを続けたので、実際現地で遊ばれているルールでは、
+				大アルカナのランクの順が<b>XX</b> <b>XXI</b> <b>XIX</b> <b>XVIII</b> …… <b>I</b>となっています。
+				しかし、ランクと数字が一致していないことは混乱を招くので、<b>XX</b>に天使の絵が描かれていない場合は特に、
+				通常通り<b>XXI</b>を最強であるとしてプレイすれば良いでしょう。
+			</p>
+			<ins datetime="2016-12-01">
+				<p>
+					なお、イタリアでは愚者のカードは「マット（<span lang="it">Matto</span>狂人）」と呼ばれています。
+				</p>
+			</ins>
+		</aside>
+		<aside>
+			<h2>感想</h2>
+			<p>
+				数回プレイしたことがあります。
+				ルールはシンプルですから、タロットカードの扱いになれるのには適していると思われます。
+				しかし、シンプルですからかえって技術が伴っている人じゃなければ、
+				自分のプレイングが良くて勝つことができたのか、運が良かっただけなのかがわからなくなると思います。
+			</p>
+			<p>
+				よくあるトリックテイキングゲームとは違ってマストラフなので、
+				トリックテイキングゲームに慣れている人でも、なかなか立ち回り方がわからなかったりします。
+			</p>
+		</aside>
+		<script src="/jscss/ad.js" type="text/javascript"></script>
+		<nav class="foot">
+			<a href="https://twitter.com/share" class="twitter-share-button" data-via="CareleSmith9" data-lang="ja" target="_blank">ツイート</a>
+			<a href="/cards/" class="top">トップへ</a>
+		</nav>
+	</section>
+</div>
+</body>
+</html>

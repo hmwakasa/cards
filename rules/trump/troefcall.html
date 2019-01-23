@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1">
+	<meta name="author" content="CareleSmithひとみ">
+	<meta name="description" content="トルフコールの遊び方">
+	<title>トルフコール(Troefcall)</title>
+	<link rel="stylesheet" type="text/css" href="/jscss/card.css"><!-- css -->
+	<script src="/jscss/jquery-latest.min.js" type="text/javascript"></script><!-- jQuery -->
+	<script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_CHTML,/jscss/mathjax.js"></script><!-- Mathjax -->
+	<script src="/jscss/jquery.tablesorter.min.js" type="text/javascript"></script><!-- tabelesorter -->
+	<script src="/jscss/jquery.metadata.js" type="text/javascript"></script><!-- tabelesorter -->
+	<script src="/jscss/twitter.js" type="text/javascript"></script><!-- twitter リンク用 -->
+	<script src="/jscss/analytics.js" type="text/javascript"></script><!-- Google Analytics-->
+	<!-- favicon -->
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/manifest.json">
+	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="theme-color" content="#ffffff">
+</head>
+<body>
+<div class="wrapper">
+	<section>
+		<header>
+			<h1>トルフコール<br><span lang="srn">Troefcall</span></h1>
+			<div class="update">
+				CareleSmithひとみ<br>
+				<time>2016-07-14</time>作成
+			</div>
+		</header>
+		<nav class="head">
+			<ul itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
+				<li><a href="/" itemprop="url"><span itemprop="title">TOP</span></a></li>
+				<li><a href="/cards/"><span itemprop="title">カードゲームの遊び方・萃</span></a></li>
+				<li><a href="/cards/index.html#rules"><span itemprop="title">遊び方</span></a></li>
+				<li><span itemprop="titile">トルフコール</span></li>
+			</ul><br>
+			<a href="https://twitter.com/share" class="twitter-share-button" data-via="CareleSmith9" data-lang="ja" target="_blank">ツイート</a>
+		</nav>
+		<p>
+			<a href="http://pagat.com" target="_blank" class="url">pagat.com</a>によります。
+		</p>
+		<p>
+			スリナムでプレイされている<a href="/cards/intro/tt.html">トリックテイキングゲーム</a>です。
+			スリナムはオランダの植民地でありましたが、度々イギリスに占領されたという歴史を持っており、
+			その歴史のゆえ、ゲームの用語はオランダ語と英語が入り混じっています。
+			<span lang="srn">troefcall</span>は、「切り札の宣言」といった感じの意味です。
+		</p>
+		<section>
+			<h2>遊ぶ人数と使うカード</h2>
+			<p>
+				4人で遊び、対面の人とパートナーとなって戦います。
+				カードは通常の52枚のトランプを使い、
+				カードのランクは、<b>2</b> <b>3</b> <b>4</b> …… <b>10</b> <b>J</b> <b>Q</b> <b>K</b> <b>A</b>の順で強くなります。
+			</p>
+		</section>
+		<section>
+			<h2>ディールと切札</h2>
+			<p>
+				最初のディーラーを決めるために、4人の前にカードを表向きに1枚ずつ配ります。
+				初めの<b>J</b>を配られた人が最初のデクレアラーに、その右隣の人がディーラーになります。
+				ここで配ったカードは、ディールを始める前に集めます。
+			</p>
+			<p>
+				以降のディールでは、次に従ってディーラーを決めます。
+			</p>
+			<ul>
+				<li>ディールでデクレアラー側のペアが得点すると、ディーラーは変わりません。</li>
+				<li>ディールでデクレアラー側が負けると、ディーラーは左隣の人に変わります。</li>
+			</ul>
+			<p>
+				デクレアラーは、ディーラーが移っても、常にそのディールのディーラーの右隣です。
+			</p>
+			<p>
+				ディーラーが決まったらまず、ディーラーはカードをシャフルします。
+				ディーラーがシャッフルした後、デクレアラーはさらにカードをシャッフルしても構いません。
+			</p>
+			<p>
+				次に、ディーラーはデクレアラーにカードを5枚配ります。
+				そして、デクレアラーは配られた5枚を見て、切札のスートを宣言します。
+				切札のスートが決まると、ディーラーはカードを他の3人にも5枚ずつ配り、
+				そのあと4枚ずつ2回全員に配ります。全員の手札は13枚になります。
+			</p>
+			<p>
+				ディールが終わって、手札を見たときに、手札の中に絵札（<b>K</b>、<b>Q</b>、<b>J</b>）が1枚もなければ、
+				配り直しを請求できます。<b>A</b>が手札にあっても構いません。
+				配り直しがあったときはディーラーは変わりません。
+			</p>
+		</section>
+		<section>
+			<h2>プレイ</h2>
+			<p>
+				マストフォローの<a href="/cards/intro/tt.html">トリックテイキングゲーム</a>です。
+				オープニングリードはデクレアラーが行います。
+			</p>
+			<p>
+				目標はパートナーと合わせて<strong>7トリック</strong>取ることです。
+				どちらかのペアが7トリック取った瞬間に、ディールが終わります。
+			</p>
+			<p>
+				もし、どちらかのペアが、<em>初めの7トリックを全て連続で取った場合</em>、
+				プレイを終えることもできますが、プレイを続けることもできます。
+				プレイを終える場合は、<strong>カップパーティー<span lang="srn">(kap paetij)</span></strong>と宣言します。
+				カップパーティーの宣言は7トリック目の勝者が行いますが、そのパートナーもすることができます。
+				どちらが宣言をしたかで点数が変わるので、どちらが宣言したかを明確にしなければなりません。
+			</p>
+			<p>
+				初めの7トリックを連続で取って、カップパーティーの宣言なしに<em>8トリック目をリードした時</em>、
+				これはプレイ続行とみなされ、<strong>13トリック全て</strong>を取ることが目標になります。
+				13トリックすべて取ることに成功することを<strong>バウニー<span lang="srn">(baunie)</span></strong>と言います。
+				バウニーに成功すると得点が高くなりますが、失敗するとペナルティーがあります。
+			</p>
+		</section>
+		<section>
+			<h2>得点</h2>
+			<p>
+				得点はチームごとに累計します。
+			</p>
+			<div class="table">
+				<table>
+					<tr>
+						<th>（初めの7トリックでない）<wbr>7トリックをとった</th>
+						<td>2点</td>
+					</tr>
+					<tr>
+						<th>初めの7トリックをとって、<wbr>7トリック目の勝者が<wbr>カップパーティーの<wbr>宣言をした</th>
+						<td>5点</td>
+					</tr>
+					<tr>
+						<th>初めの7トリックをとって、<wbr>7トリック目の勝者の<wbr>パートナーが<wbr>カップパーティーの<wbr>宣言をした</th>
+						<td>2点</td>
+					</tr>
+					<tr>
+						<th>バウニーに<wbr>成功した</th>
+						<td>15点</td>
+					</tr>
+					<tr>
+						<th>バウニーに<wbr>失敗した</th>
+						<td>相手に2点</td>
+					</tr>
+				</table>
+			</div>
+		</section>
+		<section>
+			<h2>ゲーム</h2>
+			<p>
+				あらかじめターゲットスコアを決めて、その点数に先に達したチームが勝ちです。
+				ターゲットスコアとしては、15点、20点、50点があります。
+			</p>
+			<p>
+				あまり時間が取れない場合は、ディールの回数を決めるか、制限時間を設ければよいでしょう。
+			</p>
+		</section>
+		<aside>
+			<h2>感想</h2>
+			<p>
+				<time datetime="2016-06-30">2016年6月30日</time>にプレイしました。
+				ディーラーの遷移の仕方がなかなか特殊ですが、トリックテイキングゲームの基本的な部分を抑えてあって、
+				かつ、ルールも難しくないので、初心者にも進めることのできる、面白いゲームだと思いました。
+			</p>
+			<p>
+				デクレアラー側は、勝ち続ける限り切札を宣言できるので、バウニーを狙いにいくよりは、
+				勝ち続けるようなプレイングが大事だと思いました。
+			</p>
+			<p>
+				また、ターゲットスコアは15点で十分でしょう。
+				バウニー1回で達成されてしまいますが、なかなかカップパーティーですら起きにくいので、
+				その点は問題ないと思います。私がやった時は割と拮抗したので、15点でもそれなりに時間がかかりました。
+			</p>
+		</aside>
+		<script src="/jscss/ad.js" type="text/javascript"></script>
+		<nav class="foot">
+			<a href="https://twitter.com/share" class="twitter-share-button" data-via="CareleSmith9" data-lang="ja" target="_blank">ツイート</a>
+			<a href="/cards/" class="top">トップへ</a>
+		</nav>
+	</section>
+</div>
+</body>
+</html>

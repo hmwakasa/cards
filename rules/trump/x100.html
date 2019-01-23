@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1">
+	<meta name="author" content="CareleSmithひとみ">
+	<meta name="description" content="100、99、98の遊び方">
+	<title>100</title>
+	<link rel="stylesheet" type="text/css" href="/jscss/card.css"><!-- css -->
+	<script src="/jscss/jquery-latest.min.js" type="text/javascript"></script><!-- jQuery -->
+	<script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_CHTML,/jscss/mathjax.js"></script><!-- Mathjax -->
+	<script src="/jscss/jquery.tablesorter.min.js" type="text/javascript"></script><!-- tabelesorter -->
+	<script src="/jscss/jquery.metadata.js" type="text/javascript"></script><!-- tabelesorter -->
+	<script src="/jscss/twitter.js" type="text/javascript"></script><!-- twitter リンク用 -->
+	<script src="/jscss/analytics.js" type="text/javascript"></script><!-- Google Analytics-->
+	<!-- favicon -->
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/manifest.json">
+	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="theme-color" content="#ffffff">
+</head>
+<body>
+<div class="wrapper">
+	<section>
+		<header id="x100">
+			<h1>100<br><span lang="en">One Hundred</span></h1>
+			<div class="update">
+				CareleSmithひとみ<br>
+				<del><time>2016-03-13</time>作成</del>
+				<ins><time>2017-04-13</time>加筆</ins>
+			</div>
+		</header>
+		<nav class="head">
+			<ul itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
+				<li><a href="/" itemprop="url"><span itemprop="title">TOP</span></a></li>
+				<li><a href="/cards/"><span itemprop="title">カードゲームの遊び方・萃</span></a></li>
+				<li><a href="/cards/index.html#rules"><span itemprop="title">遊び方</span></a></li>
+				<li><span itemprop="titile">100</span></li>
+			</ul><br>
+			<a href="https://twitter.com/share" class="twitter-share-button" data-via="CareleSmith9" data-lang="ja" target="_blank">ツイート</a>
+		</nav>
+		<p>
+			<a href="http://www.pagat.com" target="_blank">pagat.com</a>に依ります。
+			詳細な歴史などは分からないようですが、
+			このページで紹介しているゲームは全て、20世紀中頃に北アメリカに起源があると考えられます。
+		</p>
+		<ins datetime="2017-04-13">
+			<p>
+				ボードゲームの「ノイ<span lang="en">(neu)</span>」によく似ているルールです。
+				成立時期や発売時期を考えると、トランプを使うこちらの方が最初に生まれたと思われます。
+			</p>
+		</ins>
+		<p>
+			しばしば賭けて遊ばれるようですが、何も賭けない前提でルールを紹介します。
+		</p>
+		<section>
+			<h2>カードや遊ぶ人数</h2>
+			<p>
+				通常の52枚のトランプを使用します。
+				人数が多い時（だいたい7人以上）は、それを2デッキ使って、104枚のパックで遊びます。
+			</p>
+		</section>
+		<section>
+			<h2>ディール</h2>
+			<p>
+				ディーラーは誰がなっても構いません。
+			</p>
+			<p>
+				ディーラーは1人に3枚ずつカードを配り、残りは山札として、まとめて伏せておきます。
+			</p>
+		</section>
+		<section>
+			<h2>プレイ</h2>
+			<p>
+				ディーラーの左隣から、時計回りにプレイをします。
+				ただし、途中で、プレイの順番が反時計回りになる場合が有ります。
+			</p>
+			<p>
+				プレイの順番になった人は、手札から1枚カードを捨て，山札の隣に表向きで重ねて置きます。
+				このとき、今までの捨て札と、自分が今捨てたカードの合計点を言いながら捨てます。
+				捨て札の合計点は0から始めるので、ディーラーの右隣の人の最初のプレイは、
+				捨てたカードの点数を言うだけです。カードの点数は次の表に示しました。
+			</p>
+			<p>
+				捨て札をしたら、山札から1枚補充して、手札が3枚になるようにします。
+				もし手札を引き忘れたら、正式には次の自分の番に2枚補充して、手札が3枚になるようにしますが、
+				実際のプレイでは他の人がプレイしている時にもかかわらず、気づき次第補充する事が多いように思えます。
+			</p>
+		</section>
+		<section>
+			<h2>カードの点数</h2>
+			<p>
+				次の表にないカードについては、ランクの値だけのプラス点です。
+				ただし、<span class="r">♥</span>以外の<b>Q</b>のカードは、全て+10点です。
+				また、例えば<b>4</b>の「0点」というのは、<b>4</b>のカードの点数が0点という意味であって、
+				捨て札の合計点が変わらずに、次の人の番に移るという事です。
+				また、2枚目の<b>4</b>が出れば、進行順は時計回りに戻ります。
+			</p>
+			<div class="table">
+				<table>
+					<tr><th><b><span class="b">黒</span>A</b></th><td>合計点を0〜100の好きな値にする</td></tr>
+					<tr><th><b><span class="b">♠</span>2</b></th><td>合計点を2倍にする</td></tr>
+					<tr><th><b>4</b></th><td>0点、進行順が逆になる。</td></tr>
+					<tr><th><b><span class="r">赤</span>5</b></th><td>-5点</td></tr>
+					<tr><th><b>10</b></th><td>合計点を100にする</td></tr>
+					<tr><th><b>J</b></th><td>-10点</td></tr>
+					<tr><th><b><span class="r">♥</span>Q</b></th><td>合計点を0にする。</td></tr>
+					<tr><th><b>K</b></th><td>0点</td></tr>
+				</table>
+			</div>
+		</section>
+		<section>
+			<h2>ゲーム</h2>
+			<p>
+				捨て札の合計点が100を超えるようなプレイしか出来なくなったら負けです。
+				100点ちょうどにしても負けではありません。
+			</p>
+		</section>
+		<section>
+			<h2>ゲームの例</h2>
+			<p>
+				Aさん、Bさん、Cさんの3人でやる場合を考えます。
+			</p>
+			<p>
+				まず、Aさんが<b>8</b>を捨てながら、「8」と言います。
+				次に、Bさんが<b>10</b>を捨てながら、「100」と言います。
+				そして、Cさんは<b>4</b>を捨てながら、「100」と言い、進行順が逆回りになります。
+				すなわち次の捨て札はBさんが行います。
+				Bさんが、「95」と言いながら、<b><span class="r">♥</span>5</b>を捨てます。
+				そして、Aさんの手札が、例えば、<b>6</b>, <b>8</b>, <b>9</b>のように、5より大きいカードしかなければ、
+				Aさんは合計点を101以上にしかできないので、負けとなります。
+			</p>
+		</section>
+		<aside>
+			<h2>感想</h2>
+			<p>
+				ルール自体は単純で、わかりやすいので、大人数が集まった時にやるゲームとしては最適だと思います。
+				また、1ディールにかかる時間も短いので、気軽に遊べます。
+			</p>
+		</aside>
+		<script src="/jscss/ad.js" type="text/javascript"></script>
+		<nav class="foot">
+			<a href="https://twitter.com/share" class="twitter-share-button" data-via="CareleSmith9" data-lang="ja" target="_blank">ツイート</a>
+			<a href="/cards/" class="top">トップへ</a>
+		</nav>
+	</section>
+	<section>
+		<header id="x99">
+			<h1>99<br><span lang="en">Ninety-nine</span></h1>
+			<div class="update">
+				CareleSmithひとみ<br>
+				<time>2016-03-19</time>作成
+			</div>
+		</header>
+		<nav class="head">
+			<ul itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
+				<li><a href="/" itemprop="url"><span itemprop="title">TOP</span></a></li>
+				<li><a href="/cards/"><span itemprop="title">カードゲームの遊び方・萃</span></a></li>
+				<li><a href="/cards/index.html#rules"><span itemprop="title">遊び方</span></a></li>
+				<li><a href="#100"><span itemprop="title">100</span></a></li>
+				<li><span itemprop="titile">99</span></li>
+			</ul><br>
+			<a href="https://twitter.com/share" class="twitter-share-button" data-via="CareleSmith9" data-lang="ja" target="_blank">ツイート</a>
+		</nav>
+		<p>
+			<a href="http://www.pagat.com" target="_blank">pagat.com</a>に依ります。
+			上の<a href="#x100">100</a>とほとんど同じゲームです。
+			カードの点数と、ターゲットスコアが99である事のみが違いですので、違いのみを説明します。
+		</p>
+		<section>
+			<h2>カードの点数</h2>
+			<p>
+				次の表にないカードについては、ランクの値だけのプラス点です。
+				ただし、<b>J</b>と<b>Q</b>は、+10点です。
+				また、例えば<b>4</b>の「0点」というのは、<b>4</b>のカードの点数が0点という意味であって、
+				捨て札の合計点が変わらずに、次の人の番に移るという事です。
+				<b>A</b>または<b>10</b>を捨てる場合は、カードの点数を、2つあるうちから好きな方を選べます。
+				また、2枚目の<b>4</b>が出れば、進行順は時計回りに戻ります。
+			</p>
+			<div class="table">
+				<table>
+					<tr><th><b>A</b></th><td>+1点または+10点</td></tr>
+					<tr><th><b>4</b></th><td>0点、進行順が逆になる。</td></tr>
+					<tr><th><b>9</b></th><td>0点、進行順は変えない。</td></tr>
+					<tr><th><b>10</b></th><td>+10点または-10点</td></tr>
+					<tr><th><b>K</b></th><td>合計点を99にする。</td></tr>
+				</table>
+			</div>
+		</section>
+		<section>
+			<h2>ゲーム</h2>
+			<p>
+				捨て札の合計点が99を超えるようなプレイしか出来なくなったら負けです。
+				99点ちょうどにしても負けではありません。
+			</p>
+		</section>
+		<section>
+			<h2>バリエーション</h2>
+			<p>
+				株式会社バンタイから発売された、伊東家トランプには、カードの点数が次であるものが紹介されていました。
+				表にないカードについては、ランクの値だけのプラス点です。
+				ただし、<b>K</b>, <b>Q</b>, <b>J</b>は、+10点です。
+				また、例えば<b>4</b>の「0点」というのは、<b>4</b>のカードの点数が0点という意味であって、
+				捨て札の合計点が変わらずに、次の人の番に移るという事です。
+				<b><span class="b">黒</span>A</b>を捨てる場合は、実質、現在の合計点以上の点数に合計点を変更するということでしょう。
+				また、2枚目の<b>J</b>が出れば、進行順は時計回りに戻ります。
+			</p>
+			<div class="table">
+				<table>
+					<tr><th><b><span class="b">黒</span>A</b></th><td>0から99の何点にもなる。</td></tr>
+					<tr><th><b>3</b>, <b>4</b></th><td>0点</td></tr>
+					<tr><th><b>9</b></th><td>合計点を99にする。</td></tr>
+					<tr><th><b>10</b></th><td>-10点</td></tr>
+					<tr><th><b>J</b></th><td>+10点。進行順を逆にする。</td></tr>
+				</table>
+			</div>
+		</section>
+		<aside>
+			<h2>感想</h2>
+			<p>
+				まだプレイしてません。
+			</p>
+		</aside>
+		<script src="/jscss/ad.js" type="text/javascript"></script>
+		<nav class="foot">
+			<a href="https://twitter.com/share" class="twitter-share-button" data-via="CareleSmith9" data-lang="ja" target="_blank">ツイート</a>
+			<a href="/cards/" class="top">トップへ</a>
+		</nav>
+	</section>
+	<section>
+		<header id="x98">
+			<h1>98<br><span lang="en">Ninety-nine</span></h1>
+			<div class="update">
+				CareleSmithひとみ<br>
+				<del><time>2016-03-19</time>作成</del>
+				<ins><time>2016-03-24</time>更新</ins>
+			</div>
+		</header>
+		<nav class="head">
+			<ul itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
+				<li><a href="/" itemprop="url"><span itemprop="title">TOP</span></a></li>
+				<li><a href="/cards/"><span itemprop="title">カードゲームの遊び方・萃</span></a></li>
+				<li><a href="/cards/index.html#rules"><span itemprop="title">遊び方</span></a></li>
+				<li><a href="#100"><span itemprop="title">100</span></a></li>
+				<li><span itemprop="titile">98</span></li>
+			</ul><br>
+			<a href="https://twitter.com/share" class="twitter-share-button" data-via="CareleSmith9" data-lang="ja" target="_blank">ツイート</a>
+		</nav>
+		<p>
+			<a href="http://www.pagat.com" target="_blank">pagat.com</a>に依ります。
+			このゲームも上の<a href="#x100">100</a>と同じプレイをしますが、ターゲットスコアと手札の枚数が違います。
+		</p>
+		<section>
+			<h2>ディール</h2>
+			<p>
+				このゲームでは、手札は4枚配ります。
+			</p>
+		</section>
+		<section>
+			<h2>カードの点数</h2>
+			<p>
+				例えば<b>J</b>の「0点」というのは、<b>J</b>のカードの点数が0点という意味であって、
+				捨て札の合計点が変わらずに、次の人の番に移るという事です。
+			</p>
+			<div class="table">
+				<table>
+					<tr><th><b>A</b>〜<b>9</b></th><td>ランクの値だけのプラス点<wbr>（<b>A</b>は+1点）</td></tr>
+					<tr><th><b>10</b></th><td>-10点</td></tr>
+					<tr><th><b>J</b>, <b>Q</b></th><td>0点</td></tr>
+					<tr><th><b>K</b></th><td>合計点を98にする。</td></tr>
+				</table>
+			</div>
+		</section>
+		<section>
+			<h2>ゲーム</h2>
+			<p>
+				捨て札の合計点が98を超えるようなプレイしか出来なくなったら負けです。
+				98点ちょうどにしても負けではありません。
+			</p>
+		</section>
+		<aside>
+			<h2>感想</h2>
+			<p>
+				まだプレイしてません。
+			</p>
+			<p>
+				ジョーカーを使うバリエーションもあるようですが、それについては今の所、詳しくは調べていません。
+			</p>
+		</aside>
+		<script src="/jscss/ad.js" type="text/javascript"></script>
+		<nav class="foot">
+			<a href="https://twitter.com/share" class="twitter-share-button" data-via="CareleSmith9" data-lang="ja" target="_blank">ツイート</a>
+			<a href="/cards/" class="top">トップへ</a>
+		</nav>
+	</section>
+</div>
+</body>
+</html>

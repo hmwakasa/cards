@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1">
+	<meta name="author" content="CareleSmithひとみ">
+	<meta name="description" content="説明">
+	<title>フィールアンダーレ(Vier-Anderle)</title>
+	<link rel="stylesheet" type="text/css" href="/jscss/card.css"><!-- css -->
+	<script src="/jscss/jquery-latest.min.js" type="text/javascript"></script><!-- jQuery -->
+	<script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_CHTML,/jscss/mathjax.js"></script><!-- Mathjax -->
+	<script src="/jscss/jquery.tablesorter.min.js" type="text/javascript"></script><!-- tabelesorter -->
+	<script src="/jscss/jquery.metadata.js" type="text/javascript"></script><!-- tabelesorter -->
+	<script src="/jscss/twitter.js" type="text/javascript"></script><!-- twitter リンク用 -->
+	<script src="/jscss/analytics.js" type="text/javascript"></script><!-- Google Analytics-->
+	<!-- favicon -->
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/manifest.json">
+	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="theme-color" content="#ffffff">
+</head>
+<body>
+<div class="wrapper">
+	<section id="va">
+		<header>
+			<h1>フィールアンダーレ<br><span lang="de">Vier-Anderle</span></h1>
+			<div class="update">
+				CareleSmithひとみ<br>
+				<time>2018-01-25</time>作成
+			</div>
+		</header>
+		<nav class="head">
+			<ul itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
+				<li><a href="/" itemprop="url"><span itemprop="title">TOP</span></a></li>
+				<li><a href="/cards/"><span itemprop="title">カードゲームの遊び方・萃</span></a></li>
+				<li><a href="/cards/index.html#rules"><span itemprop="title">遊び方</span></a></li>
+				<li><span itemprop="titile">フィールアンダーレ</span></li>
+			</ul><br>	
+			<a href="https://twitter.com/share" class="twitter-share-button" data-via="CareleSmith9" data-lang="ja" target="_blank">ツイート</a>
+		</nav>
+		<p>
+			<a href="http://gamefarm.jp" target="_blank">ゲームファーム</a>や
+			<a href="http://pagat.com" target="_blank">pagat.com</a>を参考にしました。
+		</p>
+		<p>
+			ドイツのフルトバンゲンの近辺で遊ばれている、簡単なタロットのゲームです。
+			どちらかというとギャンブル的な側面が高いです。
+			<span lang="de">Vier</span>はドイツ語で「4」という意味で、その名の通り、
+			4枚の手札で遊びます。
+		</p>
+		<p>
+			タロットのトリックテイキングゲームとしては珍しく、カードの点数は問題にならず、
+			純粋に取ったトリック数だけが問題になります。
+		</p>
+		<section id="vap">
+			<h2>遊ぶ人数と準備</h2>
+			<p>
+				2人以上何人でも遊べます。5〜8人ぐらいがちょうどいいです。
+			</p>
+			<p>
+				このゲームではチップを使います。
+				全員に同じ枚数のチップをあらかじめ配っておきます。
+				プレイ中、テーブルにチップを拠出しますが、拠出する場所のことをポットと言います。
+			</p>
+			<p>
+				使うカードは<a href="/cards/intro/tarots.html">タロットカード</a>から
+				スートカード（切札でないカード）の数札をすべて取り除いた38枚です。
+				カードのランクは通常のタロットに準じます。
+				<b>O</b>は最強の切り札として扱います。
+			</p>
+			<p>
+				人数が多い時は適当に数札を追加して使います。
+				追加する時は、それぞれのスートから、使ってないカードのランクが高いカードを同じ枚数入れます。
+				入れる枚数は人数に応じて適当に決めます。
+			</p>
+		</section>
+		<section id="vad">
+			<h2>ディール</h2>
+			<p>
+				最初のディーラーは任意に決めます。
+				次からは時計回りに交代します。
+			</p>
+			<p>
+				ディーラーはポットに4チップを入れてから、全員にカードを4枚ずつ配ります。
+			</p>
+		</section>
+		<section>
+			<h2>プレイ</h2>
+			<p>
+				プレイには2種類あります。
+				どのプレイが行われるかは、カードを配る前に
+				<small>（すなわち、カードを配る前にディーラーが入れた4チップは勘定しません）</small>
+				ポットにチップがあったかによって決めます。
+			</p>
+			<p>
+				いずれのプレイになったとしても、<a href="/cards/intro/tt.html">トリックテイキングゲーム</a>
+				のプレイの規則は変わらないので、ここで説明します。
+			</p>
+			<p>
+				オープニングリードは、ディーラーの左隣の人が行います。
+				フォローの規則は次のようになります。
+				長いのですが、簡単に言えば、マストフォローで、フォローできないときは切札を出し、
+				その制限の中で勝てるカードを持っているならば必ずそれを出します。
+			</p>
+			<ul>
+				<li>
+					リードが切札だった場合
+					<ol>
+						<li>
+							そのトリックに今まで出ている切札より強い切札を持っていればそのカードを出します。
+						</li>
+						<li>
+							そのような切札を持っていなければ、何でも良いので切札を出します。
+						</li>
+						<li>
+							切札を持っていなければ、手札から好きなカードを1枚出します。
+						</li>
+					</ol>
+				</li>
+				<li>
+					リードが切札以外だった場合
+					<ol>
+						<li>
+							そのスートのカードを持っていれば、そのスートのカードを出します。
+						</li>
+						<li>
+							そのスートのカードを持っていなければ、切札を出します。
+						</li>
+						<li>
+							上2つの義務の範囲内で、そのトリックに出たどのカードよりも強いカードがあれば、
+							そのカードを出す必要があります。すなわち、
+							<ol>
+								<li>
+									リードのスートのカードを持っている時、
+									そのトリックに切札が出てない限りは、
+									そのトリックに出たリードと同じスートのどのカードよりも強いカードを持っていれば出します。
+								</li>
+								<li>
+									リードのスートを持っておらず、切札を出す場合は、
+									そのトリックに今まで出たどの切札よりも強い切札を持っていれば
+									必ずその切札を出します。
+								</li>
+							</ol>
+						</li>
+						<li>
+							リードのスートのカードも、切札も持っていなければ、
+							手札から好きに1枚出します。
+							このカードは絶対に負けるカードなので、
+							「そのトリックに出たどのカードよりも強いカードがあればそのカードを出す」
+							という制限は気にする必要はありません。
+						</li>
+					</ol>
+				</li>
+			</ul>
+			<section>
+				<h3>ポットにチップがなかったとき</h3>
+				<p>
+					プレイには全員が参加します。
+				</p>
+				<p>
+					4トリックのプレイが終わって、トリックを1つも取れなかった人は、4チップをポットに入れます
+					トリックを取ることができた人は、ポットにチップを入れなくて良いだけで、
+					チップをもらうことはありません。
+				</p>
+			</section>
+			<section>
+				<h3>ポットにチップがあったとき</h3>
+				<p>
+					プレイを始める前に、全員はそのディールに参加するかどうかを決めます。
+					参加するかの宣言はディーラーの左隣から順に行います。
+					参加する場合は「出る」と言い、参加しない場合は「降りる」と言います。
+				</p>
+				<p>
+					出ると言った人だけでプレイを行います。
+					ディーラーの左隣が降りていた場合は、出ている人の中で、
+					ディーラーの左隣に一番近い人がオープニングリードをします。
+				</p>
+				<p>
+					プレイでトリックを取った人は、1トリックを取るたび、ポットから1/4のチップをもらいます。
+					4トリック終わって、1トリックも取れなかった人は、
+					プレイが始まる直前にポットに入っていたチップ
+					<small>（ディーラーが入れた分も含みます）</small>
+					と同じ数だけのチップをポットに出します。
+				</p>
+				<p>
+					プレイに出た人が1人だけだった場合、その人がポットのチップを総取りします。
+				</p>
+			</section>
+		</section>
+		<section>
+			<h2>ゲーム</h2>
+			<p>
+				ゲームの終わりのタイミングは特に決まっていません。
+			</p>
+		</section>
+		<aside>
+			<h2>感想</h2>
+			<p>
+				まだプレイしたことはありませんが、
+				日本人が遊びやすいようにルールを一部改造したものを作りました。
+				それが次に紹介する<a href="#jva">ヤパニッシュフィールアンダーレ</a>です。
+			</p>
+		</aside>
+		<script src="/jscss/ad.js" type="text/javascript"></script>
+		<nav class="foot">
+			<a href="https://twitter.com/share" class="twitter-share-button" data-via="CareleSmith9" data-lang="ja" target="_blank">ツイート</a>
+			<a href="/cards/" class="top">トップへ</a>
+		</nav>
+	</section>
+	<section id="jva">
+		<header>
+			<h1>ヤパニッシュフィールアンダーレ<br><span lang="de">Japanisch Vier-Anderle</span></h1>
+			<div class="update">
+				CareleSmithひとみ<br>
+				<time>2018-01-25</time>作成
+			</div>
+		</header>
+		<nav class="head">
+			<ul itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
+				<li><a href="/" itemprop="url"><span itemprop="title">TOP</span></a></li>
+				<li><a href="/cards/"><span itemprop="title">カードゲームの遊び方・萃</span></a></li>
+				<li><a href="/cards/index.html#rules"><span itemprop="title">遊び方</span></a></li>
+				<li><a href="#va"><span itemprop="title">フィールアンダーレ</span></a></li>
+				<li><span itemprop="titile">ヤパニッシュフールアンダーレ</span></li>
+			</ul><br>	
+			<a href="https://twitter.com/share" class="twitter-share-button" data-via="CareleSmith9" data-lang="ja" target="_blank">ツイート</a>
+		</nav>
+		<p>
+			自作です。上の<a href="#va">フィールアンダーレ</a>をもとに作りました。
+			日本人がプレイしやすいように下り賃を採用しました。
+			2018年1月に作ったルールです。
+		</p>
+		<section>
+			<h2>遊ぶ人数と準備、およびディール</h2>
+			<p>
+				遊ぶ人数や使うカードはフィールアンダーレと<a href="#vap">同じ</a>です。
+				カードの配り方もフィールアンダーレと<a href="#vad">同じ</a>で、
+				カードを配る前にディーラーがポットに4チップ入れてから、
+				全員に4枚ずつ配ります。
+			</p>
+			<p>
+				このゲームでは、チップを拠出するポットとは別に、
+				もう一つのチップを拠出する場所である<strong>サイドポット</strong>を用意します。
+			</p>
+		</section>
+		<section>
+			<h2>プレイ</h2>
+			<p>
+				カードを配られたらトリックテイキングゲームのプレイが始まります。
+				フォローの規則は以下です。
+			</p>
+			<ul>
+				<li>
+					切札がリードされた場合
+					<ol>
+						<li>
+							そのトリックに出たどの切札よりも強い切札を持っていれば、
+							そういう切札から1枚選んで出します。
+						</li>
+						<li>
+							そのような切札を持っていなければ、
+							持っている切札から1枚選んで出します。
+						</li>
+						<li>
+							切札を持っていなければ、好きに1枚出します。
+						</li>
+					</ol>
+				</li>
+				<li>
+					切札以外がリードされた場合
+					<ol>
+						<li>
+							そのスートのカードを持っていれば、
+							そのスートのカードから1枚選んで出します。
+						</li>
+						<li>
+							そのスートのカードを持っていなければ、切札を出します。
+							<ol>
+								<li>
+									そのトリックに出たどの切札よりも強い切札を持っているならば、
+									その中から1枚選んで出します。
+								</li>
+								<li>
+									そういう切札を持っていないのであれば、
+									何でも良いので切札を1枚出します。
+								</li>
+							</ol>
+						</li>
+						<li>
+							切札も、リードされたスートのカードも持っていなければ、
+							好きに1枚出します。
+						</li>
+					</ol>
+				</li>
+			</ul>
+			<p>
+				ディーラーがポットにチップを入れたり、カードを配ったりする前に、
+				ポットにチップがあったかどうかでプレイの種類が変わるのもフィールアンダーレと同じです。
+			</p>
+			<section>
+				<h3>ポットにチップがなかった場合</h3>
+				<p>
+					プレイには全員が参加します。
+				</p>
+				<p>
+					ディーラーの左隣からオープニングリードを行い、
+					トリックテイキングゲームのプレイをします。
+				</p>
+				<p>
+					4トリック終わって、1トリックも取れなかった人は、
+					ポットに4チップ入れます。
+					トリックを取った人はポットにチップ入れませんが、
+					ポットからチップをもらうことはありません。
+				</p>
+			</section>
+			<section>
+				<h3>ポットにチップがあった場合</h3>
+				<p>
+					プレイが始まる前に、
+					ディーラーの右隣から順に、プレイに参加するか参加しないかの宣言をします。
+					プレイに参加するならば、「出る」と宣言をします。
+					プレイに参加しないならば、「降りる」と言って、
+					<em>4チップをサイドポットに入れます</em>（いわゆる下り賃です）。
+				</p>
+				<p>
+					プレイは、出ると宣言した人だけで行います。
+					オープニングリードは、出ている人の中で、ディーラーの左隣に一番近い人が行います。
+					プレイでトリックを取った人は、1トリックにつきポットにあるチップの1/4を受け取ります。
+				</p>
+				<p>
+					4トリックのプレイが終わったら、プレイで1トリックも取っていない人は8チップをポットに入れます。
+					そして、サイドポットに入っている下り賃を全てポットに移します。
+				</p>
+			</section>
+		</section>
+		<section>
+			<h2>ゲーム</h2>
+			<p>
+				ゲームの終わりのタイミングは特に決まっていません。
+			</p>
+		</section>
+		<aside>
+			<h2>感想</h2>
+			<p>
+				軽く遊べるゲームです。
+				タロットカードに初めて触る人でも、覚えるルールが少ないので、プレイしやすいと思います。
+			</p>
+		</aside>
+		<script src="/jscss/ad.js" type="text/javascript"></script>
+		<nav class="foot">
+			<a href="https://twitter.com/share" class="twitter-share-button" data-via="CareleSmith9" data-lang="ja" target="_blank">ツイート</a>
+			<a href="/cards/" class="top">トップへ</a>
+		</nav>
+	</section>
+</div>
+</body>
+</html>

@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1">
+	<meta name="author" content="CareleSmithひとみ">
+	<meta name="description" content="アルティメットの遊び方">
+	<title>アルティメット(Ultimate)</title>
+	<link rel="stylesheet" type="text/css" href="/jscss/card.css"><!-- css -->
+	<script src="/jscss/jquery-latest.min.js" type="text/javascript"></script><!-- jQuery -->
+	<script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_CHTML,/jscss/mathjax.js"></script><!-- Mathjax -->
+	<script src="/jscss/jquery.tablesorter.min.js" type="text/javascript"></script><!-- tabelesorter -->
+	<script src="/jscss/jquery.metadata.js" type="text/javascript"></script><!-- tabelesorter -->
+	<script src="/jscss/twitter.js" type="text/javascript"></script><!-- twitter リンク用 -->
+	<script src="/jscss/analytics.js" type="text/javascript"></script><!-- Google Analytics-->
+	<!-- favicon -->
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/manifest.json">
+	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="theme-color" content="#ffffff">
+</head>
+<body>
+<div class="wrapper">
+	<section>
+		<header>
+			<h1>アルティメット<br><span lang="en">Ultimate</span></h1>
+			<div class="update">
+				CareleSmithひとみ<br>
+				<del><time>2016-12-08</time>作成</del>
+				<del><time>2016-12-12</time>加筆</del>
+				<ins><time>2018-01-16</time>表現修正</ins>
+			</div>
+		</header>
+		<nav class="head">
+			<ul itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
+				<li><a href="/" itemprop="url"><span itemprop="title">TOP</span></a></li>
+				<li><a href="/cards/"><span itemprop="title">カードゲームの遊び方・萃</span></a></li>
+				<li><a href="/cards/index.html#rules"><span itemprop="title">遊び方</span></a></li>
+				<li><span itemprop="titile">アルティメット</span></li>
+			</ul><br>	
+			<a href="https://twitter.com/share" class="twitter-share-button" data-via="CareleSmith9" data-lang="ja" target="_blank">ツイート</a>
+		</nav>
+		<p>
+			すごろくやのブログ<a class="url" href="http://sgrk.blog53.fc2.com/?no=3241" target="_blank">http://sgrk.blog53.fc2.com/?no=3241</a>
+			を参考にしました。
+		</p>
+		<p>
+			初心者にお勧めする<a href="/cards/intro/tt.html">トリックテイキングゲーム</a>として紹介されていました。
+			歴史などはわかりませんが、すごろくやオリジナル<strong>ではない</strong>らしいです。
+			しかし、「アルティメット トリックテイキングゲーム」や、「Ultimate trick taking playing cards」と検索しても結果が出ないので、
+			新しいトリックテイキングゲームであるように思います。
+		</p>
+		<section>
+			<h2>使うカードと遊ぶ人数</h2>
+			<p>
+				3〜8人で遊びます。
+			</p>
+			<p>
+				使うのは通常のトランプ52枚です。カードのランクは通常通り、強いものから順に
+				<b>A</b> <b>K</b> <b>Q</b> <b>J</b> <b>10</b> <b>9</b> <b>8</b> <b>7</b> <b>6</b> <b>5</b> <b>4</b> <b>3</b> <b>2</b>
+				の順で弱くなります。
+			<p>
+			<p>
+				またカードに点数があって、この点数をたくさん集めることが目的となります。
+			</p>
+			<div class="table">
+				<table>
+					<tr><th><b>A</b></th><th><b>K</b> <b>Q</b> <b>J</b></th><th><b>10</b></th><th><b>5</b></th><th>その他の<wbr>カード</th></tr>
+					<tr><td>10点</td><td>5点</td><td>1点</td><td>-1点</td><td>0点</td></tr>
+				</table>
+			</div>
+			<p>
+				<strong><b>5</b>はマイナスの点数である</strong>ことに注意してください。点数の合計は100点になります。
+		</section>
+		<section>
+			<h2>ディール</h2>
+			<p>
+				最初のディーラーは任意に決めます。
+				次のディールからは時計回りで交代しましょう。
+			</p>
+			<p>
+				ディーラーはカードをシャッフルしたら、最初に5枚中央に配ります。
+				この中央に配った5枚のことを<strong>タロン<span lang="en">(talon)</span></strong>ということにします。
+			</p>
+			<p>
+				タロンにカードを配ったら、ディーラーの左隣から1枚ずつ配ります。
+				手札は、均等に配れる範囲で最大の枚数
+				（例えば3人だったら15枚ずつ、4人だったら11枚ずつ、5人だったら9枚ずつ）配ります。
+				余ったカードは脇によけます。余ったカードはこのディールでは使いません。
+			</p>
+		</section>
+		<section>
+			<h2>ビッド</h2>
+			<p>
+				次にビッドを行います。
+				ビッドでは、自分が取れる点数をビッドします。
+				ビッドで勝ったら、デクレアラーとなり、タロンから手札を交換し、切札を決めることができます。
+			</p>
+			<p>
+				ビッドはディーラーの左隣から行います。
+				ビッドでは、自分の取れる点数をビッドするか、ビッドをしたくなければパスをするかどちらかができます。
+				一度ビッドがあれば、今までされたビッドよりも大きい点数のビッドしかできません。
+				1度パスをしたら、再びビッドに参加することはできません。
+				ビッドはパスをしていない人が1人になるまで、何巡でも行われます。
+				最終的にパスをしなかった1人がデクレアラーとなります。
+			</p>
+			<p>
+				デクレアラーが決定した時点で、デクレアラーはビッドで宣言した点数をさらにせり上げることができます
+				<small>（ビッドの点数で得失点が決まるので、ビッドの点数を上げることに意味はあります）</small>。
+			</p>
+			<p>
+				最終的なデクレアラーのビッドが確定したら、デクレアラーはタロンのカードを全て手札に加えます。
+				そして手札からいらないカードを5枚捨てます。
+				この捨て札は、ディフェンダー（デクレアラーではない方）がトリックでとったカードとして扱われます。
+			</p>
+			<p>
+				手札の交換が終わったら、デクレアラーは切札のスートを宣言します。
+				切札なし（ノートランプ）の宣言はできません。
+			</p>
+		</section>
+		<section>
+			<h2>プレイ</h2>
+			<p>
+				<strong>ディーラーから</strong>オープニングリードをします（デクレアラーではありません）。
+				通常の<a href="/cards/intro/tt.html">トリックテイキングゲーム</a>のプレイに従います。
+				リードのスートはフォローしなければなりません。
+			</p>
+		</section>
+		<section>
+			<h2>得点</h2>
+			<p>
+				全員の手札がなくなるまでトリックを行って、ディールが終わります。
+				ディールが終わったら、デクレアラーは自分がとったカードの点数を合計しましょう
+				（捨て札や配り残りはデクレアラーの点数になりません）。
+				デクレアラーの点数によって以下のように点数をつけます。
+			</p>
+			<ol>
+				<li>
+					デクレアラーがプレイに<em>成功</em>した場合、ビッドした点数をそのままデクレアラーが得点します。
+				</li>
+				<li>
+					デクレアラーがプレイに<em>失敗</em>した場合、ビッドした点数の半分をディフェンダー全員が得点します。
+					1未満の端数は切り捨てます。
+				</li>
+			</ol>
+			<p>
+				もちろん、プレイに成功するとは、デクレアラーがビッドの点数以上をとった場合で、
+				プレイに失敗するとは、デクレアラーがビッドの点数に満たない点数しか取れなかった場合です。
+			</p>
+		</section>
+		<section>
+			<h2>ゲーム</h2>
+			<p>
+				何ディールかやって、累計点が150点に達した人がいればその人が勝ちでゲームが終了します。
+			</p>
+		</section>
+		<section>
+			<h2>応用ルール</h2>
+			<p>
+				応用ルールとして、デクレアラーがパートナーシップを組む方法が紹介されています。
+			</p>
+			<p>
+				切札を宣言した時点で、デクレアラーはパートナーを決めます。
+				パートナーが欲しいならば、「<b><span class="b">♠</span>A</b>を持っている人」というように、
+				カードを使ってパートナーを決めます。
+				そのカードを持っている人がパートナーになりますが、
+				パートナーは自分がパートナーであることを明かしてはなりません。
+				パートナー決めに使ったカードがプレイされて初めてパートナーが判明します。
+			</p>
+			<p>
+				もし、パートナーを決めるのに使ったカードが、配り残りのカードに含まれていたり、
+				デクレアラーの手札の中にあった場合は、デクレアラーはパートナーシップを組まずにプレイすることになります。
+			</p>
+			<p>
+				プレイに成功したかどうか判定するときには、
+				もちろんパートナーのとったカードとデクレアラーのとったカードの点数を合計します。
+				得点は、パートナーはデクレアラーと同じ点数を得点します。
+				もし、パートナーがいない場合は、全員の得点は2倍になります。
+				すなわち、プレイに成功したらデクレアラー側がビッドに2倍の点数を得、
+				プレイに失敗したらディフェンダーがビッドと同じ点数を得ます。
+			</p>
+		</section>
+		<aside>
+			<h2>注釈</h2>
+			<p>
+				応用ルールで、パートナーがいなかった場合に、全員の得点が倍になるのは、
+				<a>ブリスコラ・ブジャルタ</a>を参考にして、私が付け加えたルールです。
+			</p>
+		</aside>
+		<aside>
+			<h2>感想</h2>
+			<del datetime="2016-12-12">
+				<p>
+					まだプレイしたことがありません。
+				</p>
+			</del>
+			<ins datetime="2016-12-12">
+				<p>
+					2016年12月9日に3人でプレイしました。
+					私以外の2人は、トリックテイキングゲームの初心者でしたが、
+					2、3ディール目あたりからトリッックテイキングゲームのプレイに慣れてきた感じがありました。
+				<p>
+				<p>
+					初心者でも把握しやすいルールですし、ビッドや切札の宣言など、
+					多くのトリックテイキングゲームが持つ基本的なシステムを備えているので、
+					初心者に、トリックテイキングゲームを知ってもらうために適していると感じました。
+				</p>
+				<p>
+					もちろん、初心者だけではなく、トリックテイキングゲームをやったことがある人でも十分に楽しめます。
+					高いビッドにしないと点数になりませんが、ビッドを高くしすぎると失敗するので、
+					ギリギリのビッドを狙う駆け引きや、プレイに失敗しないためのとった点数のカウンティングなど、
+					考える要素が沢山あります。
+				</p>
+			</ins>
+		</aside>
+		<script src="/jscss/ad.js" type="text/javascript"></script>
+		<nav class="foot">
+			<a href="https://twitter.com/share" class="twitter-share-button" data-via="CareleSmith9" data-lang="ja" target="_blank">ツイート</a>
+			<a href="/cards/" class="top">トップへ</a>
+		</nav>
+	</section>
+</div>
+</body>
+</html>

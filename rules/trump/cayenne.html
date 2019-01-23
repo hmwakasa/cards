@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1">
+	<meta name="author" content="CareleSmithひとみ">
+	<meta name="description" content="ケイエンの遊び方">
+	<title>ケイエン(Cayenne)</title>
+	<link rel="stylesheet" type="text/css" href="/jscss/card.css"><!-- css -->
+	<script src="/jscss/jquery-latest.min.js" type="text/javascript"></script><!-- jQuery -->
+	<script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_CHTML,/jscss/mathjax.js"></script><!-- Mathjax -->
+	<script src="/jscss/jquery.tablesorter.min.js" type="text/javascript"></script><!-- tabelesorter -->
+	<script src="/jscss/jquery.metadata.js" type="text/javascript"></script><!-- tabelesorter -->
+	<script src="/jscss/twitter.js" type="text/javascript"></script><!-- twitter リンク用 -->
+	<script src="/jscss/analytics.js" type="text/javascript"></script><!-- Google Analytics-->
+	<!-- favicon -->
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/manifest.json">
+	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="theme-color" content="#ffffff">
+</head>
+<body>
+<div class="wrapper">
+	<section>
+		<header>
+			<h1>ケイエン<br><span lang="en">Cayenne</span></h1>
+			<div class="update">
+				CareleSmithひとみ<br>
+				<time>2016-03-09</time>作成
+			</div>
+		</header>
+		<nav class="head">
+			<ul itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
+				<li><a href="/" itemprop="url"><span itemprop="title">TOP</span></a></li>
+				<li><a href="/cards/"><span itemprop="title">カードゲームの遊び方・萃</span></a></li>
+				<li><a href="/cards/index.html#rules"><span itemprop="title">遊び方</span></a></li>
+				<li><span itemprop="titile">ケイエン</span></li>
+			</ul><br>	
+			<a href="https://twitter.com/share" class="twitter-share-button" data-via="CareleSmith9" data-lang="ja" target="_blank">ツイート</a>
+		</nav>
+		<p>
+			社会思想社の、トランプゲーム大百科（1998、デヴィッド・パーレット著、松田道弘訳）に依ります。
+			<a href="/cards/intro/tt.html">トリックテイキングゲーム</a>で、
+			ホイストに近いゲームのようです。
+			歴史などは調べてもわかりませんでしたが、19世紀頃にフランス辺りで遊ばれていたようです。
+			誰かくわしく知っている人がいれば教えて下さい。
+		</p>
+		<section>
+			<h2>カードや遊ぶ人数</h2>
+			<p>
+				通常の52枚のトランプを使用します。
+				ランクは、<b>A</b>が最も強く、<b>2</b>が最も弱くなります。
+				4人でプレイし、対面の人とパートナーとなります。
+			</p>
+		</section>
+		<section>
+			<h2>ケイエンのスート決め</h2>
+			<p>
+				カードを配る前にケイエン<span lang="en">(Cayenne)</span>のスートを決めます。
+				どのように決めても構いませんが、使っていない別のデッキをカットするなどして決めるのが適当でしょう。
+				ケイエンのスートに応じて、セカンドカラー<span lang="en">(second color)</span>、
+				サードカラー<span lang="en">(third color)</span>、
+				フォースカラー<span lang="en">(forth color)</span>のスートも決まります。
+			</p>
+			<div class="table">
+				<table>
+					<tr>
+						<th>ケイエン</th>
+						<td><span class="r">♥</span></td>
+						<td><span class="r">♦</span></td>
+						<td><span class="b">♣</span></td>
+						<td><span class="b">♠</span></td>
+					</tr>
+					<tr>
+						<th>セカンドカラー</th>
+						<td><span class="r">♦</span></td>
+						<td><span class="r">♥</span></td>
+						<td><span class="b">♠</span></td>
+						<td><span class="b">♣</span></td>
+					</tr>
+					<tr>
+						<th>サードカラー</th>
+						<td><span class="b">♣</span></td>
+						<td><span class="b">♣</span></td>
+						<td><span class="r">♥</span></td>
+						<td><span class="r">♥</span></td>
+					</tr>
+					<tr>
+						<th>フォースカラー</th>
+						<td><span class="b">♠</span></td>
+						<td><span class="b">♠</span></td>
+						<td><span class="r">♦</span></td>
+						<td><span class="r">♦</span></td>
+					</tr>
+				</table>
+			</div>
+		</section>
+		<section>
+			<h2>ディール</h2>
+			<p>
+				始めのディーラーは任意に決めます。
+				次のディールからは、ディーラーは時計回りの順に交代します。
+			</p>
+			<p>
+				ディーラーはカードをシャッフルして、順に4枚-4枚-5枚ずつ、
+				まとめて配ります。一人の手札は13枚になるはずです。
+			</p>
+		</section>
+		<section>
+			<h2>プレイの種類</h2>
+			<p>
+				ディールが終わったら、ディーラーは手札を見てプレイの種類を決めます。
+				ディーラーが決めたくないときは、パートナーに決めるように要請できます。
+				その場合、パートナーは必ずプレイの種類を決めなければなりません。
+			</p>
+			<div class="table">
+				<table>
+					<caption>選択可能なプレイの種類</caption>
+					<thead>
+						<tr>
+							<th>プレイの種類</th>
+							<th>目的</th>
+							<th>得点倍率</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>ケイエン</td>
+							<td rowspan="4" class="wrap">そのスートを切札に、7トリック以上とる。</td>
+							<td>4倍</td>
+						</tr>
+						<tr>
+							<td>セカンドカラー</td>
+							<td>3倍</td>
+						</tr>
+						<tr>
+							<td>サードカラー</td>
+							<td>2倍</td>
+						</tr>
+						<tr>
+							<td>フォースカラー</td>
+							<td>1倍</td>
+						</tr>
+						<tr>
+							<td>グランド<br><span lang="en">(grand)</span></td>
+							<td class="wrap">切り札なしで、7トリック以上とる。</td>
+							<td>8倍</td>
+						</tr>
+						<tr>
+							<td>ナロー<br><span lang="en">(nullo)</span></td>
+							<td class="wrap">切札なしで７トリック以下とる。</td>
+							<td>8倍</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</section>
+		<section>
+			<h2>プレイ</h2>
+			<p>
+				プレイの種類が決まれば、ディーラーの左隣がオープニングリードをします。
+				普通のマストフォローのトリックテイキングゲームです。
+			</p>
+			<p>
+				ナローの場合のみ、オープニングリードがプレイする前に、プレイの種類を決めた人は、
+				<b>A</b>のランクを<b>2</b>の下にする事を宣言できます。
+				この宣言があった場合、ランクは<b>K</b>が最強のカードとなり、
+				<b>A</b>が最弱のカードになります。
+			</p>
+		</section>
+		<section>
+			<h2>得点</h2>
+			<p>
+				プレイに成功したチームのみが得点をします。
+				得点は、基本点に倍率を掛けたもので決まります。倍率はプレイの種類で決まります。
+				基本点はトリックの点数と、とった絵札によるボーナス（アナーボーナス）の和です。
+			</p>
+			<p>
+				トリックの点数は、とったトリックの数から、6を引いたものです。
+				ただし、ナローのときは、7からとったトリックの数を引いたものがトリックの点数です。
+			</p>
+			<p>
+				また、切札の<b>A</b> <b>K</b> <b>Q</b> <b>J</b> <b>10</b>のうち、
+				3枚をとると2点、4枚をとると4点、5枚をとると6点がアナーボーナスとなります。
+				ただし、グランドとナローのゲームでは、切札がないので、アナーボーナスもありません。
+			</p>
+		</section>
+		<section>
+			<h2>ゲーム</h2>
+			<p>
+				10点をとるとゲームに勝利します。
+				また、4ゲームをとると、ラバーに勝って、さらにボーナス8点を得ます。
+			</p>
+		</section>
+		<aside>
+			<h2>感想</h2>
+			<p>
+				まだプレイしていません。
+			</p>
+		</aside>
+		<script src="/jscss/ad.js" type="text/javascript"></script>
+		<nav class="foot">
+			<a href="https://twitter.com/share" class="twitter-share-button" data-via="CareleSmith9" data-lang="ja" target="_blank">ツイート</a>
+			<a href="/cards/" class="top">トップへ</a>
+		</nav>
+	</section>
+</div>
+</body>
+</html>

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1">
+	<meta name="author" content="CareleSmithひとみ">
+	<meta name="description" content="41の遊び方">
+	<title>41</title>
+	<link rel="stylesheet" type="text/css" href="/jscss/card.css"><!-- css -->
+	<script src="/jscss/jquery-latest.min.js" type="text/javascript"></script><!-- jQuery -->
+	<script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_CHTML,/jscss/mathjax.js"></script><!-- Mathjax -->
+	<script src="/jscss/jquery.tablesorter.min.js" type="text/javascript"></script><!-- tabelesorter -->
+	<script src="/jscss/jquery.metadata.js" type="text/javascript"></script><!-- tabelesorter -->
+	<script src="/jscss/twitter.js" type="text/javascript"></script><!-- twitter リンク用 -->
+	<script src="/jscss/analytics.js" type="text/javascript"></script><!-- Google Analytics-->
+	<!-- favicon -->
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/manifest.json">
+	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="theme-color" content="#ffffff">
+</head>
+<body>
+<div class="wrapper">
+	<section>
+		<header>
+			<h1>41<br><span lang="en">Forty-one</span></h1>
+			<div class="update">
+				CareleSmithひとみ<br>
+				<del><time>2017-05-04</time>作成</del>
+				<ins><time>2017-05-08</time>加筆</ins>
+			</div>
+		</header>
+		<nav class="head">
+			<ul itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
+				<li><a href="/" itemprop="url"><span itemprop="title">TOP</span></a></li>
+				<li><a href="/cards/"><span itemprop="title">カードゲームの遊び方・萃</span></a></li>
+				<li><a href="/cards/index.html#rules"><span itemprop="title">遊び方</span></a></li>
+				<li><span itemprop="titile">41</span></li>
+			</ul><br>
+			<a href="https://twitter.com/share" class="twitter-share-button" data-via="CareleSmith9" data-lang="ja" target="_blank">ツイート</a>
+		</nav>
+		<p>
+			くぼたやウェブログの中のページ
+			<a href="http://kubotaya.exblog.jp/2030683/" target="_blank" class="url">http://kubotaya.exblog.jp/2030683/</a>
+			を参考にしました。
+		</p>
+		<p>
+			日本人ゲーム研究家である草場純さんが、20世紀の最後頃に作ったゲームだそうです。
+			クリベッジに影響されて作ったゲームとのことです。
+			古い市販のカードゲーム『スナッホイ』にも似ているとのこととです
+			<small>（スナッホイがどのようなゲームかは確認できませんでした）</small>。
+		</p>
+		<section>
+			<h2>遊ぶ人数と使うカード</h2>
+			<p>
+				2人専用のゲームです。
+				<b>ジョーカー</b>を除いた52枚のトランプを使用します。
+			</p>
+		</section>
+		<section>
+			<h2>ゲームの目的</h2>
+			<p>
+				<a href="./x100.html">100</a>のように、ディーラーでない人から順番にカードを中央に出して行きます。
+				その時、今まで出たカードの合計点数を宣言します。
+				この合計点数が41点を超えないようにすることが目標となります。
+			</p>
+			<p>
+				ただし、合計点数を1点、11点、21点、31点、41点のいずれかちょうどにすることでもらえるボーナスもあります。
+			</p>
+			<p>
+				得点はチップを使って記録します。ゲームを始める前に、チップを中央に30チップ程度置いておきます。
+				なお、得点はテーブルからチップをもらうだけであって、プレイヤー同士でチップのやり取りは行いません。
+			</p>
+		</section>
+		<section>
+			<h2>カードの点数</h2>
+			<p>
+				カードの点数は以下の通りです。
+			</p>
+			<div class="table">
+				<table>
+					<tr><th><b>A</b></th><td>1点</td></tr>
+					<tr><th><b>2</b>〜<b>10</b></th><td>ランクの値だけプラス点</td></tr>
+					<tr><th><b>J</b></th><td>-1点</td></tr>
+					<tr><th><b>Q</b></th><td>0点</td></tr>
+					<tr><th><b>K</b></th><td>直前のカードと同じ点数</td></tr>
+				</table>
+			</div>
+			<p>
+				<b>K</b>が一番最初のカード（スターター）として出た場合は、次に出たカードと同じ点数になります。
+			</p>
+		</section>
+		<section>
+			<h2>ディール</h2>
+			<p>
+				最初のディーラーは任意で決めます。
+				ディーラーはディールごとに交代します。
+			</p>
+			<p>
+				まず、ディーラーは各プレイヤーに手札を6枚ずつ配ります。
+				そして、中央に1枚表向きにして置きます。これをスターターと言います。
+				もしスターターが<b>A</b>なら、ディーターは1チップを即座に獲得します。
+			</p>
+		</section>
+		<section>
+			<h2>プレイ</h2>
+			<p>
+				ディーラーでない方から順にプレイを行います。
+				プレイでは手札からカードを1枚中央に出します。
+				この時、今まで出たカードの点数の合計を言いながら出します
+				（ディーラーでない人の最初のプレイで出した時は、自分が出したカードとスターターの点数の合計を言います）。
+			</p>
+			<p>
+				この時、合計点がちょうど1点、11点、21点、31点のうち、
+				いずれかになったら即座に手札を出したプレイヤーが1チップ獲得します。
+				41点ちょうどになったら2チップを獲得します。
+			</p>
+			<p>
+				例えば、スターターが<b>K</b>で、ディーラーがない人が<b>K</b>を出して、
+				次にディーラーが<b>7</b>を出したら、21となるので（この場合は<b>7</b> <b>7</b> <b>7</b>と出た扱いになります）
+				ディーラーが1チップ獲得します。
+				次にディーラーでない人が<b>10</b>を出したならば合計は31となるので1チップ獲得、
+				ディーラーが<b>Q</b>を出せば合計は31のまま変わらないので1チップ獲得、
+				その後ディーラーでない人が<b>K</b>を出せば、<b>K</b>は0点扱いになるので、
+				合計は31となって再び1チップ獲得といった具合です。
+			</p>
+			<p>
+				もし手札はないのに自分の番が回ってきた時や、
+				自分の番になった時にどの手札を出しても合計の点数が41を超える時は、
+				「パス」と宣言して、手札を出しません。この時、相手のプレイヤーは即座に1チップ獲得します。
+				手札に出せるカードがあるのにパスをすることはできません。
+			</p>
+			<p>
+				パスが2回連続で起きるとディール終了です。
+				この時、2回目のパス（ディールを終了させるパス）に対しては、
+				そのパスの宣言によって相手がチップをもらうことはありません。
+			</p>
+			<p>
+				ディールが終了したら、次のディールに移ります。
+				このディール使用した13枚のカードは全てゲームから取り除いて、
+				残ったカードで次のディールを行います。
+			</p>
+		</section>
+		<section>
+			<h2>ゲーム</h2>
+			<p>
+				4ディールやると全てのカードが使われます。
+				4ディール終わって、獲得したチップが一番多い人が勝ちです。
+			</p>
+		</section>
+		<aside>
+			<h2>注釈</h2>
+			<p>
+				パスをした時に、パスをしたプレイヤーはその時点でディールから抜けるのかそうでないのかはわかりませんでした
+				（<b>K</b>は直前に出されたカードで点数が変わるので
+				一度パスをしてもその後に手札をプレイできる状況になることがありえます）。
+			</p>
+		</aside>
+		<aside>
+			<h2>感想</h2>
+			<del datetime="2017-05-08">
+				<p>
+					まだプレイしてません。
+				</p>
+			</del>
+			<ins datetime="2017-05-08">
+				<p>
+					2017年5月5日にプレイしました。
+					戦略などはつかむことができませんでしたが、
+					スリリングなゲームでした。
+				</p>
+			</ins>
+		</aside>
+		<script src="/jscss/ad.js" type="text/javascript"></script>
+		<nav class="foot">
+			<a href="https://twitter.com/share" class="twitter-share-button" data-via="CareleSmith9" data-lang="ja" target="_blank">ツイート</a>
+			<a href="/cards/" class="top">トップへ</a>
+		</nav>
+	</section>
+</div>
+</body>
+</html>

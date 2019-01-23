@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1">
+	<meta name="author" content="CareleSmithひとみ">
+	<meta name="description" content="バルビュの遊び方">
+	<title>バルビュ(Barbu)</title>
+	<link rel="stylesheet" type="text/css" href="/jscss/card.css"><!-- css -->
+	<script src="/jscss/jquery-latest.min.js" type="text/javascript"></script><!-- jQuery -->
+	<script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_CHTML,/jscss/mathjax.js"></script><!-- Mathjax -->
+	<script src="/jscss/jquery.tablesorter.min.js" type="text/javascript"></script><!-- tabelesorter -->
+	<script src="/jscss/jquery.metadata.js" type="text/javascript"></script><!-- tabelesorter -->
+	<script src="/jscss/twitter.js" type="text/javascript"></script><!-- twitter リンク用 -->
+	<script src="/jscss/analytics.js" type="text/javascript"></script><!-- Google Analytics-->
+	<!-- favicon -->
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/manifest.json">
+	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="theme-color" content="#ffffff">
+</head>
+<body>
+<div class="wrapper">
+	<section>
+		<header>
+			<h1>バルビュ<br><span lang="en">Barbu</span></h1>
+			<div class="update">
+				CareleSmithひとみ<br>
+				<del><time>2017-04-10</time>作成</del>
+				<ins><time>2017-08-31</time>修正</ins>
+			</div>
+		</header>
+		<nav class="head">
+			<ul itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
+				<li><a href="/" itemprop="url"><span itemprop="title">TOP</span></a></li>
+				<li><a href="/cards/"><span itemprop="title">カードゲームの遊び方・萃</span></a></li>
+				<li><a href="/cards/index.html#rules"><span itemprop="title">遊び方</span></a></li>
+				<li><span itemprop="titile">バルビュ</span></li>
+			</ul><br>
+			<a href="https://twitter.com/share" class="twitter-share-button" data-via="CareleSmith9" data-lang="ja" target="_blank">ツイート</a>
+		</nav>
+		<p>
+			トランプゲーム大全（2014、スモール出版、赤桐裕二著）や
+			<a href="http://gamefarm.jp" target="_blank">ゲームファーム</a>を参考にしました。
+		</p>
+		<p>
+			19世紀に<a href="./hearts.html">ハート</a>と共通の祖先から生まれたゲームです。
+			その後ヨーロッパ大陸でルールが発展・改良され、比較的近年英語圏でも知られるようになりました。
+		</p>
+		<p>
+			バルビュ<span lang="fr">(le barbu)</span>とは、フランス語で「あごひげを生やした」という意味で、
+			キングのことを指していると思われます。
+			似たようなゲームが、ヨーロッパ大陸でキング<span lang="en">(king)</span>という名前でも呼ばれているようです。
+		</p>
+		<p>
+			いろいろな種類のゲームを、それぞれのプレイヤーが順に選択して合計点を競うゲームです。
+			基本は<a href="/cards/intro/tt.html">トリックテイキングゲーム</a>ですが、
+			トリックテイキングではないゲームもあります。
+			一度選んだゲームは二度と選べなくなる点が悩ましいです。
+		</p>
+		<section>
+			<h2>プレイする人数と使うカード</h2>
+			<p>
+				4人で遊びます。
+			</p>
+			<p>
+				使うカードは通常の52枚のトランプです。
+				ランクは強いものから順に
+				<b>A</b> <b>K</b> <b>Q</b> <b>J</b> <b>10</b> <b>9</b> <b>8</b> <b>7</b> <b>6</b> <b>5</b> <b>4</b> <b>3</b> <b>2</b>
+				となります。
+			</p>
+		</section>
+		<section>
+			<h2>コントラクトの種類</h2>
+			<p>
+				前述したように、このゲームでは、7つあるコントラクト（ゲームの種類）から1つを選んでプレイをします。
+			</p>
+			<p>
+				コントラクトを選ぶのは、そのディールのディーラーで、今までに選んだコントラクトを選ぶことはできません。
+				ですから、このゲームではディーラーのことをデクレアラーとも呼びます。
+				28ディール終え、4人全員がすべてのコントラクトを選択し、プレイが終わったらゲームが終了となります。
+			</p>
+			<p>
+				まず、7つのコントラクトを紹介します。なお、すべてのコントラクトの点数の合計は0点になります。
+			</p>
+			<section>
+				<h3>ネガティブコントラクト<span lang="en">(negative contract)</span></h3>
+				<p>
+					次の5つのコントラクトは<strong>ネガティブコントラクト<span lang="en">(negative contract)</span></strong>と呼ばれます。
+					いずれも切札のない<a href="/cards/intro/tt.html">トリックテイキングゲーム</a>です。
+					オープニングリードはディーラーが行い、リードのスートをフォローする義務があります。
+				</p>
+				<section>
+					<h4>ノー・トリック<span lang="en">(no tricks)</span></h4>
+					<p>
+						1トリックとるごとに-2点です。1ディールの合計点数は-26点です。
+					</p>
+				</section>
+				<section>
+					<h4>ノー・クイーン<span lang="en">(no queens)</span></h4>
+					<p>
+						<b>Q</b>を1枚とるごとに-6点です。1ディールの合計点数は-24点です。
+					</p>
+				</section>
+				<section>
+					<h4>ノー・ラスト・ツー<span lang="en">(no last two)</span></h4>
+					<p>
+						最後のトリックをとると-20点、最後から一つ前のトリックをとると-10点です。
+						1ディールの合計点数は-30点です。
+					</p>
+				</section>
+				<section>
+					<h4>ノー・ハート<span lang="en">(no hearts)</span></h4>
+					<p>
+						<span class="r">♥</span>を1枚とるごとに-2点です。
+						ただし<b><span class="r">♥</span>A</b>だけは-6点となります。
+						1ディールの合計点数は-30点です。
+					</p>
+					<p>
+						ノー・ハートのコントラクトでは、手札が<span class="r">♥</span>ばかりの時を除いて、
+						<span class="r">♥</span>のリードをすることはできません。
+					</p>
+				</section>
+				<section>
+					<h4>ノー・ハート・キング<span lang="en">(no king of hearts)</span></h4>
+					<p>
+						<b><span class="r">♥</span>K</b>をとると-20点です。
+						1ディールの合計点数は-20点です。
+					</p>
+					<p>
+						ノー・ハート・キングのコントラクトでも、ノー・ハートの時と同じように、
+						手札が<span class="r">♥</span>ばかりの時を除いて<span class="r">♥</span>のリードはできません。
+					</p>
+				</section>
+			</section>
+			<section>
+				<h3>ポジティブコントラクト<span lang="en">(positive contract)</span></h3>
+				<p>
+					次の2種はポジティブコントラクトと呼ばれます。
+				</p>
+				<section>
+					<h4>切札<span lang="en">(trump)</span></h4>
+					<p>
+						切札のコントラクトでは、プレイを始める前にデクレアラー（ディーラー）が切札のスートを任意に宣言します。
+						そのスートのカードが切札になります。
+					</p>
+					<p>
+						デクレアラーがオープニングリードをして<a href="/cards/intro/tt.html">トリックテイキングゲーム</a>のプレイを始めます。
+						フォローの規則は次のようになります。
+					</p>
+					<ol>
+						<li>
+							リードのスートのカードがあればそのうちの1枚を出します。
+						</li>
+						<li>
+							リードのスートのカードを持っていなければ他のスートのカードを出します。
+						</li>
+						<li>
+							このルールの範囲内で、手札にある<em>切札を出すことによって、今までに出ているカードに勝てる</em>場合は、
+							勝つことのできる切札を出さなければなりません。
+							<small>（切札がリードでない時に、自分の持っている一番強い切札よりも強い切札がトリックに出ている場合、
+							すなわち切札を出しても勝てない場合は、切札を出す必要はないです。
+							もちろん切札がリードであれば、リードはフォローしなければならないので切札を出す必要があります）</small>
+						</li>
+					</ol>
+					<p>
+						得点は、1トリックとるごとに+5点となります。
+						1ディールの合計点数は65点です。
+					</p>
+				</section>
+				<section>
+					<h4>ドミノ<span lang="en">(Dominoes)</span></h4>
+					<p>
+						トリックテイキングではなく、七並べに似たようなゲームを行います。
+					</p>
+					<p>
+						まず、デクレアラー（ディーラー）がスタートランクを宣言します。
+						スタートランクとは、七並べの<b>7</b>のように、最初に出すカードのランクです。
+						七並べとは違って、好きなランクを宣言することができます。
+					</p>
+					<p>
+						デクレアラーから順に、時計回りでプレイを進めていきます。
+						プレイの順番になったら、行うことは次のうちのどれか一つです。
+					</p>
+					<ol>
+						<li>
+							どのスートでもいいので、スタートランクのカードがあれば、1枚テーブルに出します。
+						</li>
+						<li>
+							今まで出ているカードと同じスートで、ランクが1つ上か下になっているカードがあれば1枚出します。
+						</li>
+						<li>
+							上のいずれも出来ない場合はパスをします。
+							出せるカードがあるのにパスをすることはできません。
+						</li>
+					</ol>
+					<p>
+						カードは<b>2</b> <b>3</b> <b>4</b> <b>5</b> <b>6</b> <b>7</b> <b>8</b> <b>9</b> <b>10</b> <b>J</b> <b>Q</b> <b>K</b> <b>A</b>
+						の順番でつながります（<b>2</b>から<b>A</b>にはつながりません）。
+					</p>
+					<p>
+						手札をすべてプレイしたプレイヤーは上がったことになり、プレイから抜けます。
+						プレイから抜けたプレイヤーがいても、全員が上がるまで、残ったプレイヤーでプレイが続けられます。
+					</p>
+					<p>
+						最初に上がったプレイヤーは+45点、次に上がったプレイヤーは+20点、3番目に上がったプレイヤーは+5点、
+						最後まで残ったプレイヤーは-5点となります。
+						全プレイヤーの合計点は+65点になります。
+					</p>
+				</section>
+			</section>
+		</section>
+		<section>
+			<h2>ディール</h2>
+			<p>
+				最初のディーラーは任意に決めてください。
+				次からは時計回りで交代します。
+			</p>
+			<p>
+				ディーラーは各プレイヤーに1枚ずつ13枚のカードを配ります。
+			</p>
+		</section>
+		<section>
+			<h2>ビッド</h2>
+			<p>
+				カードが配り終わったのならば、ディーラーは7つのコントラクトからプレイしたいコントラクトを一つ選びます。
+				それぞれのプレイヤーは、自分が今までに選んだコントラクトをもう一度選択することはできません。
+			</p>
+		</section>
+		<section>
+			<h2>ダブル</h2>
+			<p>
+				デクレアラー（ディーラー）がコントラクトを宣言したあと（切札のコントラクトなら切札を宣言したあと、
+				ドミノのコントラクトならスタートランクを宣言したあと）、ディーラーの左隣のプレイヤーから順に1回ずつ、
+				ダブルの機会が与えられます。
+			</p>
+			<p>
+				ダブルとは、あるプレイヤーとの間でやり取りをする点数を倍にするという宣言です。
+				ダブルを宣言するならば、誰に対してダブルをかけるかも一緒に宣言する必要があります。
+				何人に対してダブルをかけても構いません。全員にダブルをかけることもできます。
+				ただし、デクレアラーだけは、自分に対してダブルをかけてきた人に、ダブルをかけることはできません。
+			</p>
+			<p>
+				誰が誰に対してダブルをかけたかは得点表に記入します。
+				タブルをかけた時の得点の計算方法は、次で解説します。
+			</p>
+		</section>
+		<ins datetime="2017-08-31">
+			<section>
+				<h2>プレイ</h2>
+				<p>
+					全員のダブルの宣言が終わったら、プレイに入ります。
+					デクレアラーが決めたコントラクトに従ってプレイを行います。
+				</p>
+			</section>
+		</ins>
+		<section>
+			<h2>得点</h2>
+			<section>
+				<h3>得点表</h3>
+				<p>
+					バルビュでは、得点をつけるために次のようなスコアシートを使います。（クリックで拡大します）
+					なお、ここに示すのは一例であって、少し様式の違うスコアシートを使うこともあります。
+					私が作成したスコアシート（<a href="barubu_score_full.pdf" target="_blank">pdf</a>）を使うこともできます。
+				</p>
+				<div class="bigfigure">
+					<a href="barubu_score.png" target="_blank">
+						<figure>
+							<img src="barubu_score.png" alt="スコアシート" title="スコアシート">
+						</figure>
+					</a>
+				</div>
+				<p>
+					各行が各ディールの点数となります。縦列はそれぞれのプレイヤーを表していて、
+					プレイヤーの欄には大きいマスと小さいマスがあります。大きいマスは計算に使います。
+					また、それとは別に、コントラクトの行とチェックの行もあります。
+				</p>
+				<p>
+					例示した得点表には書いてありませんが、
+					誰がどのコントラクトの宣言をしたかを記録する欄を作っておいた方が使いやすいと思います。
+				</p>
+			</section>
+			<section>
+				<h3>記入・計算方法</h3>
+				<p>
+					まず、ディーラーがコントラクトを決めたら、コントラクトの欄にそのコントラクトを書き込みます。
+					そして、ダブルがあったら、ダブルをかけた人の大きいマスのところに、ダブルをかけた相手を書き込みます。
+					全員に対してダブルをかけた場合はXと書いておきます。
+					ディーラーに対してのダブルの場合は、丸で囲んでおきます。
+					（ディーラーへダブルにかけた人に対して、ディーラーがダブルをかけてはならないことを忘れないようにするためです）
+				</p>
+				<p>
+					プレイが終わったら、まずプレイの結果の点数を得点表の大きいマスに書き込みます。
+				</p>
+				<p>
+					次に、ダブルによる、プレイヤー同士の点数のやり取りを計算します。これも大きいマスに書き込みます。
+					つまり、プレイヤー4人をA、B、C、Dとすると、A-B、A-C、A-D、B-C、B-D、C-Dの間の点数のやり取りをそれぞれ計算します。
+				</p>
+				<p>
+					点数のやり取りは、ダブルがかかっている人の間で行われます。
+					お互いに、どちらもダブルをかけていないのであれば、点数のやり取りは生じません。
+					片方がもう片方にダブルをかけている、もしくはお互いにダブルを掛け合っている2人の間でのみ点数のやり取りが生じます。
+				</p>
+				<p>
+					ダブルを片方が掛けている場合、勝っている方が<small>（プレイの得点が高い方が）</small>その2人の得点の差だけ得点をします。
+					逆に、負けている方<small>（プレイの得点が低い方が）</small>は2人の得点の差だけ失点します。
+					お互いにダブルを掛け合っている場合は、ダブルによる得失点は2倍になります。
+				</p>
+				<p>
+					上で示した得点表を例にとって説明します。
+					切札のコントラクトでは、フランはレミにダブルをかけています。
+					このディールでは、フランは20点、レミは15点を得点しました。
+					したがって、この2人で負けている方はレミです。そして、レミとフランの点数の差は5点です。
+					ですから、レミは-5点、フランは+5点します。
+				</p>
+				<p>
+					ところで、フランはパチェにもダブルをかけており、パチェは全員に対してダブルをかけています。
+					したがって、フランとパチェはお互いにダブルを掛け合っている状態です。
+					ここで、フランの得点は20点、パチェの得点は30点でした。差は10点です。
+					ですから、その2倍の20点をフランは失点し、パチェは得点することになります。
+				</p>
+				<p>
+					このような計算を全員分やるわけです。
+				</p>
+				<p>
+					こうやって、ダブルによる点数のやり取りをすべて計算したら、
+					大きいマスに記入された、そのディールでの得点と、ダブルによる得失点をすべて合計して、
+					小さいマスに書き込みます。これがそのディールでの最終的な得点になります。
+				</p>
+				<p>
+					チェックの欄にはそのディールで得点した点数（小さいマスに書き込まれた点数）4人分の合計を書き込みます。
+					この値が、そのコントラクトで得点される点数の合計と一致していれば、計算ミスがないということが確認できるわけです。
+				</p>
+			</section>
+		</section>
+		<section>
+			<h2>ゲーム</h2>
+			<p>
+				28ディール終えたら、すなわち全員がすべてのコントラクトのデクレアラーになったらゲーム終了です。
+				点数の合計、すなわち小さいマスに書き込まれた点数の合計が大きい人から順位がつきます。
+				全員の点数の合計は0点になるはずです。
+			</p>
+		</section>
+		<section>
+			<h2>注釈</h2>
+			<p>
+				ここで紹介したルールは、コントラクトブリッジのプレイヤー間で改良され、
+				イタリアの<span lang="en">Blue Club</span>のブリッジチームでよく遊ばれていたものだそうです。
+				したがって、用語もブリッジ風になっています。
+			</p>
+		</section>
+		<section>
+			<h2>バリアント</h2>
+			<p>
+				得点のつけ方や、コントラクトについて様々なバリエーションがあります。
+				バリアントについては後日追記します。
+			</p>
+		</section>
+		<aside>
+			<h2>感想</h2>
+			<p>
+				まだプレイしていません。
+			</p>
+		</aside>
+		<script src="/jscss/ad.js" type="text/javascript"></script>
+		<nav class="foot">
+			<a href="https://twitter.com/share" class="twitter-share-button" data-via="CareleSmith9" data-lang="ja" target="_blank">ツイート</a>
+			<a href="/cards/" class="top">トップへ</a>
+		</nav>
+	</section>
+</div>
+</body>
+</html>

@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1">
+	<meta name="author" content="CareleSmithひとみ">
+	<meta name="description" content="ミゼルカの遊び方">
+	<title>ミゼルカ(Mizerka)</title>
+	<link rel="stylesheet" type="text/css" href="/jscss/card.css"><!-- css -->
+	<script src="/jscss/jquery-latest.min.js" type="text/javascript"></script><!-- jQuery -->
+	<script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_CHTML,/jscss/mathjax.js"></script><!-- Mathjax -->
+	<script src="/jscss/jquery.tablesorter.min.js" type="text/javascript"></script><!-- tabelesorter -->
+	<script src="/jscss/jquery.metadata.js" type="text/javascript"></script><!-- tabelesorter -->
+	<script src="/jscss/twitter.js" type="text/javascript"></script><!-- twitter リンク用 -->
+	<script src="/jscss/analytics.js" type="text/javascript"></script><!-- Google Analytics-->
+	<!-- favicon -->
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/manifest.json">
+	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="theme-color" content="#ffffff">
+</head>
+<body>
+<div class="wrapper">
+	<section>
+		<header>
+			<h1>ミゼルカ<br><span lang="en">Mizerka</span></h1>
+			<div class="update">
+				CareleSmithひとみ<br>
+				<time>2017-04-22</time>作成
+			</div>
+		</header>
+		<nav class="head">
+			<ul itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
+				<li><a href="/" itemprop="url"><span itemprop="title">TOP</span></a></li>
+				<li><a href="/cards/"><span itemprop="title">カードゲームの遊び方・萃</span></a></li>
+				<li><a href="/cards/index.html#rules"><span itemprop="title">遊び方</span></a></li>
+				<li><span itemprop="titile">ミゼルカ</span></li>
+			</ul><br>
+			<a href="https://twitter.com/share" class="twitter-share-button" data-via="CareleSmith9" data-lang="ja" target="_blank">ツイート</a>
+		</nav>
+		<p>
+			ニコリ130号、<a href="http://gamefarm.jp" target="_blank">ゲームファーム</a>、<a href="http://pagat.com" target="_blank">pagat.com</a>
+			などを参考にしました。
+		</p>
+		<p>
+			ポーランドで古くから遊ばれている<a href="/cards/intro/tt.html">トリックテイキングゲーム</a>です。
+		</p>
+		<p>
+			複数の種類のコントラクトから1つを選んでプレイするタイプのゲームです。
+			このタイプのゲームにしては、ゲームにかかる時間は短い方です。
+			ただし、短いと言っても1時間程度（初めてのプレイでは3時間程度）かかるので、
+			まとまった時間が取れる時じゃないとプレイできません。
+		</p>
+		<section>
+			<h2>使うカードと遊ぶ人数</h2>
+			<p>
+				3人で遊びます。
+			</p>
+			<p>
+				使うカードは通常のトランプ52枚で、
+				ランクは強いものから順に
+				<b>A</b> <b>K</b> <b>Q</b> <b>J</b> <b>10</b> <b>9</b> <b>8</b> <b>7</b> <b>6</b> <b>5</b> <b>4</b> <b>3</b> <b>2</b>
+				です。
+			</p>
+		</section>
+		<section>
+			<h2 id="contract">コントラクト</h2>
+			<p>
+				先に説明した通り、ミゼルカは複数あるコントラクト（ゲームの種類）からひとつ選んで、
+				プレイをするゲームです。
+				まず最初に、コントラクトの説明をします。コントラクトは6種類あります。
+			</p>
+			<dl>
+				<dt>スペード、ハート、ダイア、クラブ</dt>
+				<dd>それぞれのスートを切札にしてトリックをたくさんとることを目標とします。</dd>
+				<dt>ノートランプ</dt>
+				<dd>切札なしでトリックをたくさんとることを目標とします。</dd>
+				<dt>ミゼルカ</dt>
+				<dd>切札なしでトリックを<em>とらない</em>ことを目的とします。</dd>
+			</dl>
+			<p>
+				トリックをとるコントラクトの目標は、次のようになります。
+				目標より多く取ったトリックの数がプラスの得点に、
+				目標に足りなかったトリックの数がマイナスの得点になります。
+			</p>
+			<div class="table">
+				<table>
+					<caption>ミゼルカ以外での目標</caption>
+					<tr><th>デクレアラー</th><td>7トリック</td></tr>
+					<tr><th>2番目の人</th><td>5トリック</td></tr>
+					<tr><th>ディーラー</th><td>1トリック</td></tr>
+				</table>
+			</div>
+			<p>
+				ミゼルカのコントラクトの目標は、次のようになります。
+				目標より多く取ったトリックの数がマイナスの得点に、
+				目標に足りなかったトリックの数がプラスの得点になります。
+			</p>
+			<div class="table">
+				<table>
+					<caption>ミゼルカの時の目標</caption>
+					<tr><th>デクレアラー</th><td>1トリック</td></tr>
+					<tr><th>2番目の人</th><td>5トリック</td></tr>
+					<tr><th>ディーラー</th><td>7トリック</td></tr>
+				</table>
+			</div>
+			<p>
+				それぞれのコントラクトは1人1回ずつ選びます。
+				したがって、1人6回コントラクトを決めて、それが3人いるので、18ディールで1ゲームとなります。
+			</p>
+		</section>
+		<section>
+			<h2>ディールとコントラクト決め</h2>
+			<p>
+				最初のディーラーは誰がなっても構いません。
+				次のディールからは時計回りに交代します。
+				また、ディーラーの左隣の人はデクレアラー<small>（コントラクトを決める人）</small>になります。
+				ディーラーが交代するとデクレアラーも交代します。
+			</p>
+			<p>
+				ディーラーはカードを各プレイヤーとテーブル中央に1枚ずつ配ります。
+				中央に配るカードは<strong>タロン<span lang="en">(talon)</span></strong>と呼ばれ、
+				後で手札と交換できるカードとなります。
+			</p>
+			<p>
+				ディーラーはカードをそれぞれのプレイヤーとタロンに6枚ずつ配ったところで、
+				一度配るのをやめます。
+				そこで、デクレアラー<small>（ディーラーの左隣）</small>が配られた6枚のカードを見てコントラクトを決めます。
+				今まで自分が選んだコントラクトは、再び選ぶことはできません。
+			</p>
+			<p>
+				デクレアラーがコントラクトを決めると、ディールが再開されます。
+				残りのカードもそれぞれのプレイヤーとタロンに1枚ずつ配って、
+				全員の手札、およびタロンの枚数はそれぞれ13枚になります。
+			</p>
+		</section>
+		<section>
+			<h2>手札の交換</h2>
+			<p>
+				13枚すべての手札が配られたら、デクレアラーから順に手札を交換することができます。
+			</p>
+			<p>
+				まず、デクレアラーは、手札から好きな枚数だけ捨て札をします。
+				そして捨てた枚数と同じ枚数だけタロンから補充します。
+				（捨て札はタロンとは別のところに裏向きでおきます）
+			</p>
+			<p>
+				デクレアラーの次の人も同様に捨て札をして、
+				捨て札と同じ枚数だけタロンから補充しますが、
+				この時、捨て札にできる上限の枚数はタロンの枚数です。
+				タロンの枚数以上の捨て札はできません。
+			</p>
+			<p>
+				2人が交換をして、なおタロンが残っているならば、ディーラーも同様な交換をすることができます。
+			</p>
+		</section>
+		<section>
+			<h2>プレイ</h2>
+			<p>
+				手札の交換が終わったら、<a href="/cards/intro/tt.html">トリックテイキングゲーム</a>のプレイが始まります。
+				オープニングリードはデクレアラーです。リードのスートをフォローする義務があります
+				<small>（マストフォローです）</small>。
+			</p>
+		</section>
+		<section>
+			<h2>得点</h2>
+			<p>
+				13トリックのプレイが終わると、得点をつけます。
+				得点のつけ方は<a href="#contract">コントラクトの説明</a>で示した通りです。
+			</p>
+			<p>
+				得点表の様式は幾つかありますが、ここでは私が使っている様式の得点表を例示しておきます。
+			</p>
+			<div class="figure">
+				<figure>
+					<figcaption>ミゼルカ得点表</figcaption>
+					<a href="./mizerka_score.png" target="_blank"><img src="mizerka_score.png" alt="ミゼルカ得点表" title="ミゼルカ得点表"></a>
+				</figure>
+				<figure>
+					<figcaption>記入例</figcaption>
+					<a href="./mizerka_score_eg.png" target="_blank"><img src="mizerka_score_eg.png" alt="記入例" title="記入例"></a>
+				</figure>
+			</div>
+		</section>
+		<section>
+			<h2>ゲーム</h2>
+			<p>
+				全員がデクレアラーになって6つすべてのコントラクトのプレイが終わると、
+				すなわち18ディールを終えるとゲームは終了します。
+				得点の合計が高い人から順位がつきます。
+			</p>
+		</section>
+		<aside>
+			<h2>感想</h2>
+			<p>
+				何回かプレイしたことがあります。
+				ディールごとに目標が変わるので、ダレることはないですが、ゲームにかかる時間は長いです。
+				長い時感がかかるので、トランプやトリックテイキングに慣れてない人にとっては苦痛かもしれません。
+			</p>
+			<p>
+				コントラクトを選ぶ時に、一度選んだコントラクトは再び選べなくなるということは重要です。
+				ミゼルカやノートランプのコントラクトは、手札がそれなりに良くないと大量失点しやすいのですが、
+				このコントラクトを最後まで残してしまうと、手札が全く良くないのに、
+				そのコントラクトを選ばざるを得ない状況になってしまって、失点することもあります。
+			</p>
+		</aside>
+		<script src="/jscss/ad.js" type="text/javascript"></script>
+		<nav class="foot">
+			<a href="https://twitter.com/share" class="twitter-share-button" data-via="CareleSmith9" data-lang="ja" target="_blank">ツイート</a>
+			<a href="/cards/" class="top">トップへ</a>
+		</nav>
+	</section>
+</div>
+</body>
+</html>
