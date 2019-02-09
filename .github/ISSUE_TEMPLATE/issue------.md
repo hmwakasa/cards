@@ -1,9 +1,7 @@
 ---
+
 name: 間違いの指摘
 about: サイト内のルールに間違いがあった場合
-title: ''
-labels: ''
-assignees: ''
 
 ---
 
