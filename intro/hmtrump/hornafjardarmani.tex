@@ -1,0 +1,90 @@
+%! LuaLaTeX 文書
+\documentclass[jafontsize=12pt]{jlreq}
+
+\usepackage{luatexja}
+\ltjdefcharrange{11}{`→,`↑,`↓,`←}
+\ltjsetparameter{jacharrange={-2,-8,+11}}
+\usepackage[no-math,match,deluxe,jfm_yoko=jlreq]{luatexja-preset}
+\usepackage{luatexja-otf,luatexja-adjust}
+\newopentypefeature{PKana}{On}{pkna}
+
+\usepackage{yhmath,amssymb,mathtools,mathabx,mathrsfs,mathbbol}
+
+\usepackage[math]{iwona}
+\usepackage[euler-digits]{eulervm}
+\usepackage{yhmath}
+\usepackage[scaled]{beramono}
+\DeclareMathAlphabet{\mathtt}{T1}{fvm}{m}{n}
+\DeclareMathAlphabet{\mathsf}{T1}{uop}{m}{n}
+%% フォントがない場合は以下の5行を削除
+\setsansjfont[Ligatures=TeX,BoldFont=RodinNTLGPro-B]{FOT-RodinNTLGPro-DB}
+\setmainjfont[Ligatures=TeX,BoldFont=RodinNTLGPro-B]{FOT-RodinNTLGPro-DB}
+\setsansfont[Ligatures=TeX,BoldFont=RodinNTLGPro-B]{FOT-RodinNTLGPro-DB}
+\setmainfont[Ligatures=TeX,BoldFont=RodinNTLGPro-B]{FOT-RodinNTLGPro-DB}
+\ltjsetparameter{yjabaselineshift=0pt,yalbaselineshift=0.5pt}
+
+\usepackage{scalefnt}
+\usepackage{multirow}
+\usepackage{multicol}
+\ltjenableadjust[lineend=extended,priority=true,profile=true,linestep=true]
+\allowdisplaybreaks[4]
+
+\usepackage{hmtrump}
+
+\usepackage[a4paper,margin=20mm]{geometry}
+
+\newcommand{\cellalign}[2]{\multicolumn{1}{#1}{#2}}
+
+%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+\pagestyle{empty}
+
+\begin{center}
+{\LARGE オルナファザールマニ ルール早見}\\ひとみさん \today
+\end{center}
+
+\setlength{\parindent}{0pt}
+
+\section{ゲームの流れ}
+\textbf{\mbox{シャッフル}\hfill
+→\hfill\mbox{カット（右隣）}\hfill
+→\hfill\mbox{配る}\hfill
+→\hfill\mbox{交換}\hfill
+→\hfill\mbox{トリックテイキング}\hfill}\\
+カードをカットした結果、底になったカードでゲームの種類を決定\\
+配り方: マニ（中央） 4 → 左隣から順に 3 を 4 回
+
+\section{ゲームの種類/得点}
+\begin{table}[h]
+\centering
+\caption{ゲームの種類}
+\begin{tabular}{cl}
+\hline
+\cellalign{c}{底になったカード}&\cellalign{c}{ゲームの目的}\\
+\hline\hline
+\trumpx A \trumpx K \trumpx Q \trumpx J \trumpx T&切札なしでたくさんのトリックを取る\\
+\trumpx 9 \trumpx 8 \trumpx 7 \trumpx 6&そのスートを切札にしてたくさんのトリックを取る\\
+\trumpx 5 \trumpx 4 \trumpx 3 \trumpx 2&トリックをなるべく取らない (Nolo)\\
+\hline
+\end{tabular}
+\end{table}
+\rule{0pt}{0pt}\hfill \textbf{{\Large 目標: 4トリック}}\hfill\rule{0pt}{0pt}
+
+トリックをたくさん取る→4トリックより多いぶんプラス得点、少ないぶんマイナス得点\\
+ノロ→4トリックより多いぶんマイナス得点、少ないぶんプラス得点
+
+\section{カードの交換}
+\begin{table}[h]
+\centering
+\begin{tabular}{cc}
+ディーラーの左{\small （オープニングリード）}&7 枚まで\\
+ディーラーの右&5 枚まで\\
+ディーラー&残ってる枚数まで
+\end{tabular}
+\end{table}
+
+
+\end{document}
