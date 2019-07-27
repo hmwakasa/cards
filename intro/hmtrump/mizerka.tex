@@ -1,0 +1,90 @@
+%! LuaLaTeX 文書
+\documentclass[jafontsize=12pt]{jlreq}
+
+\usepackage{luatexja}
+\ltjdefcharrange{11}{`→,`↑,`↓,`←}
+\ltjsetparameter{jacharrange={-2,-8,+11}}
+\usepackage[no-math,match,deluxe,jfm_yoko=jlreq]{luatexja-preset}
+\usepackage{luatexja-otf,luatexja-adjust}
+\newopentypefeature{PKana}{On}{pkna}
+
+\usepackage{yhmath,amssymb,mathtools,mathabx,mathrsfs,mathbbol}
+
+\usepackage[math]{iwona}
+\usepackage[euler-digits]{eulervm}
+\usepackage{yhmath}
+\usepackage[scaled]{beramono}
+\DeclareMathAlphabet{\mathtt}{T1}{fvm}{m}{n}
+\DeclareMathAlphabet{\mathsf}{T1}{uop}{m}{n}
+%% フォントがない場合は以下の5行を削除
+\setsansjfont[Ligatures=TeX,BoldFont=RodinNTLGPro-B]{FOT-RodinNTLGPro-DB}
+\setmainjfont[Ligatures=TeX,BoldFont=RodinNTLGPro-B]{FOT-RodinNTLGPro-DB}
+\setsansfont[Ligatures=TeX,BoldFont=RodinNTLGPro-B]{FOT-RodinNTLGPro-DB}
+\setmainfont[Ligatures=TeX,BoldFont=RodinNTLGPro-B]{FOT-RodinNTLGPro-DB}
+\ltjsetparameter{yjabaselineshift=0pt,yalbaselineshift=0.5pt}
+
+\usepackage{scalefnt}
+\usepackage{multirow}
+\usepackage{multicol}
+\ltjenableadjust[lineend=extended,priority=true,profile=true,linestep=true]
+\allowdisplaybreaks[4]
+
+\usepackage{hmtrump}
+
+\usepackage[a4paper,margin=10mm]{geometry}
+
+\newcommand{\cellalign}[2]{\multicolumn{1}{#1}{#2}}
+
+%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+\pagestyle{empty}
+
+\begin{center}
+{\LARGE ミゼルカ ルール早見}\\ひとみさん \today
+\end{center}
+
+\setlength{\parindent}{0pt}
+\section{得点表}
+{\LARGE\rule{0pt}{0pt}\hfill 目標: \textbf{7---5---1}\hfill\rule{0pt}{0pt}}
+\begin{table}[h]
+	\centering\Large
+	\begin{tabular}{|c||p{1.8cm}|p{1.8cm}|p{1.8cm}|p{1.8cm}|p{1.8cm}|p{1.8cm}|c|}
+		\hline
+		プレイヤー&{\hfil\hmS\hfil}&{\hfil\hmH\hfil}&{\hfil\hmD\hfil}&{\hfil\hmC\hfil}&{\hfil{\hmtcfont NT}\hfil}&{\hfil{\hmtcfont Miz.}\hfil}&合計点\\
+		\hline\hline
+		&□&□&□&□&□&□&\\\cline{2-7}
+		&&&&&&&\\\cline{2-7}
+		&&&&&&&\\\cline{2-7}
+		\hline\hline
+		&&&&&&&\\\cline{2-7}
+		&□&□&□&□&□&□&\\\cline{2-7}
+		&&&&&&&\\\cline{2-7}
+		\hline\hline
+		&&&&&&&\\\cline{2-7}
+		&&&&&&&\\\cline{2-7}
+		&□&□&□&□&□&□&\\\cline{2-7}
+		\hline
+	\end{tabular}
+\end{table}
+
+\section{ディールの始め方}
+\begin{enumerate}
+	\item 全員と中央に\textbf{6枚}ずつ配る
+	\item デクレアラーがプレイの種類を決定
+	\item 残りを配り切る
+	\item カードを交換（デクレアラーから順番に、中央にあるカードの枚数まで）
+\end{enumerate}
+
+% \section{ゲームの種類}
+% \begin{table}[h]
+% 	\begin{tabular}{cl}
+% 		\hmS\hmH\hmD\hmC&ぞれぞれのスートを切札にして、トリックを取る\\
+% 		{\hmtcfont NT}&切札無しでトリックを取る\\
+% 		{\hmtcfont Miz.}&切札無しでトリックを取らない\\
+% 	\end{tabular}
+% \end{table}
+
+\end{document}
