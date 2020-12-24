@@ -1,4 +1,6 @@
-%! LuaLaTeX 文書
+% +++
+% latex="lualatex"
+% +++
 \documentclass[jafontsize=8pt]{jlreq}
 
 \usepackage{luatexja}
@@ -8,7 +10,7 @@
 \usepackage{luatexja-otf,luatexja-adjust}
 \newopentypefeature{PKana}{On}{pkna}
 
-\usepackage{yhmath,amssymb,mathtools,mathabx,mathrsfs,mathbbol}
+\usepackage{yhmath,amssymb,mathtools,mathrsfs,mathbbol}
 
 \usepackage[math]{iwona}
 \usepackage[euler-digits]{eulervm}
@@ -17,10 +19,10 @@
 \DeclareMathAlphabet{\mathtt}{T1}{fvm}{m}{n}
 \DeclareMathAlphabet{\mathsf}{T1}{uop}{m}{n}
 %% フォントがない場合は以下の5行を削除
-\setsansjfont[Ligatures=TeX,BoldFont=RodinNTLGPro-B]{FOT-RodinNTLGPro-DB}
-\setmainjfont[Ligatures=TeX,BoldFont=RodinNTLGPro-B]{FOT-RodinNTLGPro-DB}
-\setsansfont[Ligatures=TeX,BoldFont=RodinNTLGPro-B]{FOT-RodinNTLGPro-DB}
-\setmainfont[Ligatures=TeX,BoldFont=RodinNTLGPro-B]{FOT-RodinNTLGPro-DB}
+\setsansjfont[Ligatures=TeX,BoldFont=RodinNTLGPro-EB]{FOT-RodinNTLGPro-DB}
+\setmainjfont[Ligatures=TeX,BoldFont=RodinNTLGPro-EB]{FOT-RodinNTLGPro-DB}
+\setsansfont[Ligatures=TeX,BoldFont=RodinNTLGPro-EB]{FOT-RodinNTLGPro-DB}
+\setmainfont[Ligatures=TeX,BoldFont=RodinNTLGPro-EB]{FOT-RodinNTLGPro-DB}
 \ltjsetparameter{yjabaselineshift=0pt,yalbaselineshift=0.5pt}
 
 \usepackage{scalefnt}
@@ -60,12 +62,12 @@
 \textbf{\mbox{カードを配る}\hfill →\hfill \mbox{ビッドをする}\hfill →\hfill 
 \mbox{スカート交換、ゲームの種類を決める}\hfill →\hfill \mbox{トリックテイキング}\hfill
 →\hfill \mbox{得点計算}\hfill}\\
-配り方: 3→スカート2→4→3
+\textbf{配り方}: 3→スカート2→4→3
 \hspace*{1\zw}（4人以上）ディーラーと（5人）ディーラーの3つ左隣は不参加、ディーラーの次がオープニングリード\\
-ビッドは勝ち抜き方式（先のビッドに優先権）
+ビッドは勝ち抜き方式（後のビッドに優先権）
 
 \section{カード}
-基本の目的: 61カード点以上獲得/ヌルゲーム: 1トリックも取らない
+\textbf{基本の目的}: 61カード点以上獲得/\textbf{ヌルゲーム}: 1トリックも取らない
 \begin{table}[h]
 \begin{minipage}{.2\textwidth}
 \centering
@@ -177,7 +179,7 @@ $\trump Ax>\trump Kx>\trump Qx>\trump Jx>\trump Tx>\trump 9x>\trump 8x>\trump 7x
 40~\hmH4\\
 44~\hmS4\\
 45~\hmD5\\
-46~ヌル・ウベア（ハンド）\\
+46~ヌル・ウベア（スカート）\\
 48~\hmC4, \hmG2\\
 50~\hmH5\\
 54~\hmD6\\
