@@ -1,0 +1,178 @@
+% +++
+% latex="lualatex"
+% +++
+\documentclass[line_length=50zw,head_space=2cm,foot_space=1cm]{jlreq}
+
+\usepackage{luatexja}
+\ltjdefcharrange{11}{`→,`↑,`↓,`←}
+\ltjsetparameter{jacharrange={-2,-8,+11}}
+\usepackage[no-math,match,deluxe,jfm_yoko=jlreq]{luatexja-preset}
+\usepackage{luatexja-otf,luatexja-adjust}
+\newopentypefeature{PKana}{On}{pkna}
+
+\usepackage[nowidering]{yhmath}
+\usepackage{newpxmath,amsmath,mathtools,mleftright}
+\usepackage[T1]{fontenc}
+\usepackage[notrig,italicdiff]{physics}
+\mleftright
+
+\usepackage[loadonly,]{enumitem}
+\newlist{desc}{description}{5}
+\setlist[desc]{labelindent=1\zw,labelsep*=1\zw,labelwidth=4\zw}
+\newlist{enu}{enumerate}{5}
+\setlist[enu]{label*=\arabic*.}
+
+\usepackage[scr=boondoxo,frak=pxtx,bb=mth]{mathalfa}
+\DeclareMathAlphabet{\mathnormal}{T1}{pplx}{m}{it}
+\DeclareMathAlphabet{\mathrm}{T1}{pplx}{m}{n}
+\DeclareMathAlphabet{\mathit}{T1}{pplx}{m}{it}
+\DeclareMathAlphabet{\mathtt}{T1}{lmtt}{m}{n}
+\DeclareMathAlphabet{\mathsf}{T1}{kurier}{m}{n}
+\DeclareMathAlphabet{\mathbsf}{T1}{kurier}{b}{n}
+\DeclareMathAlphabet{\mathbold}{T1}{pplx}{b}{it}
+\DeclareMathAlphabet{\mathbf}{T1}{pplx}{b}{n}
+\DeclareMathAlphabet{\mathscr}{U}{BOONDOX-calo}{m}{n}
+\DeclareMathAlphabet{\mathbscr}{U}{BOONDOX-calo}{b}{n}
+%\DeclareMathAlphabet{\mathcal}{OT1}{eusm10}{m}{n}
+%\DeclareMathAlphabet{\mathbcal}{OT1}{eusm10}{b}{n}
+\DeclareMathAlphabet{\mathfrak}{OT1}{tx-frak}{m}{n}
+\DeclareMathAlphabet{\mathbfrak}{OT1}{tx-frak}{b}{n}
+\DeclareMathAlphabet{\mathbb}{U}{dsss}{m}{n}
+\DeclareSymbolFont{operators}{T1}{uop}{m}{n}
+
+\DeclareSymbolFont{numbers}{T1}{pplx}{m}{n}
+\DeclareMathSymbol{0}\mathalpha{numbers}{`0}
+\DeclareMathSymbol{1}\mathalpha{numbers}{`1}
+\DeclareMathSymbol{2}\mathalpha{numbers}{`2}
+\DeclareMathSymbol{3}\mathalpha{numbers}{`3}
+\DeclareMathSymbol{4}\mathalpha{numbers}{`4}
+\DeclareMathSymbol{5}\mathalpha{numbers}{`5}
+\DeclareMathSymbol{6}\mathalpha{numbers}{`6}
+\DeclareMathSymbol{7}\mathalpha{numbers}{`7}
+\DeclareMathSymbol{8}\mathalpha{numbers}{`8}
+\DeclareMathSymbol{9}\mathalpha{numbers}{`9}
+
+%% フォントがない場合は以下の5行を削除
+\setsansjfont[Ligatures=TeX,BoldFont=RodinNTLGPro-EB]{FOT-RodinNTLGPro-DB}
+\setmainjfont[Ligatures=TeX,BoldFont=RodinNTLGPro-EB]{FOT-RodinNTLGPro-DB}
+\setsansfont[Ligatures=TeX,BoldFont=RodinNTLGPro-EB]{FOT-RodinNTLGPro-DB}
+\setmainfont[Ligatures=TeX,BoldFont=RodinNTLGPro-EB]{FOT-RodinNTLGPro-DB}
+\ltjsetparameter{yjabaselineshift=0pt,yalbaselineshift=0.5pt}
+
+\usepackage{scalefnt}
+\usepackage{multirow}
+\usepackage{multicol}
+\ltjenableadjust[lineend=extended,priority=true,profile=true,linestep=true]
+\allowdisplaybreaks[4]
+
+\usepackage{hmtrump}
+
+\newcommand{\hmG}{%
+	\tikz[baseline=(T.base)]
+	\node[fill=black,text=white,outer sep=0pt,inner sep=0.1ex]
+	(T)at(0,0){G};%
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+\pagestyle{empty}
+
+\vspace{-1cm}
+\title{fipsenルールサマリー}
+\author{ひとみさん}
+
+\begin{center}
+{\LARGE Fipsen ルール早見}---ひとみさん \today
+\end{center}
+
+\setlength{\parindent}{0pt}
+
+\section{ゲームの流れ}
+\textbf{\mbox{カードを配る}\hfill →\hfill \mbox{ビッドをする}\hfill →\hfill
+\mbox{スカート交換、切り札決め}\hfill →\hfill \mbox{トリックテイキング}\hfill
+→\hfill \mbox{得点計算}\hfill}\\
+\textbf{配り方}: 3→スカート2→2 （配り残り: 3{\small [4 人]} or 8{\small [3 人]}）\\
+ディーラーの次がオープニングリード\hspace*{1\zh}ビッドは勝ち抜き方式（先のビッドに優先権）
+
+\begin{multicols}{2}
+	\section{カード}
+	\begin{tabular}{c|r}
+		\hline
+		&強←\hfill→弱\\
+		\hline
+		\hmC\hmS\hmH&\trumpx{A} \trumpx{K} \trumpx{Q} \trumpx{J} \trumpx{T} \trumpx{9} \trumpx{8} \trumpx{7}\\
+		\hline
+		\hmD&\trumpx{7}\\
+		\hline
+	\end{tabular}
+	
+	25 枚
+	
+	\section{ビッド}
+	取るトリック数と追加宣言をビッド
+	\begin{desc}
+		\item[ハント] 手札交換無し
+		\item[ルーテン] \hmD 切札
+		\item[ドゥルヒ] 5 トリック取る
+	\end{desc}
+	
+	同じ数のビッドなら追加宣言が多いほうが強い
+	
+	先のビッドに優先権の勝ち抜き方式
+	
+	5 トリックのビッドには自動的にドゥルヒ追加
+	
+	5 未満ビッドでもドゥルヒ宣言だと 5 トリック必要
+	
+	\subsection*{特殊なビッド}
+	\begin{desc}
+		\item[キーカー] 手札に \trumpx{K} \trumpx{Q} \trumpx{J} がない時に可能\\
+			配り残りからも交換可\hspace{1\zw}全トリック取る\\
+			4 トリックと 5 トリックの間の強さ
+	\end{desc}
+	\columnbreak
+	
+	\section{プレイ}
+	\textbf{追加宣言は後付可能}
+	
+	デクレアラーがスカートを手札に加えて 2 枚捨札\\
+	（やらなければハント追加）
+	
+	デクレアラーが切り札を宣言してプレイ\\
+	（\hmD 切札ならルーテン追加）
+	
+	ビッド数のトリックを取ったらそこで終了\\
+	（ビッド数を超えてプレイしたらドゥルヒ追加）
+	
+	\subsection*{キーカー時}
+	デクレアラーは左隣に手札に絵札がないことを見せる
+	
+	スカートと配り残りを手札に加えて 5 枚捨てる\\
+	{\small （3 人時: 手札を捨て配残とスカートから 5 枚手札）}
+	
+	切札宣言（ルーテン追加可能）
+	
+	全トリック取れなさそうならば降参可能
+	
+	\section{得点}
+	\(\text{基本点}=\text{ビッド数}\times2^\text{追加宣言数}\)
+	
+	成功なら基本点を得点
+	
+	失敗なら基本点の 2 倍失点
+	
+	キーカーの基本点は 10\\
+	（ルーテンつけたならば 2 倍）
+	
+	キーカーの降参は 5 点失点
+	
+	\subsection*{ズィーベナーフィップス}
+	手札が \trumpx{7}\trumpx{7}\trumpx{7}\trumpx{7}\trumpx{A} なら宣言\\
+	（キーカー含む手札交換後でも宣言可）
+	
+	30 点得点、そのディール終了
+\end{multicols}
+\end{document}
