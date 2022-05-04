@@ -1,0 +1,55 @@
+\RequirePackage{xparse,ifthen,xcolor,tikz,bxghost,fontspec,luatexja}
+\NewDocumentCommand{\xq}{s m m}{{%
+		\ltjsetparameter{yalbaselineshift=.33\zh}%
+		\fontspec[Scale=1.5,]{NKS31_Xiangqi_Pieces}%
+		\ifthenelse{\equal{#2}{R}}{{\color{red}%
+				\IfBooleanTF{#1}{%
+					\tikz[baseline=(C.base)]{\draw node[inner sep=0pt,outer sep=0pt,](C)
+					{\ltjalchar"3A}node(T){{\fontspec[Scale=0.9]{FOT-KakureiStd-EB}\makebox[0pt]{#3}}};}%
+				}{%
+					\ifthenelse{\equal{#3}{K}}{\ltjalchar"61}{}%
+					\ifthenelse{\equal{#3}{A}}{\ltjalchar"66}{}%
+					\ifthenelse{\equal{#3}{E}}{\ltjalchar"68}{}%
+					\ifthenelse{\equal{#3}{R}}{\ltjalchar"6B}{}%
+					\ifthenelse{\equal{#3}{H}}{\ltjalchar"6F}{}%
+					\ifthenelse{\equal{#3}{C}}{\ltjalchar"73}{}%
+					\ifthenelse{\equal{#3}{P}}{\ltjalchar"77}{}%
+					\ifthenelse{\equal{#3}{=}}{\ltjalchar"2A}{}%
+				}%
+		}}{}%
+		\ifthenelse{\equal{#2}{B}}{{\color{black}%
+				\IfBooleanTF{#1}{%
+					\tikz[baseline=(C.base)]{\draw node[inner sep=0pt,outer sep=0pt,](C)
+					{\ltjalchar"2A}node(T){{\color{white}\fontspec[Scale=0.9]{FOT-KakureiStd-EB}\makebox[0pt]{#3}}};}%
+				}{%
+					\ifthenelse{\equal{#3}{K}}{\ltjalchar"43}{}%
+					\ifthenelse{\equal{#3}{A}}{\ltjalchar"47}{}%
+					\ifthenelse{\equal{#3}{E}}{\ltjalchar"49}{}%
+					\ifthenelse{\equal{#3}{R}}{\ltjalchar"4D}{}%
+					\ifthenelse{\equal{#3}{H}}{\ltjalchar"51}{}%
+					\ifthenelse{\equal{#3}{C}}{\ltjalchar"54}{}%
+					\ifthenelse{\equal{#3}{P}}{\ltjalchar"58}{}%
+					\ifthenelse{\equal{#3}{=}}{\ltjalchar"2A}{}%
+				}%
+		}}{}%
+		\ifthenelse{\NOT\(\equal{#2}{R}\OR\equal{#2}{B}\)}{{%
+				\ifthenelse{\equal{#2}{1}}{\colorlet{picolor}{blue}}{}%
+				\ifthenelse{\equal{#2}{2}}{\colorlet{picolor}{orange}}{}%
+				\ifthenelse{\equal{#2}{3}}{\colorlet{picolor}{teal}}{}%
+				\color{picolor}%
+				\IfBooleanTF{#1}{%
+					\tikz[baseline=(C.base)]{\draw node[inner sep=0pt,outer sep=0pt,](C)
+					{\ltjalchar"3A}node(T){{\fontspec[Scale=0.9]{FOT-KakureiStd-EB}\makebox[0pt]{#3}}};}%
+				}{%
+					\ifthenelse{\equal{#3}{K}}{\ltjalchar"64}{}%
+					\ifthenelse{\equal{#3}{A}}{\ltjalchar"67}{}%
+					\ifthenelse{\equal{#3}{E}}{\ltjalchar"69}{}%
+					\ifthenelse{\equal{#3}{R}}{\ltjalchar"6D}{}%
+					\ifthenelse{\equal{#3}{H}}{\ltjalchar"71}{}%
+					\ifthenelse{\equal{#3}{C}}{\ltjalchar"75}{}%
+					\ifthenelse{\equal{#3}{P}}{\ltjalchar"78}{}%
+					\ifthenelse{\equal{#3}{=}}{\ltjalchar"2A}{}%
+				}%
+		}}{}%
+}}
+

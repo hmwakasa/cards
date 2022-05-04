@@ -1,0 +1,215 @@
+% +++
+% latex="lualatex"
+% +++
+\documentclass[line_length=50zw,head_space=2cm,foot_space=1cm]{jlreq}
+
+\usepackage{luatexja}
+\ltjdefcharrange{11}{`→,`↑,`↓,`←}
+\ltjsetparameter{jacharrange={-2,-8,+11}}
+\usepackage[no-math,match,deluxe,jfm_yoko=jlreq]{luatexja-preset}
+\usepackage{luatexja-otf,luatexja-adjust}
+\newopentypefeature{PKana}{On}{pkna}
+\usepackage{pxrubrica}
+
+\usepackage[osf]{newpxtext}\usepackage{classico}
+\usepackage[nowidering]{yhmath}
+\usepackage{newpxmath,amsmath,mathtools,mleftright}
+\usepackage[T1]{fontenc}
+\usepackage[notrig,italicdiff]{physics}
+\mleftright
+
+\usepackage[loadonly,]{enumitem}
+\newlist{desc}{description}{5}
+\setlist[desc]{labelindent=1\zw,labelsep*=1\zw,labelwidth=4\zw,leftmargin=6\zw,}
+\newlist{desc5}{description}{5}
+\setlist[desc5]{labelindent=1\zw,labelsep*=1\zw,labelwidth=5\zw,leftmargin=6\zw,}
+\newlist{enu}{enumerate}{5}
+\setlist[enu]{label*=\arabic*.}
+
+\usepackage{Tabbing}
+
+\usepackage[scr=boondoxo,frak=pxtx,bb=mth]{mathalfa}
+\DeclareMathAlphabet{\mathnormal}{T1}{pplx}{m}{it}
+\DeclareMathAlphabet{\mathrm}{T1}{pplx}{m}{n}
+\DeclareMathAlphabet{\mathit}{T1}{pplx}{m}{it}
+\DeclareMathAlphabet{\mathtt}{T1}{lmtt}{m}{n}
+\DeclareMathAlphabet{\mathsf}{T1}{kurier}{m}{n}
+\DeclareMathAlphabet{\mathbsf}{T1}{kurier}{b}{n}
+\DeclareMathAlphabet{\mathbold}{T1}{pplx}{b}{it}
+\DeclareMathAlphabet{\mathbf}{T1}{pplx}{b}{n}
+\DeclareMathAlphabet{\mathscr}{U}{BOONDOX-calo}{m}{n}
+\DeclareMathAlphabet{\mathbscr}{U}{BOONDOX-calo}{b}{n}
+%\DeclareMathAlphabet{\mathcal}{OT1}{eusm10}{m}{n}
+%\DeclareMathAlphabet{\mathbcal}{OT1}{eusm10}{b}{n}
+\DeclareMathAlphabet{\mathfrak}{OT1}{tx-frak}{m}{n}
+\DeclareMathAlphabet{\mathbfrak}{OT1}{tx-frak}{b}{n}
+\DeclareMathAlphabet{\mathbb}{U}{dsss}{m}{n}
+\DeclareSymbolFont{operators}{T1}{uop}{m}{n}
+
+\DeclareSymbolFont{numbers}{T1}{pplx}{m}{n}
+\DeclareMathSymbol{0}\mathalpha{numbers}{`0}
+\DeclareMathSymbol{1}\mathalpha{numbers}{`1}
+\DeclareMathSymbol{2}\mathalpha{numbers}{`2}
+\DeclareMathSymbol{3}\mathalpha{numbers}{`3}
+\DeclareMathSymbol{4}\mathalpha{numbers}{`4}
+\DeclareMathSymbol{5}\mathalpha{numbers}{`5}
+\DeclareMathSymbol{6}\mathalpha{numbers}{`6}
+\DeclareMathSymbol{7}\mathalpha{numbers}{`7}
+\DeclareMathSymbol{8}\mathalpha{numbers}{`8}
+\DeclareMathSymbol{9}\mathalpha{numbers}{`9}
+
+%% フォントがない場合は以下の5行を削除
+%\setmainfont[
+%	Ligatures=TeX,
+%	Scale=0.98,
+%]{Palatino}
+%\setsansfont[
+%	Ligatures=TeX,
+%	Scale=0.98,
+%]{Palatino}
+\setmainjfont[
+	Ligatures=TeX,
+	JFM=jlreq,
+	BoldFont=FOT-TsukuAOldMinPr6-E,
+]{FOT-TsukuAOldMinPr6-R}
+\setsansjfont[
+	Ligatures=TeX,
+	JFM=jlreq,
+	BoldFont=TsukuOldGothicStd-B,
+	%AutoFakeBold=1.5,
+]{FOT-TsukuOldGothicStd-B}
+\setmonofont[
+	Ligatures=TeXReset,
+]{HackGen}
+\setmonojfont[
+	Ligatures=TeXReset,
+]{HackGen}
+
+%\ltjsetparameter{yjabaselineshift=0pt,yalbaselineshift=0.5pt}
+
+\usepackage{scalefnt}
+\usepackage{multirow}
+\usepackage{multicol}
+\ltjenableadjust[lineend=extended,priority=true,profile=true,linestep=true]
+\allowdisplaybreaks[4]
+
+\usepackage{xiangqi}
+\newcommand{\特殊}{\textsuperscript ☆}
+
+\ModifyHeading{section}{lines=2}
+\ModifyHeading{subsection}{lines=1}
+
+%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+\pagestyle{empty}
+
+\vspace{-1cm}
+\title{シャンチー麻雀}
+\author{ひとみさん}
+
+\begin{center}
+	{\LARGE \jruby[g]{象棋}{シャンチー}麻雀}（32 牌、\textcolor{lightgray}{2,} 3, \textcolor{lightgray}{4} 人）%
+	---ひとみさん \today
+\end{center}
+
+\setlength{\parindent}{0pt}
+
+\section{牌構成}
+%\vspace{-3\zh}
+\begin{table}[h]
+	\centering\Huge
+	\newlength{\TableWidth}
+	\settowidth{\TableWidth}{\xq{R}{K}\xq{R}{A}\xq{R}{E}\ \xq{R}{H}\xq{R}{R}\xq{R}{C}\ \xq{R}{P}\xq{R}{P}\xq{R}{P}}
+	\begin{minipage}{\TableWidth}
+		\setlength{\baselineskip}{0\zh}
+		\begin{Tabbing}
+			\xq{R}{K}\TAB=\xq{R}{A}\xq{R}{E}\ \TAB=\xq{R}{R}\xq{R}{H}\xq{R}{C}\ \TAB=\hspace{.65\zw}\TAB=\kill
+			\TAB>\makebox[0pt][r]{\xq{R}{K}}\xq{R}{A}\xq{R}{E}\TAB>\xq{R}{R}\xq{R}{H}\xq{R}{C}\TAB>
+				\xq{R}{P}\xq{R}{P}\xq{R}{P}\\
+			\TAB>\xq{R}{A}\xq{R}{E}\TAB>\xq{R}{R}\xq{R}{H}\xq{R}{C}\TAB>\TAB>\xq{R}{P}\xq{R}{P}\\
+			\TAB>\makebox[0pt][r]{\xq{B}{K}}\xq{B}{A}\xq{B}{E}\TAB>\xq{B}{H}\xq{B}{R}\xq{B}{C}\TAB>
+				\xq{B}{P}\xq{B}{P}\xq{B}{P}\\
+			\TAB>\xq{B}{A}\xq{B}{E}\TAB>\xq{B}{R}\xq{B}{H}\xq{B}{C}\TAB>\TAB>\xq{B}{P}\xq{B}{P}
+		\end{Tabbing}
+	\end{minipage}
+\end{table}
+%\vspace{-3\zh}
+
+\section{和了形}
+%\vspace{-1\zh}
+手牌は 4 枚。\textbf{1 面子 1 雀頭}で和了。1 点縛り（懸賞役は含まない）。王牌無し。
+
+雀頭は同一牌 2 枚。
+
+面子は順子 \xq{R}{K}\xq{R}{A}\xq{R}{E}/\xq{R}{R}\xq{R}{H}\xq{R}{C}/%
+\xq{B}{K}\xq{B}{A}\xq{B}{E}/\xq{B}{R}\xq{B}{H}\xq{B}{C}（吃可）
+または刻子 \xq{R}{P}\xq{R}{P}\xq{R}{P}/\xq{B}{P}\xq{B}{P}\xq{B}{P}（碰可） のみ。
+
+吃は上家から、碰は全員からできる。二人が碰したときは上家優先。槓子は無し。
+
+\section{役一覧}
+%\vspace{-3\zh}
+\begin{multicols}{2}
+	\subsection*{6 点役（役満）}
+	\begin{desc5}
+		\item[天和] 親の配牌での和了。
+		\item[地和] 子の第一自摸での和了。
+		\item[三公\特殊]
+			{\Large \xq{1}{K}\xq{1}{A}\xq{1}{A}\xq{1}{E}\xq{1}{E}}
+		\item[五兵卒]
+			{\Large \xq{1}{P}\xq{1}{P}\xq{1}{P}\xq{1}{P}\xq{1}{P}}
+	\end{desc5}
+	\subsection*{3 点役}
+	\begin{desc5}
+		\item[将帥同国\特殊]
+			{\Large \xq{R}{K}\xq{B}{K}\xq{1}{R}\xq{1}{H}\xq{1}{C}}
+	\end{desc5}
+	\subsection*{2 点役}
+	\begin{desc5}
+		\item[将帥領兵\特殊]
+			{\Large \xq{R}{K}\xq{B}{K}\xq{1}{P}\xq{1}{P}\xq{1}{P}}
+		\item[兵車行]
+			{\Large \xq{1}{R}\xq{1}{R}\xq{1}{P}\xq{1}{P}\xq{1}{P}}
+	\end{desc5}
+	\columnbreak
+	\subsection*{1 点役}
+	\begin{desc}
+		\item[無兵卒] \xq{R}{P}\xq{B}{P} の無い和了。
+		\item[清一色] 一色のみで和了。
+		\item[門前自摸和] 門前での自摸和。
+		\item[海底摸月] 最後の自摸牌での自摸和。
+		\item[河底撈魚] 最後の打牌での栄和。
+		\item[立直] 供託 1 点。
+		\item[一発] 立直後一順以内で和了。
+	\end{desc}
+	\subsection*{その他}
+	\begin{desc}
+		\item[馬到成功] \textbf{1 点}。\xq{R}{H} または \xq{B}{H} で和了。懸賞役。
+		\item[一炮而紅] \textbf{1 点}。\xq{R}{C} または \xq{B}{C} で和了。懸賞役。
+		\item[積み棒] 親が連荘する度に \textbf{1 点加算}。
+		\item[親] 和了時、親の支払・受取は \textbf{1 点加算}。
+		\item[不聴罰符] 流局時、不聴ならば \textbf{1 点供託}。
+	\end{desc}
+\end{multicols}
+%\vspace{-1\zh}
+※無兵卒、清一色は 2, 3 点役に複合せず。
+※青色の牌は同色の牌を示す。
+※☆は特殊形の和了。
+
+%\vspace{-1\zh}
+\section{細則}
+%\vspace{-1\zh}
+\begin{itemize}
+	\item 役の複合に依る点数の加算は、親・積み棒の加点は除いて、6 点迄。
+		ダブル役満を認めるかは事前に取決め。
+	\item 振聴は現物のみ栄和不可。
+	\item 自摸和の点数は、全員満額払か、分割して支払、どちらか事前に取決め。
+		分割する場合、端数は切上げ。
+	\item 錯和は全員に 1 点払い。（3 点でも可）
+	\item その他、リーチ麻雀に準じる。
+\end{itemize}
+\end{document}
+

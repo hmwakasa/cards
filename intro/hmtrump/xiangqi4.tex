@@ -1,0 +1,249 @@
+% +++
+% latex="lualatex"
+% +++
+\documentclass[line_length=40zw,head_space=2cm,foot_space=1cm,landscape,twocolumn,]{jlreq}
+
+\usepackage{luatexja}
+\ltjdefcharrange{11}{`→,`↑,`↓,`←}
+\ltjsetparameter{jacharrange={-2,-8,+11}}
+\usepackage[no-math,match,deluxe,jfm_yoko=jlreq]{luatexja-preset}
+\usepackage{luatexja-otf,luatexja-adjust}
+\newopentypefeature{PKana}{On}{pkna}
+\usepackage{pxrubrica}
+
+\usepackage[osf]{newpxtext}\usepackage{classico}
+\usepackage[nowidering]{yhmath}
+\usepackage{newpxmath,amsmath,mathtools,mleftright}
+\usepackage[T1]{fontenc}
+\usepackage[notrig,italicdiff]{physics}
+\mleftright
+
+\usepackage[loadonly,]{enumitem}
+\newlist{desc}{description}{5}
+\setlist[desc]{labelindent=1\zw,labelsep*=1\zw,labelwidth=3\zw,leftmargin=2\zw,}
+\newlist{desc5}{description}{5}
+\setlist[desc5]{labelindent=1\zw,labelsep*=1\zw,labelwidth=5\zw,leftmargin=3\zw,}
+\newlist{enu}{enumerate}{5}
+\setlist[enu]{label*=\arabic*.}
+
+\usepackage{Tabbing}
+\usepackage{tabularray}
+
+\usepackage[scr=boondoxo,frak=pxtx,bb=mth]{mathalfa}
+\DeclareMathAlphabet{\mathnormal}{T1}{pplx}{m}{it}
+\DeclareMathAlphabet{\mathrm}{T1}{pplx}{m}{n}
+\DeclareMathAlphabet{\mathit}{T1}{pplx}{m}{it}
+\DeclareMathAlphabet{\mathtt}{T1}{lmtt}{m}{n}
+\DeclareMathAlphabet{\mathsf}{T1}{kurier}{m}{n}
+\DeclareMathAlphabet{\mathbsf}{T1}{kurier}{b}{n}
+\DeclareMathAlphabet{\mathbold}{T1}{pplx}{b}{it}
+\DeclareMathAlphabet{\mathbf}{T1}{pplx}{b}{n}
+\DeclareMathAlphabet{\mathscr}{U}{BOONDOX-calo}{m}{n}
+\DeclareMathAlphabet{\mathbscr}{U}{BOONDOX-calo}{b}{n}
+%\DeclareMathAlphabet{\mathcal}{OT1}{eusm10}{m}{n}
+%\DeclareMathAlphabet{\mathbcal}{OT1}{eusm10}{b}{n}
+\DeclareMathAlphabet{\mathfrak}{OT1}{tx-frak}{m}{n}
+\DeclareMathAlphabet{\mathbfrak}{OT1}{tx-frak}{b}{n}
+\DeclareMathAlphabet{\mathbb}{U}{dsss}{m}{n}
+\DeclareSymbolFont{operators}{T1}{uop}{m}{n}
+
+\DeclareSymbolFont{numbers}{T1}{pplx}{m}{n}
+\DeclareMathSymbol{0}\mathalpha{numbers}{`0}
+\DeclareMathSymbol{1}\mathalpha{numbers}{`1}
+\DeclareMathSymbol{2}\mathalpha{numbers}{`2}
+\DeclareMathSymbol{3}\mathalpha{numbers}{`3}
+\DeclareMathSymbol{4}\mathalpha{numbers}{`4}
+\DeclareMathSymbol{5}\mathalpha{numbers}{`5}
+\DeclareMathSymbol{6}\mathalpha{numbers}{`6}
+\DeclareMathSymbol{7}\mathalpha{numbers}{`7}
+\DeclareMathSymbol{8}\mathalpha{numbers}{`8}
+\DeclareMathSymbol{9}\mathalpha{numbers}{`9}
+
+%\setmainfont[
+%	Ligatures=TeX,
+%	Scale=0.98,
+%]{Palatino}
+%\setsansfont[
+%	Ligatures=TeX,
+%	Scale=0.98,
+%]{Palatino}
+\setmainjfont[
+	Ligatures=TeX,
+	JFM=jlreq,
+	BoldFont=FOT-TsukuAOldMinPr6-E,
+]{FOT-TsukuAOldMinPr6-R}
+\setsansjfont[
+	Ligatures=TeX,
+	JFM=jlreq,
+	BoldFont=TsukuOldGothicStd-B,
+	%AutoFakeBold=1.5,
+]{FOT-TsukuOldGothicStd-B}
+\setmonofont[
+	Ligatures=TeXReset,
+]{HackGen}
+\setmonojfont[
+	Ligatures=TeXReset,
+]{HackGen}
+
+%\ltjsetparameter{yjabaselineshift=0pt,yalbaselineshift=0.5pt}
+
+\usepackage{scalefnt}
+\usepackage{multirow}
+\usepackage{multicol}
+\ltjenableadjust[lineend=extended,priority=true,profile=true,linestep=true]
+\allowdisplaybreaks[4]
+
+\usepackage{xiangqi}
+\newcommand{\特殊}{\textsuperscript ☆}
+\newcommand{\四対子}{\textsuperscript 四}
+\newcommand{\RF}[1]{\hfill\makebox[0pt][r]{#1}}
+
+\ModifyHeading{section}{lines=2}
+\ModifyHeading{subsection}{lines=1}
+
+%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+\pagestyle{empty}
+
+\vspace{-1cm}
+\title{シャンチー麻雀}
+\author{ひとみさん}
+
+\begin{center}
+	{\LARGE \jruby[g]{象棋}{シャンチー}麻雀}（64 牌、\textcolor{lightgray}{3,} 4 人）%
+	---ひとみさん \today
+\end{center}
+
+\setlength{\parindent}{0pt}
+
+\section{牌構成}
+\begin{table}[h]
+	\centering\Huge
+	\NewColumnType{M}{Q[c]}\NewColumnType{5}{m{1ex}}\NewRowType{R}{Q[fg=red]}
+	\SetTblrInner{stretch=0,colsep=0pt}
+	\begin{tblr}{colspec={MMM5MMM5M},rowspec={RRcc}}
+		\SetCell{c}
+		2&4&4&&4&4&4&&10\\
+		\xq{R}{K}&\xq{R}{A}&\xq{R}{E}&&\xq{R}{R}&\xq{R}{H}&\xq{R}{C}&&\xq{R}{P}\\
+		\xq{B}{K}&\xq{B}{A}&\xq{B}{E}&&\xq{B}{R}&\xq{B}{H}&\xq{B}{C}&&\xq{B}{P}\\
+		2&4&4&&4&4&4&&10
+	\end{tblr}
+\end{table}
+
+\section{和了形}
+手牌は 7 枚。\textbf{2 面子 1 雀頭}、または 4 対子で和了。2 点縛り。雀頭は同一牌 2 枚。
+
+面子には刻子、槓子、順子 \xq{R}{K}\xq{R}{A}\xq{R}{E}/\xq{R}{R}\xq{R}{H}\xq{R}{C}/%
+\xq{B}{K}\xq{B}{A}\xq{B}{E}/\xq{B}{R}\xq{B}{H}\xq{B}{C} がある。
+
+吃は上家から、碰・大明槓は全員からできる。二人が碰・槓したときは上家優先。
+
+槓子は大明槓、加槓、暗槓いずれもできる。嶺上牌は牌山から取る。王牌無し。
+
+\section{細則}
+\begin{itemize}
+	\item 振聴は現物のみ栄和不可。
+	\item 自摸和の点数は、全員満額払か、分割して支払、どちらか事前に取決め。
+	\item 自摸和の点数を分割払する場合、端数は切上げ。
+	\item 錯和は全員に 6 点払い。
+\end{itemize}
+
+\section{役一覧}
+\begin{itemize}
+	\item 和了点は全て加算する。
+	\item \textcolor{blue}{青色}の牌は全て同一色。\textcolor{orange}{橙色}の牌は青と異なる色の牌。
+		\xq*{3}{?}\xq*{3}{?} は任意の色の雀頭。
+	\item \textbf{\xq*{B}{X}\xq*{B}{Y} は \xq{R}{P}\xq{B}{P} 以外の牌。}
+		\xq{B}{=}\xq*{B}{A}\xq*{B}{A}\xq{B}{=}は暗槓明槓いずれか。刻子は槓子でも可。
+	\item \特殊 は特殊形、\四対子 は四対子形（四対子 2 点とは複合しない）。
+\end{itemize}
+
+\setlength{\columnsep}{1\zw}
+\begin{multicols}{2}
+	\subsection*{32 点役}
+	\begin{desc}
+		\item[天和、地和] リーチ麻雀と同じ。
+		\item[十面埋伏\特殊]\leavevmode\\
+			\RF{\xq{R}{=}\xq{R}{P}\xq{R}{P}\xq{R}{=} \xq{B}{=}\xq{B}{P}\xq{B}{P}\xq{B}{=} \xq{R}{P}\xq{B}{P}}
+		\item[仕士、相象、俥車、{\jfontspec{NotoSansCJKjp-Medium}傌}馬、炮砲]\leavevmode\\
+			\RF{\xq*{3}{?}\xq*{3}{?} \xq{R}{=}\xq*{R}{X}\xq*{R}{X}\xq{R}{=} \xq{B}{=}\xq*{B}{X}\xq*{B}{X}\xq{B}{=}}
+	\end{desc}
+	\subsection*{24 点役}
+	\begin{desc}
+		\item[鼎足三分\四対子] \RF{\xq{R}{K}\xq{R}{K}\xq{B}{K}\xq{B}{K}\xq*{1}{X}\xq*{1}{X}\xq*{1}{X}\xq*{1}{X}}
+		\item[天双喜]\leavevmode\\
+			\RF{\xq*{3}{?}\xq*{3}{?} \xq{1}{=}\xq*{1}{X}\xq*{1}{X}\xq{1}{=} \xq{1}{=}\xq*{1}{Y}\xq*{1}{Y}\xq{1}{=}}
+	\end{desc}
+	\subsection*{20 点役}
+	\begin{desc}
+		\item[混天双]\leavevmode\\
+			\RF{\xq*{3}{?}\xq*{3}{?} \xq{R}{=}\xq*{R}{X}\xq*{R}{X}\xq{R}{=} \xq{B}{=}\xq*{B}{Y}\xq*{B}{Y}\xq{B}{=}}
+	\end{desc}
+	\subsection*{18 点役}
+	\begin{desc}
+		\item[三公] \RF{\xq{1}{K}\xq{1}{K} \xq{1}{A}\xq{1}{A}\xq{1}{A} \xq{1}{E}\xq{1}{E}\xq{1}{E}}
+		\item[百萬雄兵] \RF{\xq{1}{P}\xq{1}{P} \xq{1}{P}\xq{1}{P}\xq{1}{P} \xq{1}{P}\xq{1}{P}\xq{1}{P}}
+		\item[将相和\四対子] \RF{\xq{R}{K}\xq{R}{K}\xq{B}{K}\xq{B}{K}\xq{R}{A}\xq{R}{A}\xq{B}{A}\xq{B}{A}}
+	\end{desc}
+	\subsection*{16 点役}
+	\begin{desc}
+		\item[将帥領兵] \RF{\xq{1}{K}\xq{1}{K} \xq{1}{P}\xq{1}{P}\xq{1}{P} \xq{1}{P}\xq{1}{P}\xq{1}{P}}
+	\end{desc}
+	\subsection*{14 点役}
+	\begin{desc}
+		\item[地双喜]\leavevmode\\
+			\RF{\xq*{3}{?}\xq*{3}{?} \xq{1}{=}\xq{1}{P}\xq{1}{P}\xq{1}{=} \xq{1}{=}\xq*{1}{X}\xq*{1}{X}\xq{1}{=}}
+	\end{desc}
+	\subsection*{12 点役}
+	\begin{desc}
+		\item[混地双]\leavevmode\\
+			\RF{\xq*{3}{?}\xq*{3}{?} \xq{1}{=}\xq{1}{P}\xq{1}{P}\xq{1}{=} \xq{2}{=}\xq*{2}{X}\xq*{2}{X}\xq{2}{=}}
+		\item[鉄騎兵\四対子] \RF{\xq{1}{R}\xq{1}{R}\xq{1}{H}\xq{1}{H}\xq{1}{C}\xq{1}{C}\xq{1}{P}\xq{1}{P}}
+	\end{desc}
+	\subsection*{6 点役}
+	\begin{desc}
+		\item[一盃口] \RF{\xq*{3}{?}\xq*{3}{?} \xq*{1}{1}\xq*{1}{2}\xq*{1}{3} \xq*{1}{1}\xq*{1}{2}\xq*{1}{3}}
+	\end{desc}
+	\subsection*{5 点役}
+	\begin{desc}
+		\item[一気通貫] \RF{\xq{1}{K}\xq{1}{A}\xq{1}{E} \xq{1}{R}\xq{1}{H}\xq{1}{C} \xq{1}{P}\xq{1}{P}}
+	\end{desc}
+	\subsection*{4 点役}
+	\begin{desc}
+		\item[兵車行\四対子] \RF{\xq{R}{R}\xq{R}{R}\xq{R}{P}\xq{R}{P}\xq{B}{R}\xq{B}{R}\xq{B}{P}\xq{B}{P}}
+	\end{desc}
+	\subsection*{2 点役}
+	\begin{desc}
+		\item[{\jfontspec{NotoSansCJKjp-Medium}碰碰}胡] 対々和と同じ。\\
+			\RF{\xq*{3}{?}\xq*{3}{?} \xq*{1}{A}\xq*{1}{A}\xq*{1}{A} \xq*{2}{B}\xq*{2}{B}\xq*{2}{B}}
+		\item[二色同刻] \RF{\xq*{3}{?}\xq*{3}{?} \xq*{1}{A}\xq*{1}{A}\xq*{1}{A} \xq*{2}{A}\xq*{2}{A}\xq*{2}{A}}
+		\item[清一色] 一色のみで和了。
+		\item[四対子] 対子 4 組で和了。
+	\end{desc}
+	\subsection*{1 点役}
+	\begin{desc}
+		\item[二色同対\四対子] 四対子と複合。\\
+			\RF{\xq*{1}{A}\xq*{1}{A}\xq*{2}{A}\xq*{2}{A}\xq*{1}{B}\xq*{1}{B}\xq*{2}{B}\xq*{2}{B}}
+		\item[将対、帥対] \xq{R}{K}\xq{B}{K} の対子。
+		\item[無兵卒] \xq{R}{P}\xq{B}{P} の無い和了。
+		\item[馬到成功] \xq{R}{H}\xq{B}{H} で和了。
+		\item[一炮而紅] \xq{R}{C}\xq{B}{C} で和了。
+		\item[門前自摸和] 門前での自摸和。
+		\item[海底摸月、河底撈魚] リーチ麻雀と同じ。
+		\item[暗槓] 暗槓 1 つにつき 1 点。
+		\item[槍槓胡、槓上開花] 槍槓、嶺上開花。
+		\item[立直、一発] 立直供託 1 点。採用は任意。
+	\end{desc}
+	\subsection*{その他}
+	\begin{desc}
+		\item[積み棒] 親が連荘する度に \textbf{1 点加算}。
+		\item[親] 親の支払・受取は \textbf{1 点加算}。
+		\item[不聴罰符] 流局時、不聴ならば \textbf{1 点供託}。
+	\end{desc}
+\end{multicols}
+
+\end{document}
+
