@@ -1,0 +1,152 @@
+% +++
+% latex="lualatex"
+% +++
+\documentclass[line_length=50zw,head_space=2cm,foot_space=1cm]{jlreq}
+
+\usepackage{luatexja}
+\ltjdefcharrange{11}{`→,`↑,`↓,`←}
+\ltjsetparameter{jacharrange={-2,-8,+11}}
+\usepackage[no-math,match,deluxe,jfm_yoko=jlreq]{luatexja-preset}
+\usepackage{luatexja-otf,luatexja-adjust}
+\newopentypefeature{PKana}{On}{pkna}
+
+\usepackage[nowidering]{yhmath}
+\usepackage{newpxmath,amsmath,mathtools,mleftright}
+\usepackage[T1]{fontenc}
+\usepackage[notrig,italicdiff]{physics}
+\mleftright
+
+\usepackage[loadonly,]{enumitem}
+\newlist{desc}{description}{5}
+\setlist[desc]{labelindent=1\zw,labelsep*=1\zw,labelwidth=4\zw}
+\newlist{enu}{enumerate}{5}
+\setlist[enu]{label*=\arabic*.}
+
+\usepackage[scr=boondoxo,frak=pxtx,bb=mth]{mathalfa}
+\DeclareMathAlphabet{\mathnormal}{T1}{pplx}{m}{it}
+\DeclareMathAlphabet{\mathrm}{T1}{pplx}{m}{n}
+\DeclareMathAlphabet{\mathit}{T1}{pplx}{m}{it}
+\DeclareMathAlphabet{\mathtt}{T1}{lmtt}{m}{n}
+\DeclareMathAlphabet{\mathsf}{T1}{kurier}{m}{n}
+\DeclareMathAlphabet{\mathbsf}{T1}{kurier}{b}{n}
+\DeclareMathAlphabet{\mathbold}{T1}{pplx}{b}{it}
+\DeclareMathAlphabet{\mathbf}{T1}{pplx}{b}{n}
+\DeclareMathAlphabet{\mathscr}{U}{BOONDOX-calo}{m}{n}
+\DeclareMathAlphabet{\mathbscr}{U}{BOONDOX-calo}{b}{n}
+%\DeclareMathAlphabet{\mathcal}{OT1}{eusm10}{m}{n}
+%\DeclareMathAlphabet{\mathbcal}{OT1}{eusm10}{b}{n}
+\DeclareMathAlphabet{\mathfrak}{OT1}{tx-frak}{m}{n}
+\DeclareMathAlphabet{\mathbfrak}{OT1}{tx-frak}{b}{n}
+\DeclareMathAlphabet{\mathbb}{U}{dsss}{m}{n}
+\DeclareSymbolFont{operators}{T1}{uop}{m}{n}
+
+\newfontfamily{\hmuopfont}{FOT-RodinNTLGPro}[NFSSFamily=hmrn]
+%\DeclareSymbolFont{numbers}{T1}{hmrn}{m}{n}
+\DeclareSymbolFont{numbers}{T1}{pplx}{m}{n}
+\DeclareMathSymbol{0}\mathalpha{numbers}{`0}
+\DeclareMathSymbol{1}\mathalpha{numbers}{`1}
+\DeclareMathSymbol{2}\mathalpha{numbers}{`2}
+\DeclareMathSymbol{3}\mathalpha{numbers}{`3}
+\DeclareMathSymbol{4}\mathalpha{numbers}{`4}
+\DeclareMathSymbol{5}\mathalpha{numbers}{`5}
+\DeclareMathSymbol{6}\mathalpha{numbers}{`6}
+\DeclareMathSymbol{7}\mathalpha{numbers}{`7}
+\DeclareMathSymbol{8}\mathalpha{numbers}{`8}
+\DeclareMathSymbol{9}\mathalpha{numbers}{`9}
+
+%% フォントがない場合は以下の5行を削除
+\setsansjfont[Ligatures=TeX,BoldFont=RodinNTLGPro-EB]{FOT-RodinNTLGPro-DB}
+\setmainjfont[Ligatures=TeX,BoldFont=RodinNTLGPro-EB]{FOT-RodinNTLGPro-DB}
+\setsansfont[Ligatures=TeX,BoldFont=RodinNTLGPro-EB]{FOT-RodinNTLGPro-DB}
+\setmainfont[Ligatures=TeX,BoldFont=RodinNTLGPro-EB]{FOT-RodinNTLGPro-DB}
+\ltjsetparameter{yjabaselineshift=0pt,yalbaselineshift=0.5pt}
+
+\usepackage{scalefnt}
+\usepackage{multirow}
+\usepackage{multicol}
+\ltjenableadjust[lineend=extended,priority=true,profile=true,linestep=true]
+\allowdisplaybreaks[4]
+
+\usepackage{hmtrump}
+
+\newcommand{\hmG}{%
+	\tikz[baseline=(T.base)]
+	\node[fill=black,text=white,outer sep=0pt,inner sep=0.1ex]
+	(T)at(0,0){G};%
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+\pagestyle{empty}
+
+\vspace{-1cm}
+\title{Japanisch Vier--Anderle ルールサマリー}
+\author{ひとみさん}
+
+\begin{center}
+{\LARGE Japanisch Vier--Anderle ルール早見}---ひとみさん \today
+\end{center}
+
+\setlength{\parindent}{0pt}
+
+\section{用意するもの}
+\textbullet チップ（一人あたり\((\text{人数}+\text{1})\times\text{4}\)枚くらい）\quad
+\textbullet タロットカード（切札と絵札）\\
+タロットカードの強さは:
+\tikz[baseline=(T.base)]{\draw node[inner sep=0pt,outer sep=0pt](C){\large ■}node(T)[color=white]{強};}
+\textbf{切札}\tarottrump{0} \tarottrump{21} \tarottrump{20} \tarottrump{19}
+…… \tarottrump{2} \tarottrump{1}
+\textbf{絵札}\trump{K}{x} \trump{Q}{x} \trump{C}{x} \trump{J}{x}
+\tikz[baseline=(T.base)]{\draw node[inner sep=0pt,outer sep=0pt](C){\large □}node(T)[]{弱};}
+
+\section{フォローの規則}
+\begin{itemize}
+	\item 切札を出すときは、そのトリックに現時点で勝てる切札を出す
+	\item 切札リードの場合
+		\begin{itemize}
+			\item 切札を出す
+			\item 切札がなければ好きに出す
+		\end{itemize}
+	\item 絵札リードの場合
+		\begin{itemize}
+			\item リードのスートのカードを出す
+			\item リードのスートをがなければ切札を出す
+			\item リードのスートも切札もなければ好きに出す
+		\end{itemize}
+\end{itemize}
+
+\section{ディールの流れ}
+\begin{center}
+	\begin{tikzpicture}[x=6\zw,y=-4\zh]
+		\draw(0,0)--(4,1)--(8,0)--cycle node[midway,below]{ポットにチップが};
+		\draw(0,0)|-(4,1)node[midway,above right]{ない}-|(8,0)node[midway,above left]{ある};
+		\draw(0,2)rectangle(4,1)node[midway]{ディーラーがポットに 4 チップ入れる};
+		\draw(0,3)rectangle(4,2)node[midway]{カードを 4 枚配る};
+		\draw(0,3)--(2,4)--(4,3)--cycle node[midway,below]{TT に参加するか※};
+		\draw(0,3)|-(2,4)node[midway,above right]{降りる}-|(4,3)node[midway,above left]{出る};
+		\draw(0,8)rectangle(2,4)node[midway,text width=12\zw,align=flush center]{サイドポットに\\4 チップ入れる};
+		\draw(2,5)rectangle(4,4)node[midway]{トリックテイキング※};
+		\draw(2,5)--(3,6)--(4,5)--cycle node[midway,below]{トリックを取ったか};
+		\draw(2,5)|-(3,6)node[midway,above right]{No}-|(4,5)node[midway,above left]{Yes};
+		\draw(2,8)rectangle(3,6)node[midway,text width=6\zw,align=flush center]{サイドポット\\に 8 チップ\\入れる};
+		\draw(3,8)rectangle(4,6)node[midway,text width=6\zw,align=flush center]{1 トリック\\につき\\1/4 ポット\\得る};
+		\draw(0,9)rectangle(4,8)node[midway]{サイドポットをポットに移す};
+		\draw(4,2)rectangle(8,1)node[midway]{ディーラーがポットに 4 チップ入れる};
+		\draw(4,3)rectangle(8,2)node[midway]{カードを 4 枚配る};
+		\draw(4,5)rectangle(8,3)node[midway]{トリックテイキング※};
+		\draw(4,5)--(6,6)--(8,5)--cycle node[midway,below]{トリックを取ったか};
+		\draw(4,5)|-(6,6)node[midway,above right]{No}-|(8,5)node[midway,above left]{Yes};
+		\draw(4,9)rectangle(6,6)node[midway,text width=12\zw,align=flush center]{ポットに\\4 チップ入れる};
+		\draw(6,9)rectangle(8,6);
+	\end{tikzpicture}
+\end{center}
+※トリックテイキングに参加するかは、ディーラーの隣のプレイヤーから順に判断\\
+※オープニングリードは、参加している人でディーラーの次に一番近い人
+
+\begin{multicols}{2}
+	\columnbreak
+\end{multicols}
+\end{document}
